@@ -11,16 +11,14 @@ function App(){
   console.log('app rendering');
   
 
-  const [todos,setTodos]=useState([{id:1,text:"learn react"},
-    {Id:2,text:"read documentation"}
-  ])
+  const [todos,setTodos]=useState([])
 
   const [search,setsearch]=useState("")
 
   const appendTodo=useCallback((text)=>{
     console.log('appendtodo');
     
-    setTodos(previousTodos => [...previousTodos,{id:Date.now(),text:text}])
+    setTodos(previousTodos => [...previousTodos,{text:text}])
 
   },[])
 
