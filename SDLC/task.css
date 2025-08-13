@@ -1,0 +1,33 @@
+ .container h1 ,ul ,li{
+            display: inline-block;
+        }
+.container{
+    width: 100%;
+}
+
+.container ul{
+    margin-left: 40%;
+}
+.container li{
+    padding: 0px 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: white;
+}
+.mid-box{
+    align-items: center;
+    margin-top:20%;
+    text-align: center;
+    color: white;
+
+
+}
+body{
+    background-image: Url("somali.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+
+}

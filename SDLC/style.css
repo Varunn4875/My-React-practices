@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Libertinus+Mono&family=Manufacturing+Consent&family=Montserrat&family=Playwrite+AU+QLD:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+
+body{
+background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+.H1{
+  font-family: "Playwrite AU QLD",cursive;
+  font-weight:900;
+  font-style: normal;
+  color: white;
+  font-size: 50px;
+  margin-top: 25%;
+
+}
+.H3{
+	font-family: "Playwrite AU QLD",cursive;
+  font-weight:900;
+  font-style: normal;
+  color: white;
+  margin-left: 50%;
+  font-size:30px;
+}

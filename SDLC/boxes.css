@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Libertinus+Mono&family=Manufacturing+Consent&family=Montserrat&family=Playwrite+AU+QLD:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+*{
+	margin: 0%;
+	padding: 0%;
+}
+h1{
+  font-family: "Playwrite AU QLD",cursive;
+  font-weight:900;
+  font-style: normal;
+  color: black;
+}
+.Container{
+   border: 2px solid black;
+   background-color: lightcoral;
+   height: 500px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: "Playwrite AU QLD",cursive;
+  font-weight:900;
+  font-style: normal;
+  color: black;
+}
+.first{
+width: 80px;
+height: 150px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+.second{
+width: 80px;
+height: 210px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+.third{
+width: 80px;
+height: 280px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+.fourth{
+width: 80px;
+height: 350px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+.fifth{
+width: 80px;
+height: 420px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+.sixth{
+width: 80px;
+height: 480px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+.seventh{
+width: 80px;
+height: 480px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+.eighth{
+width: 80px;
+height: 420px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+.nienth{
+width: 80px;
+height: 350px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+.tenth{
+width: 80px;
+height: 280px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+.eleventh{
+width: 80px;
+height: 210px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+.twelve{
+width: 80px;
+height: 150px;
+margin: 0px 20px;
+border-radius:25px ;
+background-color: gainsboro;
+text-align:center;
+justify-content: center;
+align-items: center;
+}
+

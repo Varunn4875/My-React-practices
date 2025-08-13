@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+<form action="#">
+	<fieldset>
+		<legend><h1>User Form</h1></legend>
+	<label for="username">Name: </label>
+	<input type="name"name="username" placeholder="Enter your name">
+	<br><br>
+	<label for="password">Password:</label>
+	<input type="password" name="password" placeholder="Enter your Password">
+	<br><br>
+	<label for="gender">Gender: </label>
+	<input type="radio" name="gender">Male</input>
+	<input type="radio" name="gender">Female</input>
+	<br><br>
+	<label for="email">Email:</label>
+	<input type="email" name="email" placeholder="Enter your Email">
+	<br><br>
+	<label for="password">Password:</label>
+	<input type="password" name="password" placeholder="Enter your Password">
+	<br><br>
+	<label for="phone">Phone No.</label>
+<select id="country-code" name="country-code">
+  <option value="+91">+91</option>
+  <option value="+988">+988</option>
+  <option value="+1">+1</option>
+  <option value="+44">+44</option>
+</select>
+
+<input
+  type="tel"
+  id="phone"
+  name="phone"
+  placeholder="Enter your cell number"
+  pattern="[0-9]{10}"
+  required
+/>
+
+  <br><br>
+  <button type="submit">submit</button>
+</fieldset>
+
+
+
+</form>
+
+<center><h1>TIME TABE </h1></center>
+<br>
+<br>
+<table>
+	<style>
+		table{
+			border: 2px solid black;
+			width: 100%;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		th, td{
+			border: 1px solid black;
+			padding: 10px;
+		}
+		th{
+			background-color:#afcded;
+		}
+		tr td:first-child{
+			font-weight: 900;
+		}
+		.LUNCH{
+			font-weight: 900;
+			transform: rotate(450deg);
+		}
+
+	</style>
+<div>
+	<tr>
+		 <th>Day/Period</th>
+      <th>I<br>9:30-10:20</th>
+      <th>II<br>10:20-11:10</th>
+      <th>III<br>11:10-12:00</th>
+      <th>12:00-12:40</th>
+      <th>IV<br>12:40-1:30</th>
+      <th>V<br>1:30-2:20</th>
+      <th>VI<br>2:20-3:10</th>
+      <th>VII<br>3:10-4:00</th>
+    </tr>
+    <tr>
+    	<td>Monday</td>
+    	<td>Eng</td>
+    	<td>Mat</td>
+    	<td>Che</td>
+    	<td class="LUNCH" rowspan="6">LUNCH</td>
+    	<td colspan="3">Lab</td>
+    	<td>Phy</td>
+    </tr>
+    <tr>
+    	<td>Tudesday</td>
+    	<td colspan="3">LAB</td>
+    	<td>Eng</td>
+    	<td>Che</td>
+    	<td>Mat</td>
+    	<td>SPORTS</td>
+    </tr>
+    <tr>
+    	<td>Wednesday</td>
+    	<td>Mat</td>
+    	<td>Phy</td>
+    	<td>Eng</td>
+    	<td>Che</td>
+    	<td colspan="3">LIBRARY</td>
+    </tr>
+    <tr>
+    	<td>Thursday</td>
+    	<td>Phy</td>
+    	<td>che</td>
+    	<td>che</td>
+    	<td colspan="3">LAB</td>
+    	<td>Mat</td>
+    </tr>
+    <tr>
+    	<td>Friday</td>
+    	<td colspan="3">LAB</td>
+    	<td>Mat</td>
+    	<td>Che</td>
+    	<td>Eng</td>
+    	<td>Phy</td>
+    </tr>
+    <tr>
+    	<td>Saturday</td>
+    	<td>Eng</td>
+    	<td>Che</td>
+    	<td>Mat</td>
+    	<td colspan="3">SEMINAR</td>
+    	<td>SPORTS</td>
+
+</table>
+</body>
+</html>
