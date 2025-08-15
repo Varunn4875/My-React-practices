@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Image Slider</title>
+  <style>
+  body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+    }
+
+    .slider {
+      position: relative;
+      width:500px;
+      height: 300px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .buttons {
+      position: absolute;
+      top: 45%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+
+    .btn {
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+    
+  </style>
+</head>
+<body>
+
+<h2>Simple Image Slider</h2>
+
+<div class="slider">
+  <div class="slides" id="slideContainer">
+    <img src="https://picsum.photos/id/1019/500/300" alt="Image 1">
+    <img src="https://picsum.photos/id/1016/500/300" alt="Image 2">
+    <img src="https://picsum.photos/id/1018/500/300" alt="Image 3">
+    <img src="https://picsum.photos/id/1011/500/300" alt="Image 1">
+    <img src="somali.jpg" alt="somali">
+  </div>
+  
+  <div class="buttons">
+    <button class="btn" onclick="prevSlide()">&#10094;</button>
+    <button class="btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+<script>
+  let index = 0;
+  const slides = document.getElementById('slideContainer');
+  const totalSlides = slides.children.length;
+
+  function showSlide() {
+    slides.style.transform = `translateX(${-index * 500}px)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    showSlide();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide();
+  }
+</script>
+
+</body>
+</html>
+
