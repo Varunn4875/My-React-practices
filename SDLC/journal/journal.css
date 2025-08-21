@@ -1,0 +1,133 @@
+*{
+	margin: 0px 20px;
+	padding: 0;
+	box-sizing: border-box;
+}
+.top{
+	/*border-bottom: 2px solid black;*/
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	border-bottom: 2px solid black;
+	padding: 15px;
+}
+.c1{
+	border:1px solid black;
+	/*height: 100px;*/
+	width: 200px;
+	align-items: center;
+	/*padding: 10px;*/
+}
+.c2{
+	width: 300px;
+	align-items: center;
+}
+.c3{
+	align-items: center;
+	width: 300px;
+	/*padding:15px;*/
+}
+.box-2{
+	display:flex;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+}
+.flyertitle{
+	border-bottom: 2px solid black;
+}
+.supertitle{
+	font-size: 40px;
+}
+.bgimg{
+	background-image: url("natural-disaster-landscape.jpg");
+	background-position: cover;
+	background-size: cover;
+	width: 600px;
+	height: 400px;
+}
+.bghead{
+	margin: 15px 0px;
+	font-size: 25px;
+	font-weight: 900;
+	width: 600px;
+}
+.rollsbig{
+	width: 600px;
+	border-bottom: 2px dotted black;
+	margin: 15px 0px;
+}
+.yourname{
+	width: 600px;
+	border-bottom: 2px dotted black;
+}
+.content{
+	width: 600px;
+	text-align: justify;
+	column-count: 2;
+}
+.right-top{
+	background-image: url("oldcar.webp");
+	width: 600px;
+	height: 300px;
+	margin: 10px 0px;
+}
+.man{
+	border-bottom: 2px solid black;
+	width: 600px;
+}
+.related{
+	margin: 10px 0px;
+	font-size: 25px;
+	font-weight: 900;
+	width: 600px;
+	border-bottom: 2px dotted black;
+}
+.parals{
+	width: 600px;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+}
+.sigma2{
+	width: 600px;
+}
+.content{
+	text-align: justify;
+}
+.bottom{
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	border: 1.5px solid black;
+	padding: 15px;
+	justify-content: space-between;
+}
+.b1{
+	background-image: url("natural-disaster-landscape.jpg");
+	width:100px ;
+	height: 100px;
+
+}
+.b3{
+	width: 100px;
+	align-items: center;
+}
+.add{
+	font-weight: 900;
+	font-size: 40px;
+
+}
+.sell{
+	font-size: 40px;
+	font-weight: 400;
+	font-style: italic;
+}
+.bottom-class{
+	border-bottom: 2px solid black;
+}
+.footer{
+	display: flex;
+	justify-content: center;
+	margin: 10px 0px;
+}
