@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div{
+	column-count: 5;
+	height: 300px;
+	text-align: justify;
+	column-rule:3px dashed teal;
+	column-gap: 60px;
+	line-height: 25px;
+	margin: 15px 15px;
+	box-sizing: border-box;
+	font-size: 1rem;
+	overflow: visible;
+}
+div h1{
+	column-span: all;
+	margin: 25px 0px;
+}
