@@ -9,28 +9,37 @@
 	justify-content:space-around;
 	align-items: center;
 	border-bottom: 2px solid black;
-	padding: 15px;
+	padding: 15px 0px;
 }
 .c1{
 	border:1px solid black;
 	/*height: 100px;*/
-	width: 200px;
+	width: 250px;
 	align-items: center;
-	/*padding: 10px;*/
+	text-align: justify;
+	padding: 10px;
 }
 .c2{
-	width: 300px;
+	width: 900px;
 	align-items: center;
+	text-align: center;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 55px; /* adjust as needed */
+    /*background-color: green;*/
+    margin: center;
+
 }
 .c3{
 	align-items: center;
 	width: 300px;
 	/*padding:15px;*/
+	text-align: justify;
 }
 .box-2{
 	display:flex;
 	justify-content: space-between;
 	border-bottom: 2px solid black;
+	margin: 0px 0px;
 }
 .flyertitle{
 	border-bottom: 2px solid black;
@@ -39,7 +48,7 @@
 	font-size: 40px;
 }
 .bgimg{
-	background-image: url("natural-disaster-landscape.jpg");
+	background-image: url("oldcar.webp");
 	background-position: cover;
 	background-size: cover;
 	width: 600px;
@@ -67,6 +76,8 @@
 }
 .right-top{
 	background-image: url("oldcar.webp");
+	background-position: cover;
+	background-size: cover;
 	width: 600px;
 	height: 300px;
 	margin: 10px 0px;
@@ -84,6 +95,7 @@
 }
 .parals{
 	width: 600px;
+	text-align: justify;
 }
 .container{
 	display: flex;
@@ -91,20 +103,24 @@
 }
 .sigma2{
 	width: 600px;
+	align-items: center;
 }
-.content{
-	text-align: justify;
+.sigma1{
+	align-items: center;
+	width: 600px;
 }
 .bottom{
 	display: flex;
 	margin-top: 30px;
 	margin-bottom: 10px;
 	border: 1.5px solid black;
-	padding: 15px;
+	padding: 10px;
 	justify-content: space-between;
 }
 .b1{
-	background-image: url("natural-disaster-landscape.jpg");
+	background-image: url("oldcar.webp");
+	background-position: cover;
+	background-size: cover;
 	width:100px ;
 	height: 100px;
 
@@ -112,14 +128,15 @@
 .b3{
 	width: 100px;
 	align-items: center;
+	text-align: center;
 }
 .add{
 	font-weight: 900;
-	font-size: 40px;
+	font-size: 30px;
 
 }
 .sell{
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 400;
 	font-style: italic;
 }
