@@ -274,8 +274,11 @@ imgcontent p{
 .getstarted{
 	background-color: black;
 	color: white;
-	padding: 10px 25px;
+	padding: 10px 40px;
 	border-radius: 15px;
+	text-align: center;
+	border: none;
+	outline: none;
 
 }
 
