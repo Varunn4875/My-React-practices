@@ -239,8 +239,7 @@ imgcontent p{
 	background-color: white;
 	width: 530px;
 	height: 440px;
-	/*margin: 10px 25px;
-	border-radius: 15px;*/
+	border-radius: 15px;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -262,11 +261,22 @@ imgcontent p{
 	align-items: center;
 	text-align: center;
 	display: flex;
+	margin: 0px 10px;
 
 }
 .whitepara{
-	width: 150px;
+	width: 250px;
 	background-color: white;
+	margin: 120px 10px;
+	padding: 10px;
+	border-radius: 15px;
+}
+.getstarted{
+	background-color: black;
+	color: white;
+	padding: 10px 25px;
+	border-radius: 15px;
+
 }
 
 
