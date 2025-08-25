@@ -1,0 +1,32 @@
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.client{
+			margin: 15px 25px;
+			box-sizing: border-box;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		.clients{
+			margin: 0px 100px;
+		    display:inline-block;
+			vertical-align: middle;
+			height: 100px;
+			width: 100px;
+		}
+		.slider-track{
+			display: inline-block;
+			animation: box-animae 25s linear infinite;
+
+		}
+		@keyframes box-animae
+		{
+			0% {
+				transform: translateX(100%);
+			}
+			100%{
+				transform: translateX(-100%);
+			}
+		}

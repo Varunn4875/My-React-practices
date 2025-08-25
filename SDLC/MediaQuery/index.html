@@ -1,0 +1,30 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Landing Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div class="nav">
+			<div class="left">Varun</div>
+			<div class="center hide">
+				<ul>
+					<li>Home </li>
+					<li>About</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<div class="right"><button class="nav-btn"><i class="fa-solid fa-bars"></i></button></div>
+		</div>
+	<script>
+		document.querySelector(".nav-btn").onclick=
+		function(){
+			document.querySelector(".center").classList.toggle("hide")
+		}
+	</script>
+
+	</body>
+	</html>
