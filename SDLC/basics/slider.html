@@ -16,7 +16,7 @@
       margin: auto;
       overflow: hidden;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 50px 50px 100px goldenrod;
     }
 
     .slides {
@@ -65,7 +65,6 @@
     <img src="https://picsum.photos/id/1016/500/300" alt="Image 2">
     <img src="https://picsum.photos/id/1018/500/300" alt="Image 3">
     <img src="https://picsum.photos/id/1011/500/300" alt="Image 1">
-    <img src="somali.jpg" alt="somali">
   </div>
   
   <div class="buttons">
@@ -81,6 +80,7 @@
 
   function showSlide() {
     slides.style.transform = `translateX(${-index * 500}px)`;
+
   }
 
   function nextSlide() {

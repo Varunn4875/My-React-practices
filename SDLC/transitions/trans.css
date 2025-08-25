@@ -5,7 +5,7 @@
 .trans{
 	width: 500px;
 	height: 500px;
-	background-color:black ;
+	background-color:black;
 	/*transition-property: width;*/
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0,.31,.23,1.62);
