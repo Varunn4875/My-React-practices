@@ -1,0 +1,225 @@
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.container{
+		height: 100vh;
+		color: white;
+	}
+	.container{
+		background-image: url("guy2.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: scroll;
+		background-size:cover;
+		background-color: rgba(100, 30, 30, 0.8);/* The light brown layer */
+	    background-blend-mode: overlay;
+
+	}
+	.nav{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		cursor: pointer;
+	}
+	.nav .right ul li{
+		display: inline;
+		margin: 0px 30px;
+		font-weight: 900;
+	}
+	.center-box{
+	    margin: 10% auto;
+		width:850px ;
+		align-items: center;
+		text-align: center;
+	}
+	.center-box h3{
+		font-size: 28px;
+		font-weight: 900;
+	}
+	.center-box h2{
+		font-size: 40px;
+		font-weight: 900;
+	}
+	.center-box h1{
+		font-size: 56px;
+		font-weight: 900;
+	}
+	.center-box p{
+		margin-top: 25px;
+		font-size: 20px;
+	}
+	.grid p{
+		margin-top: 25px;
+		font-size: 20px;	
+	}
+	.center-box button{
+		padding: 10px 25px;
+		background: transparent;
+		border: 1px solid white;
+		margin-top: 15px;
+		color: white;
+	}
+	.container2{
+		height: 500px;
+		width: 100%;
+		background-image: url("rack.jpg");
+	    background-position:scroll;
+	    background-attachment: fixed;
+		background-size:cover;
+	    background-color:#363434; 
+	    background-blend-mode: overlay;
+	    color: white;
+	}
+	.container2 h1 {
+		text-align: center;
+		color: white;
+		padding: 30px;
+	}
+	.container2outline{
+		padding: 60px 0px;
+	}
+	.grid-box{
+		display: grid;
+		grid-template-columns: repeat(4, 20%);
+		justify-content: space-around;
+		width: 100%;
+	}
+	.grid{
+		text-align: center;
+		border: solid white;
+	}
+	.icons{
+		font-size: 50px;
+		color:#FF0000;
+	}
+	.head h1{
+		text-decoration: underline #FF0000 ;
+	}
+	.container3{
+		height: 500px;
+		width: 100%;
+		background-image: url("cycle2.jpg");
+		background-size:cover;
+		background-attachment: fixed;
+	   background-color: #673443;/* The light brown layer */
+	    background-blend-mode: overlay;
+	    background-position:scroll;
+	    color: white;
+	    text-align: center;
+	}
+	/*.container3{
+		height: 500px;
+		width: 100%;
+	}
+	*/.container3 .c3box button{
+		padding: 15px 30px;
+		background: transparent;
+		margin-top: 30px;
+		color: white;
+		border: 1px white solid;
+	}
+	.c3box h1{
+		font-size: 32px;
+		font-weight: 900;
+	}
+	.c3box{
+		text-align: center;
+		align-items: center;
+		width: 800px;
+		margin-right: auto;
+	    margin-left: auto;
+
+	}
+	.c3box p{
+		margin-top: 20px;
+	}
+	.outline{
+	    padding: 120px 0px;
+
+	}
+	.container4{
+		height: 700px;
+		width: 100%;
+		background-image: url("rack.jpg");
+	    background-position:scroll;
+	    background-attachment: fixed;
+		background-size:cover;
+	    background-color:#363434; 
+	    background-blend-mode: overlay;
+	    color: white;
+
+	}
+	.container4outline{
+		padding:30px 30px;
+	}
+	.container4outline h1{
+		text-align: center;
+		color: white;
+		text-decoration: underline #FF0000 ;
+	}
+	.c4c1{
+		text-align: center;
+		align-items: center;
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.c4parent{
+		margin-top: 100px;
+		display: grid;
+		grid-template-columns: repeat(3, 33%);
+		justify-content: space-around;
+/*		display: flex;
+		flex-wrap: wrap;*/
+		width: 100%;
+		gap: 20px 0px;
+	}
+	.social-box {
+      background: white;
+      width: 100px;
+      position: absolute;
+      left: 35%;
+      bottom: 0px;
+      padding: 10px 0px;
+      border-radius: 15px;
+    }
+    .social-box a i{
+         color:#FF0000;
+         font-size: 20px;
+    }
+	.imgc4{
+		background-image: url("smirth.jpg");
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		height: 397px;
+		width: 370px;
+		border-radius: 25px;
+		position: relative;
+		margin-top: 15px;
+	}
+	.imgc5{
+		background-image: url("jean.jpg");
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		height: 397px;
+		width: 370px;
+		border-radius: 25px;
+		position: relative;
+		margin-top: 15px;
+	}
+	.alex{
+		background-image: url("alex.jpg");
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		height: 397px;
+		width: 370px;
+		border-radius: 25px;
+		position: relative;
+		margin-top: 15px;
+	}
