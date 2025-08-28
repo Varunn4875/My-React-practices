@@ -1,1 +1,93 @@
-style.css
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	height: 100vh;
+	color: white;
+}
+.container{
+	background-image: url("istockphoto-1277242852-612x612.jpg");
+	background-repeat: no-repeat;
+	background-position: scroll;
+	background-size:cover;
+	background-color:brown; /* The light brown layer */
+    background-blend-mode: overlay;
+
+}
+.nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	cursor: pointer;
+}
+.nav .right ul li{
+	display: inline;
+	margin: 0px 30px;
+	font-weight: 900;
+}
+.center-box{
+	margin:15% auto;
+	width:800px ;
+	align-items: center;
+	text-align: center;
+}
+.center-box h3{
+	font-size: 28px;
+	font-weight: 900;
+}
+.center-box h2{
+	font-size: 40px;
+	font-weight: 900;
+}
+.center-box h1{
+	font-size: 56px;
+	font-weight: 900;
+}
+.center-box,.grid p{
+	margin-top: 25px;
+	font-size: 20px;
+}
+.center-box button{
+	padding: 10px 25px;
+	background: transparent;
+	border: 1px solid white;
+	margin-top: 15px;
+	color: white;
+
+}
+.container2{
+	height: 400px;
+	width: 100%;
+	background-image: url("pexels-photo-260352.webp");
+    background-position:scroll;
+	background-size:cover;
+    background-color:#363434; 
+    background-blend-mode: overlay;
+    color: white;
+}
+.container2 h1 {
+	text-align: center;
+	color: white;
+	padding: 30px;
+}
+.grid-box{
+	display: grid;
+	grid-template-columns: repeat(4, 20%);
+	justify-content: space-around;
+	width: 100%;
+}
+.grid{
+	text-align: center;
+}
+.icons{
+	font-size: 50px;
+	color:#FF0000;
+}
+.head h1{
+	text-decoration: underline #FF0000 ;
+}
+
+
