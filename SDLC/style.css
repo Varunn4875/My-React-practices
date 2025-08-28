@@ -10,6 +10,7 @@
 .container{
 	background-image: url("istockphoto-1277242852-612x612.jpg");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-position: scroll;
 	background-size:cover;
 	background-color:brown; /* The light brown layer */
@@ -29,8 +30,8 @@
 	font-weight: 900;
 }
 .center-box{
-	margin:15% auto;
-	width:800px ;
+    margin: 10% auto;
+	width:850px ;
 	align-items: center;
 	text-align: center;
 }
@@ -46,9 +47,13 @@
 	font-size: 56px;
 	font-weight: 900;
 }
-.center-box,.grid p{
+.center-box p{
 	margin-top: 25px;
 	font-size: 20px;
+}
+.grid p{
+	margin-top: 25px;
+	font-size: 20px;	
 }
 .center-box button{
 	padding: 10px 25px;
@@ -56,13 +61,13 @@
 	border: 1px solid white;
 	margin-top: 15px;
 	color: white;
-
 }
 .container2{
-	height: 400px;
+	height: 500px;
 	width: 100%;
 	background-image: url("pexels-photo-260352.webp");
     background-position:scroll;
+    background-attachment: fixed;
 	background-size:cover;
     background-color:#363434; 
     background-blend-mode: overlay;
@@ -88,6 +93,48 @@
 }
 .head h1{
 	text-decoration: underline #FF0000 ;
+}
+.container3{
+	height: 500px;
+	width: 100%;
+	background-image: url("stationary.webp");
+	background-size:cover;
+	background-attachment: fixed;
+   background-color: rgba(100, 30, 30, 0.8);/* The light brown layer */
+    background-blend-mode: overlay;
+    background-position:scroll;
+    color: white;
+    text-align: center;
+}
+/*.container3{
+	height: 500px;
+	width: 100%;
+}
+*/.container3 .c3box button{
+	padding: 10px 25px;
+	background: transparent;
+	margin-top: 30px;
+	color: white;
+	border: 1px white solid;
+}
+.c3box h1{
+	font-size: 32px;
+	font-weight: 900;
+}
+.c3box{
+	text-align: center;
+	align-items: center;
+	width: 800px;
+	margin-right: auto;
+    margin-left: auto;
+
+}
+.c3box p{
+	margin-top: 20px;
+}
+.outline{
+    padding: 120px 0px;
+
 }
 
 
