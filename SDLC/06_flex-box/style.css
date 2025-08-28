@@ -1,0 +1,26 @@
+	*{
+		margin: 0;
+		padding: 15px;
+		box-sizing: border-box;
+	}
+	.container{
+		display: flex;
+		justify-content: space-around;
+		/*justify-content: flex-start;*/
+		flex-wrap: wrap;
+		/*gap:10px 0px;*/
+		align-items: center;
+	}
+	.container .pic{
+		width: 400px;
+		height: 320px;		
+	}
+	.container .pic img{
+		width: 100%;
+		height: 300px;
+		transition: 0.5s ease-in;
+		border-radius: 25px;
+	}
+	.pic img:hover{
+		transform: scale(1.2);
+	}
