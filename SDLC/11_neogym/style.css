@@ -1,283 +1,376 @@
-		@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Libertinus+Mono&family=Manufacturing+Consent&family=Montserrat&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-		body{
-			font-family: "Montserrat", sans-serif;
-	          font-optical-sizing: auto;
-	          font-weight: 400;
-	          font-style: normal;
-		}
-		html{
-			scroll-behavior: smooth;
-		}
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		.container{
-			height: 100vh;
-			color: white;
-		}
-		/*.container{
-			background-image: url("guy2.jpg");
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-position: scroll;
-			background-size:cover;
-			background-color: rgba(100, 30, 30, 0.8);/* The light brown layer */
-		    /*background-blend-mode: overlay;*/
+			@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Libertinus+Mono&family=Manufacturing+Consent&family=Montserrat&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+			body{
+				font-family: "Montserrat", sans-serif;
+		          font-optical-sizing: auto;
+		          font-weight: 400;
+		          font-style: normal;
+			}
+			html{
+				scroll-behavior: smooth;
+			}
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.container{
+				height: 100vh;
+				color: white;
+			}
+			/*.container{
+				background-image: url("guy2.jpg");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: scroll;
+				background-size:cover;
+				background-color: rgba(100, 30, 30, 0.8);/* The light brown layer */
+			    /*background-blend-mode: overlay;*/
 
-		}*/
-		.center a{
-			text-decoration: none;
-			color: white;
-			list-style: none;
-		}
-		./*right a:active{
-			text-decoration: underline red solid;
-		}*/
+			}*/
+			.center a{
+				text-decoration: none;
+				color: white;
+				list-style: none;
+			}
+			./*right a:active{
+				text-decoration: underline red solid;
+			}*/
 
-		.nav .right ul li{
-			display: inline;
-			margin: 0px 30px;
-			font-weight: 900;
-		}
-		.containers ul li{
-			display: inline;
-			margin: 0px 25px;
-		}
-		.containers a{
-	text-decoration: none;
-			color: white;
-		}
-		.containers:hover{
-			cursor: pointer;
-		}
-		.containers li:hover{
-			text-decoration: solid 4px  underline #FF0000;
-		}
-		.containers{
-			/*margin: 15px 0px;*/
-		}
-		.containers {
-	  position: fixed;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	  z-index: 1000; /* stay above everything */
-	  /*background: rgba(0,0,0,0.6); /* transparent black */
-	  padding: 15px 30px;
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  color: #fff;
-	  background: transparent;
-	  backdrop-filter: blur(5px);
-	  }
-	#home {
-	  height: 100vh; /* full screen */
-	  background: url("guy2.jpg") no-repeat center center/cover;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  text-align: center;
-	  color: #fff;
-	  padding-top: 100px; /* push content below navbar */
-	  background-color: rgba(100, 30, 30, 2);/* The light brown layer */
-		background-blend-mode: overlay;
-
-	}
-		.center-box{
-		    margin: 10% auto;
-			width:850px ;
-			align-items: center;
-			text-align: center;
-		}
-		.center-box h3{
-			font-size: 28px;
-			font-weight: 900;
-		}
-		.center-box h2{
-			font-size: 40px;
-			font-weight: 900;
-		}
-		.center-box h1{
-			font-size: 56px;
-			font-weight: 900;
-		}
-		.center-box p{
-			margin-top: 25px;
-			font-size: 20px;
-		}
-		.grid p{
-			margin-top: 25px;
-			font-size: 20px;	
-		}
-		.center-box button{
-			padding: 10px 25px;
-			background: transparent;
-			border: 1px solid white;
-			margin-top: 15px;
-			color: white;
-		}
-		.container2{
-			height: 500px;
-			width: 100%;
-			background-image: url("rack.jpg");
-		    background-position:scroll;
-		    background-attachment: fixed;
-			background-size:cover;
-		    background-color:#363434; 
-		    background-blend-mode: overlay;
-		    color: white;
-		}
-		.container2 h1 {
-			text-align: center;
-			color: white;
-			padding: 30px;
-		}
-		.container2outline{
-			padding: 60px 0px;
-		}
-		.grid-box{
-			display: grid;
-			grid-template-columns: repeat(4, 20%);
-			justify-content: space-around;
-			width: 100%;
-		}
-		.grid{
-			text-align: center;
-			border: solid white;
-		}
-		.icons{
-			font-size: 50px;
-			color:#FF0000;
-		}
-		.head h1{
-			text-decoration: underline #FF0000 ;
-		}
-		.container3{
-			height: 500px;
-			width: 100%;
-			background-image: url("cycle2.jpg");
-			background-size:cover;
-			background-attachment: fixed;
-		   background-color: #673443;/* The light brown layer */
-		    background-blend-mode: overlay;
-		    background-position:scroll;
-		    color: white;
-		    text-align: center;
-		}
-		/*.container3{
-			height: 500px;
-			width: 100%;
-		}
-		*/.container3 .c3box button{
-			padding: 15px 30px;
-			background: transparent;
-			margin-top: 30px;
-			color: white;
-			border: 1px white solid;
-		}
-		.c3box h1{
-			font-size: 32px;
-			font-weight: 900;
-		}
-		.c3box{
-			text-align: center;
-			align-items: center;
-			width: 800px;
-			margin-right: auto;
-		    margin-left: auto;
+			.nav .right ul li{
+				display: inline;
+				margin: 0px 30px;
+				font-weight: 900;
+				justify-content: space-between;
+			}
+			.containers ul li{
+				display: inline;
+				margin: 0px 25px;
+				transition: 0.2s ease-in;
+			}
+			.containers a{
+		text-decoration: none;
+				color: white;
+			}
+			.containers:hover{
+				cursor: pointer;
+			}
+			.containers li:hover{
+				text-decoration: solid 4px  underline #FF0000;
+			}
+			.containers{
+				/*margin: 15px 0px;*/
+			}
+			.containers {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  z-index: 1000; /* stay above everything */
+		  /*background: rgba(0,0,0,0.6); /* transparent black */
+		  padding: 15px 30px;
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  color: #fff;
+		  background: transparent;
+		  backdrop-filter: blur(5px);
+		  }
+		#home {
+		  height: 100vh; /* full screen */
+		  background: url("istockphoto-1277242852-612x612.jpg") no-repeat center center/cover;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+		  color: #fff;
+		  padding-top: 100px; /* push content below navbar */
+		  background-color: rgba(82,39,49,5);/* The light brown layer */
+			background-blend-mode: overlay;
 
 		}
-		.c3box p{
-			margin-top: 20px;
-		}
-		.outline{
-		    padding: 120px 0px;
+			.center-box{
+			    margin: 10% auto;
+				width:850px ;
+				align-items: center;
+				text-align: center;
+			}
+			.center-box h3{
+				font-size: 28px;
+				font-weight: 900;
+			}
+			.center-box h2{
+				font-size: 40px;
+				font-weight: 900;
+			}
+			.center-box h1{
+				font-size: 56px;
+				font-weight: 900;
+			}
+			.center-box p{
+				margin-top: 25px;
+				font-size: 20px;
+			}
+			.right .nav-btn{
+				padding: 5px;
+				font-size: 15px;
+			}
+			.grid p{
+				margin-top: 25px;
+				font-size: 20px;	
+			}
+			.center-box button{
+				padding: 10px 25px;
+				background: transparent;
+				border: 1px solid white;
+				margin-top: 15px;
+				color: white;
+				transition: 0.5s ease-in;
+			}
+			.center-box button:hover{
+				background-color: whitesmoke;
+				color: black;
+			}
+			.container2{
+				height: 500px;
+				width: 100%;
+				background-image: url("sport-equipment-concept-unrecognizable-black-600nw-2198498071.webp");
+			    background-position:scroll;
+			    background-attachment: fixed;
+				background-size:cover;
+			    background-color:#363434; 
+			    background-blend-mode: overlay;
+			    color: white;
+			}
+			.container2 h1 {
+				text-align: center;
+				color: white;
+				padding: 30px;
+			}
+			.container2outline{
+				padding: 60px 0px;
+			}
+			.grid-box{
+				display: grid;
+				grid-template-columns: repeat(4, 20%);
+				justify-content: center;
+				width: 100%;
+			}
 
-		}
-		.container4{
-			height: 700px;
-			width: 100%;
-			background-image: url("rack.jpg");
-		    background-position:scroll;
-		    background-attachment: fixed;
-			background-size:cover;
-		    background-color:#363434; 
-		    background-blend-mode: overlay;
-		    color: white;
+			.grid{
+				text-align: center;
+				margin: 0px 50px;
+			}
+			.icons{
+				font-size: 50px;
+				color:#FF0000;
+			}
+			.head h1{
+				text-decoration: underline #FF0000 ;
+			}
+			.container3{
+				height: 500px;
+				width: 100%;
+				background-image: url("stationary.webp");
+				background-size:cover;
+				background-attachment: fixed;
+			   background-color: #673443;/* The light brown layer */
+			    background-blend-mode: overlay;
+			    background-position:scroll;
+			    color: white;
+			    text-align: center;
+			}
+			/*.container3{
+				height: 500px;
+				width: 100%;
+			}
+			*/.container3 .c3box button{
+				padding: 15px 30px;
+				background: transparent;
+				margin-top: 30px;
+				color: white;
+				border: 1px white solid;
+				transition: 0.5s ease-in;
+			}
+			.c3box button:hover{
+				background-color: whitesmoke;
+				color: black;
+			}
+			.c3box h1{
+				font-size: 32px;
+				font-weight: 900;
+			}
+			.c3box{
+				text-align: center;
+				align-items: center;
+				width: 800px;
+				margin-right: auto;
+			    margin-left: auto;
 
-		}
-		.container4outline{
-			padding:30px 30px;
-		}
-		.container4outline h1{
-			text-align: center;
-			color: white;
-			text-decoration: underline #FF0000 ;
-		}
-		.c4c1{
-			text-align: center;
-			align-items: center;
-			width: 400px;
-			gap: 20px 0px;
-		}
-		.c4parent{
-			margin-top: 100px;
-			/*display: grid;
-			grid-template-columns: repeat(3,1fr);*/
-			justify-content: space-around;
-			display: flex;
-			flex-wrap: wrap;
-			width: 100%;
-			gap: 50px 0px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.social-box {
-	      background: white;
-	      width: 100px;
-	      position: absolute;
-	      left: 35%;
-	      bottom: 0px;
-	      padding: 10px 0px;
-	      border-radius: 15px;
-	    }
-	    .social-box a i{
-	         color:#FF0000;
-	         font-size: 20px;
-	    }
-		.imgc4{
-			background-image: url("smirth.jpg");
-			overflow: hidden;
-			background-size: cover;
-			background-position: center;
-			height: 397px;
-			width: 370px;
-			border-radius: 25px;
-			position: relative;
-			margin-top: 15px;
-		}
-		.imgc5{
-			background-image: url("jean.jpg");
-			overflow: hidden;
-			background-size: cover;
-			background-position: center;
-			height: 397px;
-			width: 370px;
-			border-radius: 25px;
-			position: relative;
-			margin-top: 15px;
-		}
-		.alex{
-			background-image: url("alex.jpg");
-			overflow: hidden;
-			background-size: cover;
-			background-position: center;
-			height: 397px;
-			width: 370px;
-			border-radius: 25px;
-			position: relative;
-			margin-top: 15px;
-		}
+			}
+			.c3box p{
+				margin-top: 20px;
+			}
+			.outline{
+			    padding: 120px 0px;
+
+			}
+			.container4{
+				height: 700px;
+				width: 100%;
+				background-image: url("sport-equipment-concept-unrecognizable-black-600nw-2198498071.webp");
+			    background-position:scroll;
+			    background-attachment: fixed;
+				background-size:cover;
+			    background-color:#363434; 
+			    background-blend-mode: overlay;
+			    color: white;
+
+			}
+			.container4outline{
+				padding:30px 30px;
+			}
+			.container4outline h1{
+				text-align: center;
+				color: white;
+				text-decoration: underline #FF0000 ;
+			}
+			.c4c1{
+				text-align: center;
+				align-items: center;
+				width: 400px;
+				gap: 20px 0px;
+			}
+			.c4parent{
+				margin-top: 100px;
+				/*display: grid;
+				grid-template-columns: repeat(3,1fr);*/
+				justify-content: space-around;
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				gap: 50px 0px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.social-box {
+		      background: white;
+		      width: 100px;
+		      position: absolute;
+		      left: 35%;
+		      bottom: 0px;
+		      padding: 10px 0px;
+		      border-radius: 15px;
+		    }
+		    .social-box a i{
+		         color:#FF0000;
+		         font-size: 20px;
+		    }
+			.imgc4{
+				background-image: url("smirth.jpg");
+				overflow: hidden;
+				background-size: cover;
+				background-position: center;
+				height: 397px;
+				width: 370px;
+				border-radius: 25px;
+				position: relative;
+				margin-top: 15px;
+			}
+			.imgc5{
+				background-image: url("jean.jpg");
+				overflow: hidden;
+				background-size: cover;
+				background-position: center;
+				height: 397px;
+				width: 370px;
+				border-radius: 25px;
+				position: relative;
+				margin-top: 15px;
+			}
+			.alex{
+				background-image: url("alex.jpg");
+				overflow: hidden;
+				background-size: cover;
+				background-position: center;
+				height: 397px;
+				width: 370px;
+				border-radius: 25px;
+				position: relative;
+				margin-top: 15px;
+			}
+			.nav .containers .right{
+				display: none;
+			}
+			.container5{
+				background-color: #27223f;
+				height:650px ;
+				width: 100%;
+			/*	display: grid;
+				grid-template-columns: repeat(2, 50%);*/
+				display: flex;
+				/*flex-direction: column;*/
+			}
+			.runimage{
+				background-image: url("run.jpg");
+				height: 100%;
+				width: 50%;
+				background-repeat: no-repeat;
+			}
+			.form{
+				margin: 0px 20px;
+			}
+			.c6outline{
+				padding: 20px 0px;
+			}
+			.container6{
+				background-color:#252233 ;
+				height: 180px;
+				display: flex;
+				/*justify-content:space-evenly;*/
+				padding: 50px 0px;
+				text-align: center;
+				justify-content: center;
+			}
+			.container6 .left{
+				margin: 0px 50px;
+				color: white;
+				font-size: 20px;
+			}
+			.container6 i{
+				font-size: 30px;
+			}
+			.input,textarea{
+				padding: 15px;
+				width: 500px;
+				margin: 15px 0px;
+				justify-content: center;
+				border: none;
+				outline: none;
+			}
+			.form h1{
+				color: white;
+				margin-top: 100px;
+			}
+			.form input::placeholder{
+				color: black;
+				border: none;
+				outline: none;
+			}
+			.form textarea{
+				outline: none;
+				border: none;
+			}
+			.form textarea::placeholder{
+				color: black;
+				font-size: 16px;
+			}
+			.send{
+				padding: 15px 50px;
+				background-color: #ff2953;
+				border: none;
+				outline: none;
+				font-weight: bold;
+				color: white;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
