@@ -8,12 +8,13 @@
 								<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 							</head>
 							<body>
+
 <header class="nav">
   <div class="containers">
     <div class="left">
       <h1>NEOGYM</h1>
     </div>
-    <div class="center">
+    <div class="center hide">
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#whyus">WHY US</a></li>
@@ -22,7 +23,7 @@
         <li><i class="fa-solid fa-magnifying-glass"></i></li>
       </ul>
     </div>
-    <div class="right">
+    <div class="right ">
       <button class="nav-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
@@ -187,7 +188,12 @@
 														    </section>
 
 
-
+<script>
+									document.querySelector(".nav-btn").onclick=function(){
+										document.querySelector(".center").classList.toggle('hide')
+										console.log("hi")
+									}
+								</script>
 
 							</body>
 							</html>
