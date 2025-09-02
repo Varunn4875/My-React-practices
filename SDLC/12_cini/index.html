@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #fff;
+      color: black;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    .movie {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .movie img {
+      width: 120px;
+      border-radius: 10px;
+    }
+    .movie-details h2 {
+      margin: 0;
+    }
+    .screen {
+      background: #555;
+      height: 25px;
+      margin: 20px 0;
+      text-align: center;
+      border-radius: 5px;
+      line-height: 25px;
+      font-size: 14px;
+    }
+    .seats {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 10px;
+      justify-items: center;
+    }
+    .seat {
+      width: 20px;
+      height: 20px;
+      background: #444;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .seat.booked {
+      background: red;
+      cursor: not-allowed;
+    }
+    .seat.selected {
+      background: limegreen;
+    }
+    .legend {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+    .legend div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .legend span {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      border-radius: 3px;
+    }
+    .summary {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: limegreen;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .btn:hover {
+      background: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="movie">
+      <img src="https://picsum.photos/200/300?random=1" alt="Movie Poster">
+      <div class="movie-details">
+        <h2>Avengers: Endgame</h2>
+        <p>Duration: 3h 2m</p>
+        <p>Rating: ★★★★☆</p>
+      </div>
+    </div>
+
+    <div class="screen">SCREEN</div>
+
+    <div class="seats" id="seats">
+      <!-- 32 seats (4 rows of 8) -->
+      <!-- Some pre-booked -->
+      <div class="seat"></div>
+      <div class="seat booked"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat booked"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat booked"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat booked"></div>
+
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat booked"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat booked"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+
+       <div class="seat"></div>
+      <div class="seat booked"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>      
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat booked"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat booked"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="legend">
+      <div><span style="background:#444"></span> Available</div>
+      <div><span style="background:red"></span> Booked</div>
+      <div><span style="background:limegreen"></span> Selected</div>
+    </div>
+
+    <div class="summary" id="summary">You have selected 0 seat(s).</div>
+
+    <a href="#" class="btn">Book Now</a>
+  </div>
+
+  <script>
+    const seats = document.querySelectorAll('.seat:not(.booked)');
+    const summary = document.getElementById('summary');
+
+    seats.forEach(seat => {
+      seat.addEventListener('click', () => {
+        seat.classList.toggle('selected');
+      });
+    });
+
+  </script>
+</body>
+</html>
