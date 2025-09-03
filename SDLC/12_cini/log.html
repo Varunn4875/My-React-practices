@@ -21,8 +21,8 @@
     }
 
     .swiper {
-      width: 100%;
-      padding: 20px 0;
+      width: 50%%;
+      padding: 20px 0 50px; /* extra space for dots */
     }
 
     .swiper-slide {
@@ -49,6 +49,22 @@
     .swiper-button-next,
     .swiper-button-prev {
       color: #000;
+      bottom: 0px;
+    }
+
+    /* Pagination dots */
+    .swiper-pagination {
+      bottom: 0px ;
+    }
+
+    .swiper-pagination-bullet {
+      background: #888;
+      opacity: 0.6;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #000;
+      opacity: 1;
     }
     .pro-img1{
       background-image: url("movement.jpg");
@@ -63,7 +79,7 @@
 </head>
 <body>
 
-  <h2>Get to know Mac.</h2>
+  <h2>Explore the line up.</h2>
 
   <!-- Swiper -->
   <div class="swiper mySwiper">
@@ -74,53 +90,78 @@
         <h3>Classic</h3>
         <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
       </div>
-      
       </div>
       <div class="swiper-slide" style="background:#c9e8ff;">
-        <h3>Compatibility</h3>
-        <p>Mac runs your favourite apps.</p>
+        <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
       </div>
-      <div class="swiper-slide" style="background:linear-gradient(45deg,#ff7eb3,#ff758c); color:#fff;">
-        <h3>Privacy & Security</h3>
-        <p>Your business is nobody else’s.</p>
       </div>
-      <div class="swiper-slide" style="background:#ddd;">
-        <h3>Durability</h3>
-        <p>Built to stand the test of time.</p>
+      <div class="swiper-slide" style="background:#e8f7f1;">
+        <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
+      </div>
+      <div class="swiper-slide" style="background:#c9e8ff;">
+       <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
       </div>
       <!-- <div class="swiper-slide" style="background:#00b894; color:#fff;">
-        <h3>Apple Values</h3>
-        <p>Our values drive everything we do.</p>
+        <div class="products-card">
+        <div class="pro-img1"></div>
+        <h3>Classic</h3>
+        <p>A lifetime service promise and comprehensive warranty ensure we stand behind every second our watches keep.</p>
+      </div>
       </div> -->
     </div>
 
     <!-- Navigation Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+  
+
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination"></div>
   </div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1.2,
-      spaceBetween: 20,
-      centeredSlides: false,
-      grabCursor: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 2.5,
-        },
-        1024: {
-          slidesPerView: 3.5,
-        }
-      }
-    });
+   var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  centeredSlidesBounds: true, 
+  centeredSlides: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2.5,
+    },
+    1024: {
+      slidesPerView: 3.5,
+    }
+  }
+});
+
+
   </script>
 </body>
 </html>
