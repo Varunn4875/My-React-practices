@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.foot{
+	display: flex;
+	align-items: center;
+	padding: 20px 40px;
+	justify-content: space-around;
+	gap: 30px 30px;
+	flex-wrap: wrap;
+	color: black;
+
+}
+.footer-section{
+	background-color:#f5f5f7;
+}
+.child-1, .child-2 p{
+	font-size: 20px;
+}
+.child-2 b:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.child-3 li:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+
+}
+.child-3 li{
+	font-weight: bold;
+}
+.child-3 ul{
+	list-style: none;
+}
+.icons{
+	/*display: flex;
+	justify-content: space-between;*/
+	font-size: 20px;
+	margin: 0px 0px;
+	cursor: pointer;
+}
+.icons i{
+	margin: 0px 5px;
+}
+.icons i:hover{
+	transform: scale(1.1);
+}
+.child{
+	width:300px ;
+	height: 250px;
+	text-align: left;
+}
+
