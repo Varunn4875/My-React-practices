@@ -12,9 +12,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" type="text/css" href="swiping.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="swiping.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 
     <!-- Demo styles -->
     <style>
@@ -69,36 +73,38 @@
       .swiper-slide img:hover {
         transform: scale(1.3);
       }
-      /*.container{
-       display: flex;
-      }*/
+      .container{
+       margin-top: 100px;
+      }
     </style>
   </head>
 
   <body>
-     <div class="navbar">
-    <h2>Kairos&Co</h2>
-    <button class="menu-btn">☰</button>
-  </div>
+      <div class="navbar">
+      <!-- <h2>Kairos&Co</h2> -->
+      <h2><img src="ChatGPT Image Aug 31, 2025, 03_10_18 PM.png" height="100px" width="100px"></h2>
+      <!-- <h2>Since 1892</h2> -->
+      <button class="menu-btn">&#9776;</button>
+    </div>
 
-  <!-- Overlay -->
-  <div class="overlay"></div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
 
-  <!-- Swiper Sidebar -->
-  <div class="swipers mySidebar">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">Products</a>
-        <a href="#">Categories</a>
-        <a href="#">Review</a>
-        <a href="#">Blogs</a>
+    <!-- Swiper Sidebar -->
+    <div class="swipers mySidebar">
+      <div class="swiper-wrapper">
+        <div class="swiper-slides">
+          <a href="#home"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
+          <a href="#features"><i class="fa-solid fa-star"></i>&nbsp;&nbsp;Features</a>
+          <a href="#"><i class="fa-brands fa-product-hunt"></i>&nbsp;&nbsp;Products</a>
+          <a href="#"><b><i class="fa-solid fa-list"></i></b>&nbsp;&nbsp;Categories</a>
+          <a href="#"><b><i class="bi bi-funnel-fill"></i></b>&nbsp; &nbsp;Sort </a>
+          <a href="login.html"><b><i class="bi bi-person-fill"></i></b>&nbsp; &nbsp;Login</a>
+        </div>
       </div>
     </div>
-  </div>
     <!-- Swiper -->
-    <div class="container-sm">
+    <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="swiper mySwiper">
@@ -128,10 +134,13 @@
     </div>
         </div>
     
-             <div class="col-lg-6 col-md-6 col-sm-12" style="margin: 50px 0px;">
+             <div class="col-lg-6 col-md-6 col-sm-12" style="margin: 30px 0px;">
 
               <h1><q>Poseidon Edition</q>  by Kairos&Co - Automatic Watch - 200M - NH38</h1>
               <h3>Rs.10,250.00/-</h3>
+              <br>
+              <a href=""><button class="get">Get yours Today</button></a>
+              <br>
               <br>
               <h5>The Samudhra Edition - A timepiece born of the ocean. Crafted for those who venture beyond the surface.</h5>
               <br>
@@ -193,5 +202,6 @@
       overlay.style.display = "none";
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
