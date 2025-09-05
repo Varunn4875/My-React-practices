@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="swiping.css">
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: black;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 450px;
+        height: 450px;
+        /*padding: 50px;*/
+        margin: 50px 0px;
+        transform-style: preserve-3d;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-position: cover;
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+      }
+      @media(max-width: 992px){
+        .swiper{
+          width: 400px;
+        height: 400px;
+        padding: 50px ;
+        transform-style: preserve-3d;
+        margin-left: auto;
+        margin-right: auto;
+        }
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        transition: all 0.5s ease-in;
+      }
+      .swiper-slide img:hover {
+        transform: scale(1.3);
+      }
+      /*.container{
+       display: flex;
+      }*/
+    </style>
+  </head>
+
+  <body>
+     <div class="navbar">
+    <h2>Kairos&Co</h2>
+    <button class="menu-btn">☰</button>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Swiper Sidebar -->
+  <div class="swipers mySidebar">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Review</a>
+        <a href="#">Blogs</a>
+      </div>
+    </div>
+  </div>
+    <!-- Swiper -->
+    <div class="container-sm">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </div>
+      </div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+      <div class="swiper-pagination"></div>
+    </div>
+        </div>
+    
+             <div class="col-lg-6 col-md-6 col-sm-12" style="margin: 50px 0px;">
+
+              <h1><q>Poseidon Edition</q>  by Kairos&Co - Automatic Watch - 200M - NH38</h1>
+              <h3>Rs.10,250.00/-</h3>
+              <br>
+              <h5>The Samudhra Edition - A timepiece born of the ocean. Crafted for those who venture beyond the surface.</h5>
+              <br>
+              <h5>Ships in 2-3 days of placing the order</h5>
+              <br>
+              <h5>Now with a clean no-date dial for uninterrupted flow, upgraded to the NH38 movement, and featuring a lume pip at 12 on the bezel for better visibility.</h5>
+              <br>
+              <h5>The Poseidon Edition is a tribute to the eternal rhythm of the Greek God Poseidon. Inspired by the interplay of sunlight and water, its sunburst blue dial captures the fleeting shimmer of light as it filters through the deep.</h5>
+                 
+               
+              </div>
+        </div>
+      </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "flip",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable:true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: true,
+        // },
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper for sidebar
+    const sidebar = new Swiper('.mySidebar', {
+      direction: 'horizontal',
+      allowTouchMove: false, // disable swiping manually
+    });
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const overlay = document.querySelector('.overlay');
+    const sidebarEl = document.querySelector('.mySidebar');
+
+    // Toggle Sidebar
+    menuBtn.addEventListener('click', () => {
+      sidebarEl.style.transform = "translateX(0)"; // slide in
+      overlay.style.display = "block";
+    });
+
+    // Close Sidebar when overlay clicked
+    overlay.addEventListener('click', () => {
+      sidebarEl.style.transform = "translateX(100%)"; // slide out
+      overlay.style.display = "none";
+    });
+  </script>
+  </body>
+</html>

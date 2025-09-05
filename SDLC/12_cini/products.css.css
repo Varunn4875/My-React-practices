@@ -1,0 +1,65 @@
+    body {
+        position: relative;
+        height: 100%;
+      }
+
+    /* Top Navbar */
+    .navbar {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu-btn {
+      font-size: 22px;
+      cursor: pointer;
+      background: orange;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+
+    /* Sidebar using Swiper */
+    .swipers{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 100%;
+      background: #fff;
+      box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+      transform: translateX(100%); /* hidden initially */
+      z-index: 999;
+    }
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+
+    .swiper-slide a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 0;
+      font-size: 18px;
+    }
+
+    /* Overlay background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      z-index: 998;
+    }
