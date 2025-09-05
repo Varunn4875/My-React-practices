@@ -3,19 +3,36 @@
         height: 100%;
       }
 
-    /* Top Navbar */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    body,html{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+
+    }
     .navbar {
       background: #fff;
-      padding: 10px 20px;
+      padding: 0px 0px;
       display: flex;
-      justify-content: space-between;
+      justify-content:space-between;
       align-items: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: sticky;
+      box-shadow: -2px 0 10px rgba(0,0,0,1);
+      position: fixed;
+      width:100%;
       top: 0;
       z-index: 1000;
     }
-
+    .navbar h2{
+      margin: 0px 15px;
+    }
     .menu-btn {
       font-size: 22px;
       cursor: pointer;
@@ -24,35 +41,40 @@
       border: none;
       padding: 8px 12px;
       border-radius: 5px;
+      margin: 0px 15px;
     }
-
-    /* Sidebar using Swiper */
-    .swipers{
+    .swipers {
       position: fixed;
-      top: 0;
+      top: 100px;
       right: 0;
       width: 250px;
       height: 100%;
       background: #fff;
       box-shadow: -2px 0 10px rgba(0,0,0,0.2);
-      transform: translateX(100%); /* hidden initially */
+      transform: translateX(100%); 
       z-index: 999;
     }
 
-    .swiper-slide {
+    .swiper-slides{
       display: flex;
       flex-direction: column;
-      padding: 40px 20px;
+      align-items: left;
+    }
+    .content h1{
+      font-size: 35px;
+      color: #1d1d1f;
     }
 
-    .swiper-slide a {
+    .swiper-slides a {
       text-decoration: none;
       color: #333;
-      padding: 10px 0;
+      padding: 10px 10px;
       font-size: 18px;
+      transition: ease-in all 0.2s ;
     }
-
-    /* Overlay background */
+    .swiper-slides a:hover{
+      transform: scale(1.2);
+    }
     .overlay {
       position: fixed;
       top: 0;
@@ -62,4 +84,19 @@
       background: rgba(0,0,0,0.5);
       display: none;
       z-index: 998;
+    }
+    .get{
+    	padding: 15px 30px;
+    	background-color: white;
+    	color: black;
+    	border: none;
+    	outline: none;
+    	transition: 0.4s cubic-bezier(.67,.71,.63,.44);
+    	border: 1px solid black;
+    	font-weight: 900;
+
+    }
+    .get:hover{
+    	background-color: black;
+    	color: white;
     }
