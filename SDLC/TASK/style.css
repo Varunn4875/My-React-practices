@@ -33,6 +33,7 @@ body{
 	align-items: center;
 	justify-content: space-evenly;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0px 50px;
 	width: 90%;
 }
@@ -236,7 +237,7 @@ body{
 	background-size: cover;
 }
 .tesla-2{
-	width: 60%;
+	width: 65%;
 }
 .tesla-unlock{
 	display: flex;
@@ -311,7 +312,7 @@ body{
 
 .card-img {
   width: 100%;
-  height: 140px;
+  height: 200px;
   object-fit: cover;
 }
 
