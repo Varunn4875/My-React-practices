@@ -3,6 +3,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 body{
 	font-family: "Poppins", sans-serif;
@@ -18,7 +19,7 @@ body{
 	align-items: center;
 	margin: 10px;
 	cursor: pointer;
-	padding: 10px;
+	/*padding: 10px;*/
 }
 .list ul li{
 	display: inline;
@@ -132,13 +133,15 @@ body{
 }
 .unlock{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
 	align-items: center;
-	margin: 30px 80px;
+	margin: 30px 0px;
 	color: #4d4d4d;
+	width: 100%;
 }
 .unlock div{
-	margin: 0px 50px;
+	margin: 0px 25px;
 }
 
 .unlock-1{
@@ -148,15 +151,15 @@ body{
 	font-size: 35px;
 }
 .unlock-1{
-	background-image: url("rafiki.png");
-	width: 450px;
-	height: 350px;
+	background-image: url("Frame 35.svg");
+	width: 400px;
+	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 }
 .unlock-2{
-	width: 50%;
+	width: 40%;
 }
 .learn{
 	background-color: #4aa84c;
@@ -173,31 +176,166 @@ body{
 }
 .achievement-section{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	flex-wrap: wrap;
 	align-items: center;
-	margin: 30px 80px;
+	margin: 30px 0px;
+	color: #4d4d4d;
+	width: 100%;
+	gap: 30px ;
 	color: #4d4d4d;
 }
-.achievement-section div{
-	margin: 0px 50px;
 
-}
 .count-1{
-	width:50%;
+	text-align: left;
 }
-.count-2{
-	width: 50%;
+.count-2 div{
+	margin: 0px 30px;
+	text-align: left;
 }
+
+
 .count-2 img{
-	height: 30px;
+	height: 40px;
 }
 .members-clubs{
 	display: flex;
 }
-.inline-items img h1{	
-	display: inline;
+.inline-items div{	
+	display: flex;
 }
 .event-pay{
 	display: flex;
+}
+.customer-1{
+	background-image: url("pana.svg");
+	width: 400px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.tesla-section{
+	background-color: #f5f7fa;
+}
+.tesla-container{
+	display:flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.tesla-container div{
+	margin: 0px 30px;
+}
+
+.tesla-img{
+	background-image: url("image 9.png");
+	width: 350px;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.tesla-2{
+	width: 60%;
+}
+.tesla-unlock{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 30px 100px;
+	color: #4d4d4d;
+	width: 90%;
+}
+.tesla-2 h2{
+    color:#4aa84c;
+}
+.icon-list ul  {
+  display: flex;
+  /*justify-content: center;  */
+  /*align-items: center;*/
+  gap: 20px;                      
+  padding: 0;
+  margin: 0;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: center;
+}
+
+.icon-list img {
+  height: 50px;
+}
+.marketing-container{
+  background: #fff;
+  width: 80%;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 18px;
+  padding: 32px 36px;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #202124;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 32px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.card-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 18px 12px 0 12px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.readmore {
+  color: #2ecc40;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin-top: 4px;
+}
+
+.readmore:hover {
+  text-decoration: underline;
 }
 
