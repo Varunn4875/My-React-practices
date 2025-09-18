@@ -1,0 +1,145 @@
+.home-section{
+	background-image: url("page-title-bg.jpg");
+	bakckground-size:cover;
+	background-position: cover;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-color: rgba(0, 0, 3, 0.3);
+	background-blend-mode: overlay;
+}
+/*header{
+	background-color: black;
+}*/
+.col-lg-8{
+	padding-block-start: 250px;
+}
+.header {
+  background-color: transparent !important; 
+}
+.phone{
+	padding-block-start: 50px;
+}
+.col-lg-8{
+	h1{
+		font-size: 50px;
+	}
+	p{
+		font-size: 20px;
+	}
+}
+li{
+	font-size: 17px;
+}
+.col-lg-4 .phone-1{
+ width: 250px;
+ height: 504px;
+ object-fit: cover;
+  position: relative;
+}
+.wrapper{
+	 position: relative;
+}
+.col-lg-4 .phone-2{
+	 width: 250px;
+ height: 504px;
+ object-fit: cover;
+ position: absolute;
+ left: 100px;
+ top: 50px;
+
+}
+
+.aboutContent{
+	background-color: white;
+	box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+	border-radius: 15px;
+	height: 300px;
+	width: 350px;
+}
+.aboutContent i{
+	background-color:#f6fafc ;
+	border-radius: 50%;
+	padding: 20px;
+	font-size: 25px;
+	color: #559bcc;
+	font-weight: 900;
+}
+.about-1{
+	margin-block-end: 200px;
+}
+.about-section .container{
+	margin-block-end: 200px;
+}
+.about-us{
+	p{
+		color: #559bcc;
+		font-size: 20px;
+	}
+	span{
+		background-color:#f6fafc;
+		padding: 5px 15px;
+		border-radius: 5px;
+	}
+	.read{
+		color: white;
+		background-color: #559bcc;
+		padding: 10px 20px;
+		font-size: 20px;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+	}
+}
+.play{
+	outline: none;
+	border: none;
+	padding: 10px 25px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	margin-block-start:15px ;
+	border-radius: 5px;
+}
+.play:hover{
+	background-color: #559bcc;
+	color: white;
+}
+.card{
+	width: 410px
+	background-color: white;
+	box-shadow: 0px 0 3px rgba(0,0,0,0.1);
+	border-radius: 5px;
+}
+.card .img{
+	padding: 30px;
+	position: relative;
+}
+.card .anchor{
+	position: absolute;
+	left: calc(50% - 60px);
+	bottom: 45px;
+	i{
+	background-color:#f6fafc ;
+	border-radius: 50%;
+	padding: 20px;
+	font-size: 25px;
+	color: #559bcc;
+	font-weight: 900;
+}
+i:hover{
+	background-color: #559bcc;
+	color: white;
+	cursor: pointer;
+
+}
+i:hover{
+	background-color: #559bcc;
+	color: white;
+	cursor: pointer;
+}
+.steps-section .container{
+	margin-block-start: 100px;
+}
+.stepsContent {
+  background-color: red !important;
+}
