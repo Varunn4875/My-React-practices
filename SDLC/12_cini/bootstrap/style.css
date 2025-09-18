@@ -68,9 +68,7 @@ li{
 .about-1{
 	margin-block-end: 200px;
 }
-.about-section .container{
-	margin-block-end: 200px;
-}
+
 .about-us{
 	p{
 		color: #559bcc;
@@ -137,9 +135,13 @@ i:hover{
 	color: white;
 	cursor: pointer;
 }
-.steps-section .container{
+/*.steps-section .container{
 	margin-block-start: 100px;
-}
+}*/
 .stepsContent {
   background-color: red !important;
+}
+.list-inline{
+	line-height: 1.45;
+	color: blue;
 }
