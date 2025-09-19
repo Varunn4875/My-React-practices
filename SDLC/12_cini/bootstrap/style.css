@@ -7,6 +7,14 @@
 	height: 100vh;
 	background-color: rgba(0, 0, 3, 0.3);
 	background-blend-mode: overlay;
+}	
+body {
+	overflow-x: hidden;
+}
+@media(max-width: 992px){
+	body{
+		overflow-x: hidden;
+	}
 }
 /*header{
 	background-color: black;
