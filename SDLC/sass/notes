@@ -1,9 +1,15 @@
+1.  Accordion
+-------------
+<!-- carousel -->
+<!-- <div id="carouselExample" class="carousel slide text-center"> -->
+<!-- carouselExample do just the slider -->
+<!-- if carousel needs to be autoplaying then #carouselExampleAutoplaying -->
 <div class="accordion" id="accordionExample">
      <div class="accordion-item">
        <h2 class="accordion-header">
          <button class="accordion-button collapsed" data-bs-toggle="collapse"data-bs-target="#collapseOne">content #1</button>
        </h2>
-       <div id="collapseOne"data-bs-parent="#accordionExample" class="accordion-collapse collapse">
+       <div id="collapseOne"data-bs-parent="#accordionExample" class="accordion-collapse collapsed">
         <div class="accordion-body"><h1>This is the first item’s accordion body.</h1></div>
        </div>
      </div>
@@ -17,4 +23,212 @@
      </div>
 
    </div>
-   <!-- if we removed the data-bs-parent="accordionExample" -->
+   <!-- if we removed the data-bs-parent="accordionExample" we can open multiple accordion -->
+
+
+   2.Alert
+   -------
+
+    <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+<script>
+  const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+  //getting the id of the alert div to append in wrapper variable 
+const appendAlert = (message, type) => {
+  //getting two parameters message and type 
+  const wrapper = document.createElement('div')
+  //creating the new div and saved in the wrapper variable
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+    //creating a div element and giving the parameter values
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+  //apending the values of alertplaceholder in the wrapper variable 
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this alert message!', 'success')
+  })
+}
+
+3.Badges
+<!-- badges -->
+
+<h1>Times of india <a href="https://www.youtube.com/"> <span class="badge text-bg-primary">Youtube</span></a></h1>
+<h2>youtube click to see a video <a href="https://www.youtube.com/"> <span class="badge text-bg-secondary">Youtube</span></a></h2>
+<h3>click to read <a href="https://www.ndtv.com/"> <span class="badge text-bg-success">ndtv</span></a></h3>
+<h4>Example heading <a href="https://www.youtube.com/"> <span class="badge text-bg-danger">Youtube</span></a></h4>
+<h5>Example heading<a href="https://www.youtube.com/"> <span class="badge text-bg-warning">Youtube</span></a></h5>
+<h6>Example heading<a href="https://www.youtube.com/"> <span class="badge text-bg-info ">Youtube</span></a></h6>
+
+4.BreadCrumbs
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><a href="#">Library</a></li>
+  </ol>
+</nav>
+
+with customized divider
+-----------------------
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+
+
+5.Buttons
+---------
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+
+6.Button-Groups
+---------------
+🛠 Basic Syntax
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-primary">Left</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-primary">Right</button>
+</div>
+<br>
+
+
+btn-group → wraps the buttons.
+
+role="group" and aria-label → improve accessibility.
+
+📏 Sizes
+
+Use size utilities on .btn-group:
+
+<div class="btn-group btn-group-lg">
+ <button type="button" class="btn btn-primary">Left</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-primary">Right</button></div> <!-- Large -->
+<div class="btn-group btn-group-sm">
+ <button type="button" class="btn btn-primary">Left</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-primary">Right</button>
+</div> <!-- Small -->
+
+↕ Vertical Button Groups
+<div class="btn-group-vertical" role="group" aria-label="Vertical example">
+  <button class="btn btn-secondary">Top</button>
+  <button class="btn btn-secondary">Middle</button>
+  <button class="btn btn-secondary">Bottom</button>
+</div>
+<br>
+
+⬜ Checkbox and Radio Button Groups
+
+Use .btn-check for toggleable checkboxes or radios styled as buttons:
+<br>
+
+<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+<label class="btn btn-outline-primary" for="btncheck1">Checkbox</label>
+
+📂 Button Toolbar
+
+Combine multiple groups:
+
+<div class="btn-toolbar" role="toolbar">
+  <div class="btn-group me-2">
+    <button class="btn btn-primary">1</button>
+    <button class="btn btn-primary">2</button>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-secondary">3</button>
+  </div>
+</div>
+<br>
+
+⬇ Nesting Dropdowns
+
+Include dropdowns within a group:
+
+<div class="btn-group">
+  <button class="btn btn-primary">Action</button>
+  <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"></button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+  </ul>
+</div>
+<br>
+🎨 Utilities and Tips
+
+Use spacing utilities (me-2, ms-2) for separation.  
+
+
+7.Cards
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+8.carousel
+<style>
+    .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff0000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  /*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230000ff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");*/
+  background-color: #f0f0f0; /* Replace with your desired color */
+  opacity: 1; /* Adjust opacity to make the background fully visible */
+} </style>
+
+<!-- carousel -->
+<!-- <div id="carouselExample" class="carousel slide text-center"> -->
+<!-- carouselExample do just the slider -->
+<!-- if carousel needs to be autoplaying then #carouselExampleAutoplaying -->
+
+<!-- <div id="carouselExampleAutoplaying" class="carousel slide text-center" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying"data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/500/500" class="img-fluid" width="500px" height="500px" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/500/500" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/500/500" class="img-fluid" alt="...">
+        </div>
+    </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+</div> -->
