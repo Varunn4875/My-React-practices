@@ -4,10 +4,13 @@
 	background-position: cover;
 	object-fit: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 120vh;
 	background-color: rgba(0, 0, 3, 0.3);
 	background-blend-mode: overlay;
 }	
+{
+	pointer-events: auto;
+}
 body {
 	overflow-x: hidden;
 }
@@ -20,7 +23,7 @@ body {
 	background-color: black;
 }*/
 .col-lg-8{
-	padding-block-start: 250px;
+	padding-block-start: 180px;
 }
 .header {
   background-color: transparent !important; 
