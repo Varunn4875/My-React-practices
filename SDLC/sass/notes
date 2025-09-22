@@ -1,0 +1,20 @@
+<div class="accordion" id="accordionExample">
+     <div class="accordion-item">
+       <h2 class="accordion-header">
+         <button class="accordion-button collapsed" data-bs-toggle="collapse"data-bs-target="#collapseOne">content #1</button>
+       </h2>
+       <div id="collapseOne"data-bs-parent="#accordionExample" class="accordion-collapse collapse">
+        <div class="accordion-body"><h1>This is the first item’s accordion body.</h1></div>
+       </div>
+     </div>
+      <div class="accordion-item">
+       <h2 class="accordion-header">
+         <button class="accordion-button collapsed" data-bs-toggle="collapse"data-bs-target="#collapseTwo">content #2</button>
+       </h2>
+       <div id="collapseTwo" data-bs-parent="#accordionExample" class="accordion-collapse collapse">
+        <div class="accordion-body"><h1>This is the first item’s accordion body.</h1></div>
+       </div>
+     </div>
+
+   </div>
+   <!-- if we removed the data-bs-parent="accordionExample" -->
