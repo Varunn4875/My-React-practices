@@ -65,8 +65,10 @@ console.log(ar, "type:" + typeof(ar))
 let array=23.567;
 console.log(array,"type:" + typeof(array))
 array=parseFloat(array)
+console.log(array,"type:" + typeof(array))
 array=parseInt(array)
 console.log(array,"type:" + typeof(array))
+
 
 //string to number
 
@@ -75,5 +77,13 @@ console.log(string,"type:" + typeof(string))
 string=Number(string)
 console.log(string,"type:" + typeof(string))
 
+
+
+//TYPE CORRECTION
+
+let number1=100;
+let number2="200";
+number2=Number(number2)
+console.log(number1+number2);
 
 
