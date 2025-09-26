@@ -14,12 +14,16 @@ console.log(b)
 //value assignment
 
 var c=45;
-c=25;
+console.log(c)
+var c=25;
 console.log(c)   //can be reassigned
 
 //let and const cannot be reassigned
 
 let num=10;
+console.log(num)
+num=1000;
+console.log(num)
 let int=10.5;
 let str='varun';
 let bool=true;
