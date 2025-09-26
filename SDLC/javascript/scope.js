@@ -96,3 +96,9 @@ let result=45
 console.log(result)
 result+=56
 console.log(result)
+
+
+function greet(name){
+    return `my name is ${name}`
+}
+console.log(greet("varun"))
