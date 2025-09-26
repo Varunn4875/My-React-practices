@@ -57,7 +57,7 @@ console.log(t, "type:" + typeof(t))
 t=Number(t)
 console.log(t, "type:" + typeof(t))
 
-
+//------------------------------------------------------------------------------
 
 //converting arrays
 let ar=[23,45,54,45];
@@ -83,7 +83,7 @@ console.log(string,"type:" + typeof(string))
 string=Number(string)
 console.log(string,"type:" + typeof(string))
 
-
+//---------------------------------------------------------------
 
 //TYPE CORRECTION
 
@@ -102,3 +102,14 @@ function greet(name){
     return `my name is ${name}`
 }
 console.log(greet("varun"))
+//----------------------------------
+const user = {
+  name: "Daniel",
+  age: 26,
+};
+
+console.log(user.name)
+
+//---------------------------------------------------
+
+
