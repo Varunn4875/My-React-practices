@@ -20,6 +20,8 @@ console.log(c)   //can be reassigned
 
 //let and const cannot be reassigned
 
+console.log(345!=34)
+
 let num=10;
 console.log(num)
 num=1000;
@@ -90,4 +92,7 @@ let number2="200";
 number2=Number(number2)
 console.log(number1+number2);
 
-
+let result=45
+console.log(result)
+result+=56
+console.log(result)
