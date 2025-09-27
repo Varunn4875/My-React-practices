@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
@@ -11,8 +10,57 @@
     </style>
   </head>
   <body>
-    <h1 class="text-3xl text-sky-500 font-bold underline">
+    <!-- <h1 class="text-3xl text-sky-500 font-bold underline">
       Hello world!
-    </h1>
+    </h1> -->
+
+<!-- <div class="columns-xs gap-8 ...">
+  <img class="aspect-3/2 object-cover ..." src="https://picsum.photos/200/300" alt="mount" />
+  <img class="aspect-square ..." src="https://picsum.photos/200/300" alt="mount" />
+  <img class="aspect-square ..." src="https://picsum.photos/200/300" alt="mount" />
+
+</div> 
+ -->
+
+<!-- <div class="columns-sm gap-4">
+  <img class="aspect-3/3 ..." src="https://picsum.photos/200/300" alt="mount" />
+  <img class="aspect-square ..." src="https://picsum.photos/200/300" alt="mount" />
+  <img class="aspect-square ..." src="https://picsum.photos/200/300" alt="mount" />
+</div> -->
+
+<!-- <div class="columns-3 gap-4">
+  <p>This is the content for the first column.</p>
+  <p>This content will flow into the second column.</p>
+  <p>More content for the second column.</p>
+</div> -->
+
+<!-- <div class="columns-3xs gap-8...">
+  <img class="aspect-3/2 rounded object-cover ..." src="https://picsum.photos/200/300" alt="mount" />
+  <img class="aspect-square rounded ..." src="https://picsum.photos/200/300" alt="mount" />
+  <img class="aspect-square rounded ..." src="https://picsum.photos/200/300" alt="mount" />
+</div> -->
+
+<div class="columns-5">
+  <p>Well, let me tell you something, ...</p>
+  <p class="break-after-column">Sure, go ahead, laugh...</p>
+  <p>Maybe we can live without...</p>
+  <p>Look. If you think this is...</p>
+</div>
+
+<!-- box-decoration -->
+<!-- Use the box-content utility to set an element's box-sizing to content-box, 
+telling the browser to add borders and padding
+ on top of the element's specified width or height. -->
+<div class="box-sizing size-40 border-4 p-4 ...">
+        <h1> <span class="box-decoration-slice bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white ...">
+        Hello <br>World</span>
+      </h1>
+      <h1> <span class="box-decoration-clone bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white ...">
+        Hello<br> World</span>
+      </h1>
+</div>
+
+<!-- box-decoration -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
 </html>
