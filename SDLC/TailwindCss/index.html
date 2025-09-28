@@ -51,16 +51,34 @@
 <!-- Use the box-content utility to set an element's box-sizing to content-box, 
 telling the browser to add borders and padding
  on top of the element's specified width or height. -->
+
+ <!-- box-sizing and box-border are same -->
+
+
 <div class="box-sizing size-40 border-4 p-4 ...">
         <h1> <span class="box-decoration-slice bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white ...">
         Hello <br>World</span>
-      </h1>
-      <h1> <span class="box-decoration-clone bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white ...">
+        </h1>
+        <h1> <span class="box-decoration-clone bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white ...">
         Hello<br> World</span>
-      </h1>
+        </h1>
 </div>
 
-<!-- box-decoration -->
+
+<!-- display-properties -->
+<p class="bg-linear-to-r from-indigo-600 to-pink-500">
+  When controlling the flow of text, using the CSS property <span class="inline">display: inline</span> will cause the
+  text inside the element to wrap normally.
+</p>
+<p class="bg-linear-to-r from-green-600 to-pink-500">
+  While using the property <span class="inline-block">display: inline-block</span> will wrap the element to prevent the
+  text inside from extending beyond its parent.
+</p>
+<p class="bg-linear-to-r from-red-600 to-pink-500">
+  Lastly, using the property <span class="block">display: block</span> will put the element on its own line and fill its
+  parent.
+</p>
+
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
 </html>
