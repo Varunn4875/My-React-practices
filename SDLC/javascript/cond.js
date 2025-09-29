@@ -49,7 +49,7 @@ if (pins==='2102') {
 	else if(withdrawlAmt>balance){
 		console.log(`insufficient balance error:${err}`)
 	}
-}else{
+} else{
 	console.log(`your pin was incorrect`)
 }
 
@@ -59,15 +59,15 @@ if (pins==='2102') {
 
 let userLanguage='tEnglish'
 switch(userLanguage){
-case "Tamil":
-	console.log(`you're switched to tamil`)
-break;
-case "English":
-	console.log(`Your Profile was switched to ${userLanguage}`) 
-break;
-case "Hindi":
-console.log(`Your Profile was switched to ${userLanguage}`)
-break;
-default:
-	console.log("please select your language")
+		case "Tamil":
+			console.log(`you're switched to tamil`)
+		break;
+		case "English":
+			console.log(`Your Profile was switched to ${userLanguage}`) 
+		break;
+		case "Hindi":
+		console.log(`Your Profile was switched to ${userLanguage}`)
+		break;
+		default:
+			console.log("please select your language")
 }
