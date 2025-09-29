@@ -43,7 +43,7 @@ let withdrawlAmt=15003
 let err='404'
 
 if (pins==='2102') {
-	if(withdrawlAmt<balance){
+	if(withdrawlAmt<=balance){
 		console.log(`withdrawl amount of ${1500} is successfull`)
 	}
 	else if(withdrawlAmt>balance){
@@ -52,9 +52,6 @@ if (pins==='2102') {
 } else{
 	console.log(`your pin was incorrect`)
 }
-
-
-
 //5.language selection using switch statement
 
 let userLanguage='tEnglish'
