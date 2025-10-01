@@ -1,0 +1,613 @@
+JavaScript MCQs
+
+1. Structure (20 Qs)
+-------------------
+1. Which of the following is the correct way to write a JavaScript code inside HTML?
+a) <script> code </script>
+b) <javascript> code </javascript>
+c) <js> code </js>
+d) <scripting> code </scripting>
+
+2. JavaScript code can be placed inside:
+a) Only the <head> tag
+b) Only the <body> tag
+c) Both <head> and <body>
+d) Only external files
+
+3. Which attribute specifies the location of external JavaScript?
+a) type
+b) link
+c) src
+d) href
+
+4. JavaScript files have which extension?
+a) .java
+b) .js
+c) .javascript
+d) .jvs
+
+5. Which tag is used to link an external JavaScript file?
+a) <link>
+b) <script>
+c) <js>
+d) <src>
+
+6. Where is the best place to include JavaScript for faster page load?
+a) At the top of <head>
+b) At the bottom of <body>
+c) Inside <title>
+d) Before <html>
+
+7. How do you write single-line comments in JS?
+a) <!-- comment -->
+b) // comment
+c) /* comment */
+d) ** comment **
+
+8. How do you write multi-line comments in JS?
+a) /* comment */
+b) <!-- comment -->
+c) # comment
+d) // comment
+
+9. Which keyword is used to declare a function in JavaScript?
+a) def
+b) function
+c) func
+d) declare
+
+10. Which is correct syntax for calling a function named myFunc?
+a) call myFunc;
+b) myFunc();
+c) myFunc{}
+d) execute myFunc();
+
+11. How do you create an alert box in JavaScript?
+a) msg("Hello");
+b) alert("Hello");
+c) message("Hello");
+d) box("Hello");
+
+12. Which method writes directly to the HTML document?
+a) console.log()
+b) document.write()
+c) innerHTML()
+d) alert()
+
+13. Which statement ends a line in JavaScript?
+a) Colon
+b) Comma
+c) Semicolon
+d) Period
+
+14. What is the correct syntax for a for loop?
+a) for(i=0;i<5;i++)
+b) for i=0 to 5
+c) loop(i<5;i++)
+d) repeat(5)
+
+15. Which keyword exits a loop immediately?
+a) break
+b) exit
+c) return
+d) stop
+
+16. Which keyword skips one iteration of a loop?
+a) break
+b) continue
+c) skip
+d) pass
+
+17. Which statement is used to handle errors in JS?
+a) throw-catch
+b) try-catch
+c) handle-error
+d) if-error
+
+18. Which keyword declares a block of code to run regardless of error?
+a) else
+b) finally
+c) end
+d) default
+
+19. Which keyword is used to define a class in JS?
+a) struct
+b) class
+c) object
+d) def
+
+20. Which method is used to log output for debugging?
+a) console.log()
+b) document.print()
+c) system.debug()
+d) output.log()
+
+2. Variables (20 Qs)
+--------------------
+21. Which keyword declares a variable in JavaScript?
+a) var
+b) let
+c) const
+d) All of the above
+
+22. Which keyword creates a block-scoped variable?
+a) var
+b) let
+c) constant
+d) static
+
+23. Which keyword creates a variable that cannot be reassigned?
+a) let
+b) var
+c) const
+d) final
+
+24. What is the default value of an uninitialized variable in JS?
+a) null
+b) undefined
+c) 0
+d) NaN
+
+25. Which variable declaration allows redeclaration?
+a) var
+b) let
+c) const
+d) all
+
+26. Which keyword does not allow redeclaration?
+a) var
+b) let
+c) const
+d) both b and c
+
+27. Which variable declaration gets hoisted with undefined?
+a) var
+b) let
+c) const
+d) all
+
+28. Which variable type cannot be reassigned after initialization?
+a) var
+b) let
+c) const
+d) static
+
+29. What is the scope of var inside a function?
+a) Global
+b) Function
+c) Block
+d) None
+
+30. What is the scope of let inside a block {}?
+a) Global
+b) Function
+c) Block
+d) None
+
+31. Which type of variables are hoisted but not initialized?
+a) var
+b) let
+c) const
+d) both b and c
+
+32. What happens if you redeclare a variable with let in the same scope?
+a) Overwrites value
+b) Error
+c) Ignores
+d) Becomes global
+
+33. Which variable keyword is best for constant values?
+a) var
+b) let
+c) const
+d) define
+
+34. What is the output of console.log(a); var a=5;?
+a) 5
+b) undefined
+c) error
+d) null
+
+35. What is the output of console.log(a); let a=5;?
+a) 5
+b) undefined
+c) error
+d) null
+
+36. Which variable can be redeclared in different scopes without error?
+a) var
+b) let
+c) const
+d) final
+
+37. Which keyword makes variables read-only?
+a) var
+b) let
+c) const
+d) static
+
+38. What is "temporal dead zone" related to?
+a) var
+b) let & const
+c) functions
+d) classes
+
+39. Which keyword is function-scoped?
+a) var
+b) let
+c) const
+d) class
+
+40. Which is the correct declaration of multiple variables in JS?
+a) var x=1,y=2,z=3;
+b) let x=1,y=2,z=3;
+c) const x=1,y=2,z=3;
+d) All of the above
+
+3. Data Types (20 Qs)
+---------------------
+41. Which of the following is a primitive data type in JS?
+a) String
+b) Number
+c) Boolean
+d) All of the above
+
+42. Which of the following is NOT a primitive data type?
+a) Object
+b) String
+c) Boolean
+d) Number
+
+43. What is the type of null in JS?
+a) null
+b) object
+c) undefined
+d) boolean
+
+44. What is the type of NaN?
+a) number
+b) NaN
+c) undefined
+d) string
+
+45. Which operator checks data type of a variable?
+a) typeof
+b) type
+c) check
+d) instance
+
+46. What does typeof undefined return?
+a) null
+b) undefined
+c) object
+d) boolean
+
+47. What does typeof null return?
+a) null
+b) undefined
+c) object
+d) string
+
+48. What is the type of true in JS?
+a) number
+b) string
+c) boolean
+d) object
+
+49. Which of these is NOT a number in JS?
+a) Infinity
+b) NaN
+c) 42
+d) Boolean
+
+50. What is the type of [1,2,3]?
+a) array
+b) object
+c) list
+d) vector
+
+51. Which symbol defines a BigInt?
+a) #
+b) n
+c) $
+d) @
+
+52. Which of these is a falsy value?
+a) ""
+b) 0
+c) null
+d) All of the above
+
+53. What is typeof function() {}?
+a) object
+b) function
+c) method
+d) class
+
+54. Which data type is used for large integers beyond 2^53?
+a) Number
+b) BigInt
+c) Float
+d) Double
+
+55. Which function converts a string to an integer?
+a) parseInt()
+b) parseFloat()
+c) Number()
+d) All of the above
+
+56. Which function converts a string to a float?
+a) parseInt()
+b) parseFloat()
+c) Number()
+d) Float()
+
+57. Which operator checks if a variable is an instance of a class?
+a) typeof
+b) instanceof
+c) classof
+d) is
+
+58. Which symbol represents template literals?
+a) " "
+b) ' '
+c) ` `
+d) ~ ~
+
+59. Which method finds length of a string?
+a) str.size
+b) str.len
+c) str.length
+d) str.count
+
+60. Which operator concatenates strings?
+a) +
+b) &
+c) concat()
+d) All of the above
+
+4. Nullish Coalescing (10 Qs)
+-----------------------------
+61. Which operator is used for nullish coalescing?
+a) ??
+b) ||
+c) &&
+d) ?:
+
+62. What does null ?? "Hello" return?
+a) null
+b) Hello
+c) undefined
+d) error
+
+63. What does undefined ?? "Default" return?
+a) undefined
+b) Default
+c) error
+d) null
+
+64. What does "Hi" ?? "Hello" return?
+a) Hi
+b) Hello
+c) undefined
+d) error
+
+65. What does 0 ?? 10 return?
+a) 0
+b) 10
+c) null
+d) undefined
+
+66. Which operator returns the right-hand operand if left is null/undefined?
+a) ||
+b) ??
+c) &&
+d) ?:
+
+67. What is the difference between || and ???
+a) || checks falsy, ?? checks null/undefined
+b) Both are same
+c) || checks null, ?? checks undefined
+d) ?? checks truthy, || checks falsy
+
+68. Which operator has higher precedence?
+a) ??
+b) &&
+c) ||
+d) All same
+
+69. Which error occurs if ?? is used without parentheses with ||?
+a) SyntaxError
+b) ReferenceError
+c) TypeError
+d) None
+
+70. Which JavaScript version introduced nullish coalescing?
+a) ES5
+b) ES6
+c) ES11
+d) ES12
+
+5. Comparison (15 Qs)
+---------------------
+71. What does 5 == "5" return?
+a) true
+b) false
+c) error
+d) NaN
+
+72. What does 5 === "5" return?
+a) true
+b) false
+c) error
+d) NaN
+
+73. Which operator checks value only (ignores type)?
+a) ==
+b) ===
+c) =
+d) :=
+
+74. Which operator checks both value and type?
+a) ==
+b) ===
+c) !=
+d) <=
+
+75. What does null == undefined return?
+a) true
+b) false
+c) error
+d) NaN
+
+76. What does null === undefined return?
+a) true
+b) false
+c) error
+d) NaN
+
+77. What does "2" > 1 return?
+a) true
+b) false
+c) error
+d) NaN
+
+78. What does "2" < "12" return?
+a) true
+b) false
+c) error
+d) NaN
+
+79. What does NaN == NaN return?
+a) true
+b) false
+c) error
+d) undefined
+
+80. Which method checks if a value is NaN?
+a) Number.NaN()
+b) isNaN()
+c) checkNaN()
+d) NaN()
+
+81. Which operator checks inequality in JS?
+a) !=
+b) !==
+c) <>
+d) both a and b
+
+82. What does Object.is(NaN, NaN) return?
+a) true
+b) false
+c) error
+d) undefined
+
+83. What does "a" < "b" return?
+a) true
+b) false
+c) error
+d) NaN
+
+84. What does "5" >= 5 return?
+a) true
+b) false
+c) error
+d) undefined
+
+85. Which method is used for strict equality comparison?
+a) ==
+b) ===
+c) Object.is()
+d) all of the above
+
+6. Operators (15 Qs)
+--------------------
+86. Which operator is used for assignment?
+a) =
+b) ==
+c) ===
+d) :=
+
+87. Which operator adds values?
+a) +
+b) -
+c) *
+d) /
+
+88. Which operator returns remainder?
+a) %
+b) /
+c) //
+d) mod
+
+89. Which operator increments value by 1?
+a) ++
+b) +=
+c) --
+d) inc
+
+90. Which operator decrements value by 1?
+a) ++
+b) +=
+c) --
+d) dec
+
+91. Which operator is used for exponentiation?
+a) ^
+b) **
+c) pow()
+d) exp
+
+92. Which operator returns both AND conditions true?
+a) &&
+b) ||
+c) &
+d) AND
+
+93. Which operator returns true if either condition is true?
+a) &&
+b) ||
+c) OR
+d) +
+
+94. Which operator negates a boolean value?
+a) ~
+b) !
+c) not
+d) ^
+
+95. Which operator combines two strings?
+a) +
+b) &
+c) concat
+d) append
+
+96. Which operator is used for ternary condition?
+a) if-else
+b) ? :
+c) ??
+d) switch
+
+97. Which bitwise operator performs OR?
+a) |
+b) &
+c) ^
+d) ~
+
+98. Which bitwise operator performs XOR?
+a) |
+b) &
+c) ^
+d) ~
+
+99. Which operator checks property existence in objects?
+a) has()
+b) in
+c) of
+d) with
+
+100. Which operator spreads array elements?
+a) ...
+b) ++
+c) **
+d) expand
