@@ -611,3 +611,976 @@ a) ...
 b) ++
 c) **
 d) expand
+
+
+1. Structure (Q1–20)
+
+1. Which of the following is the correct way to write a JavaScript code inside HTML?
+✅ a) <script> code </script>
+
+In HTML, JavaScript is always embedded using the <script> element.
+
+Other options (<javascript>, <js>, <scripting>) don’t exist in the HTML specification.
+
+Example:
+
+<script>
+  console.log("Hello JS");
+</script>
+
+
+2. JavaScript code can be placed inside:
+✅ c) Both <head> and <body>
+
+JS can be put in the <head> (executed before page loads fully) or <body> (often at the bottom for performance).
+
+Best practice: put it at the end of <body> so HTML loads first, preventing blocking.
+
+3. Which attribute specifies the location of external JavaScript?
+✅ c) src
+
+The src attribute of <script> points to an external .js file.
+
+Example: <script src="app.js"></script>.
+
+href is for links, type defines MIME type, and link is for CSS.
+
+4. JavaScript files have which extension?
+✅ b) .js
+
+By convention, all JavaScript files end with .js.
+
+.java is Java language, .jvs and .javascript don’t exist.
+
+5. Which tag is used to link an external JavaScript file?
+✅ b) <script>
+
+Use <script src="file.js"></script>.
+
+<link> is only for CSS, <js> and <src> are invalid.
+
+6. Where is the best place to include JavaScript for faster page load?
+✅ b) At the bottom of <body>
+
+If you put scripts at the top, HTML parsing pauses until JS loads.
+
+Placing at the bottom ensures the page content loads first.
+
+Modern option: use <script defer> or <script async> inside <head>.
+
+7. How do you write single-line comments in JS?
+✅ b) // comment
+
+// makes the rest of the line a comment.
+
+Example:
+
+// This is a comment
+let x = 10;
+
+
+8. How do you write multi-line comments in JS?
+✅ a) / comment /
+
+Wrap comment with /* ... */.
+
+Example:
+
+/* This is
+   a multi-line
+   comment */
+
+
+9. Which keyword is used to declare a function in JavaScript?
+✅ b) function
+
+Syntax:
+
+function greet() {
+  console.log("Hello!");
+}
+
+
+10. Which is correct syntax for calling a function named myFunc?
+✅ b) myFunc();
+
+Functions are called with parentheses.
+
+call myFunc; is invalid, myFunc{} is object syntax, and execute myFunc(); doesn’t exist.
+
+11. How do you create an alert box in JavaScript?
+✅ b) alert("Hello");
+
+alert() is built-in for popup messages.
+
+Others (msg, box, message) aren’t valid functions.
+
+12. Which method writes directly to the HTML document?
+✅ b) document.write()
+
+Inserts text/HTML into the page while loading.
+
+Not recommended today (can overwrite page), but correct answer.
+
+Example:
+
+document.write("Hello World");
+
+
+13. Which statement ends a line in JavaScript?
+✅ c) Semicolon
+
+JS interprets end of statement using automatic semicolon insertion, but semicolons ; are the proper way.
+
+Colon, comma, and period are not statement terminators.
+
+14. What is the correct syntax for a for loop?
+✅ a) for(i=0;i<5;i++)
+
+Structure: for(initialization; condition; increment).
+
+Others (for i=0 to 5, loop, repeat) are from other languages, not JS.
+
+15. Which keyword exits a loop immediately?
+✅ a) break
+
+break stops loop execution immediately.
+
+exit doesn’t exist in JS (PHP has it), return exits a function not loop, and stop isn’t JS.
+
+16. Which keyword skips one iteration of a loop?
+✅ b) continue
+
+Skips current iteration and moves to the next.
+
+Example:
+
+for(let i=0;i<5;i++){
+  if(i==2) continue; // skips printing 2
+  console.log(i);
+}
+
+
+17. Which statement is used to handle errors in JS?
+✅ b) try-catch
+
+Syntax:
+
+try {
+  riskyCode();
+} catch (e) {
+  console.log("Error: " + e.message);
+}
+
+
+18. Which keyword declares a block of code to run regardless of error?
+✅ b) finally
+
+finally runs whether error happens or not.
+
+Example:
+
+try { throw "Error"; }
+catch(e) { console.log(e); }
+finally { console.log("Always runs"); }
+
+
+19. Which keyword is used to define a class in JS?
+✅ b) class
+
+Introduced in ES6 (2015).
+
+Example:
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+
+20. Which method is used to log output for debugging?
+✅ a) console.log()
+
+Standard debugging tool → prints to the browser console.
+
+document.print() doesn’t exist, system.debug() is from Salesforce, output.log() is invalid
+21. Which keyword declares a variable in JavaScript?
+✅ d) All of the above
+
+var: Function-scoped, older syntax.
+
+let: Block-scoped, modern and recommended for most cases.
+
+const: Block-scoped, cannot be reassigned.
+
+All three are valid ways to declare variables.
+
+22. Which keyword creates a block-scoped variable?
+✅ b) let
+
+Variables declared with let exist only inside the nearest {} block.
+
+Example:
+
+{
+  let x = 5;
+}
+console.log(x); // ReferenceError
+
+
+var is function-scoped, not block-scoped.
+
+23. Which keyword creates a variable that cannot be reassigned?
+✅ c) const
+
+Once you assign a value to a const, you cannot change it.
+
+Example:
+
+const PI = 3.14;
+PI = 3.1415; // Error
+
+
+24. What is the default value of an uninitialized variable in JS?
+✅ b) undefined
+
+Variables declared but not assigned have the value undefined.
+
+Example:
+
+let x;
+console.log(x); // undefined
+
+
+25. Which variable declaration allows redeclaration?
+✅ a) var
+
+var can be redeclared in the same scope.
+
+Example:
+
+var x = 5;
+var x = 10; // allowed
+
+
+let and const will throw an error on redeclaration.
+
+26. Which keyword does not allow redeclaration?
+✅ d) both b and c (let and const)
+
+Redeclaring a let or const in the same scope causes SyntaxError.
+
+27. Which variable declaration gets hoisted with undefined?
+✅ a) var
+
+var is hoisted (moved to top) and initialized with undefined.
+
+Example:
+
+console.log(a); // undefined
+var a = 5;
+
+
+let and const are hoisted but not initialized (TDZ – Temporal Dead Zone).
+
+28. Which variable type cannot be reassigned after initialization?
+✅ c) const
+
+const creates a read-only reference.
+
+Note: For objects/arrays, the reference cannot change, but the content can.
+
+const arr = [1,2];
+arr.push(3); // allowed
+arr = []; // Error
+
+
+29. What is the scope of var inside a function?
+✅ b) Function
+
+var declared inside a function is local to that function.
+
+Outside the function, it’s inaccessible.
+
+30. What is the scope of let inside a block {}?
+✅ c) Block
+
+let only exists inside the block it was declared in.
+
+Example:
+
+if(true){
+  let x = 10;
+}
+console.log(x); // ReferenceError
+
+
+31. Which type of variables are hoisted but not initialized?
+✅ d) both b and c (let & const)
+
+They are hoisted, but accessing them before declaration throws a ReferenceError (TDZ).
+
+32. What happens if you redeclare a variable with let in the same scope?
+✅ b) Error
+
+SyntaxError occurs because let cannot be redeclared in the same block.
+
+33. Which variable keyword is best for constant values?
+✅ c) const
+
+For values that shouldn’t change, const is preferred for readability and safety.
+
+34. What is the output of console.log(a); var a=5;?
+✅ b) undefined
+
+var is hoisted and initialized to undefined.
+
+So console.log(a) prints undefined before assignment.
+
+35. What is the output of console.log(a); let a=5;?
+✅ c) error
+
+let is in the Temporal Dead Zone until its declaration is executed.
+
+Accessing it before declaration causes ReferenceError.
+
+36. Which variable can be redeclared in different scopes without error?
+✅ b) let
+
+You cannot redeclare in the same block, but you can redeclare in a different block scope.
+
+Example:
+
+let x = 1;
+{
+  let x = 2; // different block → allowed
+}
+
+
+37. Which keyword makes variables read-only?
+✅ c) const
+
+Only const ensures the variable cannot be reassigned.
+
+38. What is "temporal dead zone" related to?
+✅ b) let & const
+
+TDZ = Time between entering scope and variable being declared.
+
+Accessing a let/const in TDZ → ReferenceError.
+
+39. Which keyword is function-scoped?
+✅ a) var
+
+var variables ignore block scope but respect function scope.
+
+Example:
+
+if(true){
+  var x = 5;
+}
+console.log(x); // 5
+
+
+40. Which is the correct declaration of multiple variables in JS?
+✅ d) All of the above
+
+Multiple variables can be declared in one statement:
+
+var x=1,y=2,z=3;
+let a=1,b=2,c=3;
+const p=1,q=2,r=3; // All initialized
+3. Data Types (Q41–60)
+
+41. Which of the following is a primitive data type in JS?
+✅ d) All of the above
+
+Primitive types: String, Number, Boolean, BigInt, Symbol, null, undefined.
+
+They are immutable and compared by value.
+
+42. Which of the following is NOT a primitive data type?
+✅ a) Object
+
+Objects, Arrays, and Functions are non-primitive/reference types.
+
+Primitives are simple, immutable values.
+
+43. What is the type of null in JS?
+✅ b) object
+
+Quirk of JS: typeof null returns "object".
+
+Historical bug, but still behaves like null.
+
+44. What is the type of NaN?
+✅ a) number
+
+NaN = Not-a-Number but its type is still number.
+
+Example:
+
+console.log(typeof NaN); // "number"
+
+
+45. Which operator checks data type of a variable?
+✅ a) typeof
+
+Returns the type as a string.
+
+Example:
+
+let x = 10;
+console.log(typeof x); // "number"
+
+
+46. What does typeof undefined return?
+✅ b) undefined
+
+The value undefined has its type "undefined".
+
+47. What does typeof null return?
+✅ c) object
+
+JS historical bug: null is technically a primitive but typeof null = "object".
+
+48. What is the type of true in JS?
+✅ c) boolean
+
+Boolean values: true or false.
+
+49. Which of these is NOT a number in JS?
+✅ d) Boolean
+
+42, Infinity, NaN → number type.
+
+Boolean is a separate primitive type.
+
+50. What is the type of [1,2,3]?
+✅ b) object
+
+Arrays are objects in JS.
+
+Use Array.isArray([1,2,3]) to check array specifically.
+
+51. Which symbol defines a BigInt?
+✅ b) n
+
+BigInt literals use n suffix.
+
+Example:
+
+const big = 123456789012345678901234567890n;
+console.log(typeof big); // "bigint"
+
+
+52. Which of these is a falsy value?
+✅ d) All of the above
+
+Falsy values: "", 0, null, undefined, NaN, false.
+
+Everything else is truthy.
+
+53. What is typeof function() {}?
+✅ b) function
+
+Functions are callable objects, but typeof returns "function" specifically.
+
+54. Which data type is used for large integers beyond 2^53?
+✅ b) BigInt
+
+JS Number cannot represent integers beyond 2^53 precisely.
+
+Use BigInt (n suffix) for arbitrary-size integers.
+
+55. Which function converts a string to an integer?
+✅ a) parseInt()
+
+parseInt("123") → 123
+
+Number() can also convert strings to numbers, but parseInt is explicit for integers.
+
+56. Which function converts a string to a float?
+✅ b) parseFloat()
+
+Converts string with decimal to number.
+
+Example:
+
+parseFloat("3.14"); // 3.14
+
+
+57. Which operator checks if a variable is an instance of a class?
+✅ b) instanceof
+
+Example:
+
+class Person {}
+let p = new Person();
+console.log(p instanceof Person); // true
+
+
+58. Which symbol represents template literals?
+✅ c) (backticks)
+
+Used for multi-line strings and interpolation:
+
+let name = "Alice";
+console.log(`Hello, ${name}!`);
+
+
+59. Which method finds length of a string?
+✅ c) str.length
+
+Example:
+
+let str = "Hello";
+console.log(str.length); // 5
+
+
+60. Which operator concatenates strings?
+✅ a) +
+
+Can combine strings:
+
+let a = "Hello ", b = "World";
+console.log(a + b); // "Hello World"
+
+
+concat() method also works, but + is standard.
+
+✅ That covers Data Types Q41–60 with detailed explanations and examples.
+
+If you want, I can next do Nullish Coalescing Q61–70, which is a very important modern JS feature with tricky edge cases.
+
+Do you want me to continue?
+
+You said:
+yes 61 -70
+ChatGPT said:
+
+Perfect! Let’s dive into Nullish Coalescing (Q61–70) with detailed explanations. This operator is newer (ES11/2020) and often confused with ||, so I’ll clarify with examples.
+
+4. Nullish Coalescing (Q61–70)
+
+61. Which operator is used for nullish coalescing?
+✅ a) ??
+
+The nullish coalescing operator returns the right-hand operand only if the left-hand side is null or undefined.
+
+Example:
+
+let a = null;
+console.log(a ?? "default"); // "default"
+
+
+62. What does null ?? "Hello" return?
+✅ b) Hello
+
+Left operand is null, so the operator returns the right operand.
+
+63. What does undefined ?? "Default" return?
+✅ b) Default
+
+Left operand is undefined, so right operand is returned.
+
+64. What does "Hi" ?? "Hello" return?
+✅ a) Hi
+
+Left operand is not null or undefined, so nullish coalescing returns the left operand.
+
+Example:
+
+console.log("Hi" ?? "Hello"); // "Hi"
+
+
+65. What does 0 ?? 10 return?
+✅ a) 0
+
+Important difference from ||: || treats all falsy values (0, "", false) as false, but ?? only treats null or undefined.
+
+Example:
+
+console.log(0 ?? 10); // 0
+console.log(0 || 10); // 10
+
+
+66. Which operator returns the right-hand operand if the left is null/undefined?
+✅ b) ??
+
+Nullish coalescing does not consider 0, false, or "" as nullish, only null/undefined.
+
+67. What is the difference between || and ???
+✅ a) || checks falsy, ?? checks null/undefined
+
+|| returns the right-hand side if left is falsy (0, "", false, null, undefined).
+
+?? only cares about null or undefined.
+
+Example:
+
+console.log(0 || 5);  // 5
+console.log(0 ?? 5);  // 0
+
+
+68. Which operator has higher precedence?
+✅ b) &&
+
+Operator precedence order:
+
+() parentheses
+
+! (logical NOT)
+
+** (exponent)
+
+* / %
+
++ -
+
+&& (logical AND)
+
+|| (logical OR)
+
+?? (nullish coalescing) – lower than && and ||, so if mixed, use parentheses.
+
+69. Which error occurs if ?? is used without parentheses with ||?
+✅ a) SyntaxError
+
+Mixing ?? with || or && without parentheses is ambiguous:
+
+let x = null ?? 5 || 10; // SyntaxError
+let x = (null ?? 5) || 10; // Correct
+
+
+70. Which JavaScript version introduced nullish coalescing?
+✅ c) ES11
+
+Nullish coalescing (??) was introduced in ECMAScript 2020 (ES11).
+
+Key Points / Tips for Nullish Coalescing
+
+Only null and undefined trigger the right-hand operand.
+
+0, false, "" are not nullish, unlike ||.
+
+Be careful when mixing with || or && – always use parentheses.
+
+✅ That completes Q61–70 with full explanations.
+
+Next, we can cover Comparison (Q71–85) with detailed reasoning, including type coercion and NaN quirks.
+
+Do you want me to continue with that?
+
+You said:
+yes 71-85
+ChatGPT said:
+
+Great! Let’s go through Comparison (Q71–85) with detailed explanations, because JS type coercion and equality operators can be tricky.
+
+5. Comparison (Q71–85)
+
+71. What does 5 == "5" return?
+✅ a) true
+
+== is loose equality. JS converts "5" (string) to 5 (number) before comparing.
+
+Example:
+
+console.log(5 == "5"); // true
+
+
+72. What does 5 === "5" return?
+✅ b) false
+
+=== is strict equality → compares value and type.
+
+Number 5 !== string "5".
+
+73. Which operator checks value only (ignores type)?
+✅ a) ==
+
+Loose equality allows type coercion.
+
+"0" == 0 → true, "0" === 0 → false.
+
+74. Which operator checks both value and type?
+✅ b) ===
+
+Strict equality, no coercion.
+
+75. What does null == undefined return?
+✅ a) true
+
+Special case in JS: null loosely equals undefined.
+
+76. What does null === undefined return?
+✅ b) false
+
+Strict equality → different types → false.
+
+77. What does "2" > 1 return?
+✅ a) true
+
+JS converts "2" to number 2.
+
+2 > 1 → true.
+
+78. What does "2" < "12" return?
+✅ b) false
+
+Strings are compared lexicographically (dictionary order).
+
+"2" > "1" → "2" < "12" is false.
+
+Example:
+
+console.log("2" < "12"); // false
+
+
+79. What does NaN == NaN return?
+✅ b) false
+
+By definition, NaN is not equal to anything, including itself.
+
+Use Number.isNaN() or Object.is() to check NaN.
+
+80. Which method checks if a value is NaN?
+✅ b) isNaN()
+
+isNaN(value) returns true if value cannot be converted to a number.
+
+Example:
+
+console.log(isNaN(NaN)); // true
+console.log(isNaN("hello")); // true
+
+
+81. Which operator checks inequality in JS?
+✅ d) both a and b (!= and !==)
+
+!= → loose inequality (allows type coercion)
+
+!== → strict inequality (no coercion)
+
+82. What does Object.is(NaN, NaN) return?
+✅ a) true
+
+Object.is() treats NaN as equal to NaN, unlike ==/===.
+
+83. What does "a" < "b" return?
+✅ a) true
+
+Lexicographical comparison using Unicode values.
+
+"a".charCodeAt(0) = 97, "b".charCodeAt(0) = 98 → 97 < 98 → true.
+
+84. What does "5" >= 5 return?
+✅ a) true
+
+"5" is converted to number → 5 >= 5 → true.
+
+85. Which method is used for strict equality comparison?
+✅ c) Object.is()
+
+Object.is() is the most reliable strict comparison, even for NaN and -0.
+
+Example:
+
+console.log(Object.is(NaN, NaN)); // true
+console.log(NaN === NaN); // false
+
+Key Notes on Comparison Operators
+
+== vs === → == allows coercion, === is strict.
+
+null vs undefined → == true, === false.
+
+NaN → never equal to anything except via Object.is().
+
+Strings and numbers are automatically converted in numeric comparisons.
+
+✅ That’s Q71–85 fully explained.
+
+Next, we can cover Operators (Q86–100) including arithmetic, logical, bitwise, and spread operators with detailed explanations.
+
+Do you want me to continue with that?
+
+You said:
+yes 86-100
+ChatGPT said:
+
+Perfect! Let’s cover Operators (Q86–100) with detailed explanations and examples. This section includes arithmetic, assignment, logical, ternary, bitwise, and modern JS operators.
+
+6. Operators (Q86–100)
+
+86. Which operator is used for assignment?
+✅ a) =
+
+Assigns a value to a variable.
+
+Example:
+
+let x = 5; // assigns 5 to x
+
+
+87. Which operator adds values?
+✅ a) +
+
+Adds numbers or concatenates strings.
+
+Example:
+
+2 + 3; // 5
+"Hello " + "World"; // "Hello World"
+
+
+88. Which operator returns remainder?
+✅ a) %
+
+Modulus operator gives the remainder of division.
+
+Example:
+
+10 % 3; // 1
+
+
+89. Which operator increments value by 1?
+✅ a) ++
+
+Example:
+
+let x = 5;
+x++; // x becomes 6
+
+
+90. Which operator decrements value by 1?
+✅ c) --
+
+Example:
+
+let x = 5;
+x--; // x becomes 4
+
+
+91. Which operator is used for exponentiation?
+✅ b) ** ** (double asterisk)
+
+Raises a number to a power.
+
+Example:
+
+2 ** 3; // 8
+
+
+92. Which operator returns true if both conditions are true?
+✅ a) && (logical AND)
+
+Example:
+
+true && false; // false
+true && true;  // true
+
+
+93. Which operator returns true if either condition is true?
+✅ b) || (logical OR)
+
+Example:
+
+true || false; // true
+false || false; // false
+
+
+94. Which operator negates a boolean value?
+✅ b) !
+
+Logical NOT operator.
+
+Example:
+
+!true; // false
+!false; // true
+
+
+95. Which operator combines two strings?
+✅ a) +
+
+Strings concatenation.
+
+Example:
+
+"Hello" + " World"; // "Hello World"
+
+
+96. Which operator is used for ternary condition?
+✅ b) ? :
+
+Syntax: condition ? exprIfTrue : exprIfFalse
+
+Example:
+
+let age = 18;
+let status = age >= 18 ? "Adult" : "Minor";
+console.log(status); // "Adult"
+
+
+97. Which bitwise operator performs OR?
+✅ a) |
+
+Performs OR at the bit level.
+
+Example:
+
+5 | 3; // 5 = 0101, 3 = 0011 → 0101 | 0011 = 0111 → 7
+
+
+98. Which bitwise operator performs XOR?
+✅ c) ^
+
+Bitwise XOR: 1 if bits are different, 0 if same.
+
+Example:
+
+5 ^ 3; // 0101 ^ 0011 = 0110 → 6
+
+
+99. Which operator checks property existence in objects?
+✅ b) in
+
+Returns true if property exists in object (or its prototype chain).
+
+Example:
+
+let obj = {name: "Alice"};
+console.log("name" in obj); // true
+console.log("age" in obj); // false
+
+
+100. Which operator spreads array elements?
+✅ a) ... (spread operator)
+
+Expands array elements in function calls or arrays.
+
+Example:
+
+let arr = [1,2,3];
+console.log(...arr); // 1 2 3
+let newArr = [0, ...arr, 4];
+console.log(newArr); // [0,1,2,3,4]
+
+Key Notes / Tips for Operators
+
+Arithmetic: + - * / % ** ++ --
+
+Logical: && || !
+
+Ternary: ? : → concise if-else
+
+Bitwise: & | ^ ~ << >> → works on 32-bit integers
+
+Assignment: =
+
+Spread operator (...) → very useful for arrays/objects and function arguments
+
+Property existence: in → checks if a key exists in an object
