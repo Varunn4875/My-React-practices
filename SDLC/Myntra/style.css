@@ -82,7 +82,7 @@ body
 }
 .footer-list a{
     text-decoration: none;
-     color: #aaaab3;
+     color: #696b79;
      font-weight: 400;
 }
 .list-items {
@@ -105,5 +105,6 @@ footer .container li{
 button{
 	border: none;
 	outline: none;
+	margin-inline: 3px;
 }
 }
