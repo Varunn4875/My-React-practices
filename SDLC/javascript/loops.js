@@ -27,24 +27,24 @@ while(number <=5)
 
 
 //3. do while with if 
-let attempts=0;
-let correct=false;
-let RealPassword=1234
-do{
-	 let enteredPasswd= parseInt(prompt(`Enter your password Attempt No: ${attempts + 1} `))
-	attempts ++;
+// let attempts=0;
+// let correct=false;
+// let RealPassword=1234
+// do{
+// 	 let enteredPasswd= parseInt(prompt(`Enter your password Attempt No: ${attempts + 1} `))
+// 	attempts ++;
 
-	if(enteredPasswd === RealPassword){
-		console.log(`Access granted`)
-		break;
-	}else{
-		console.log(`Access Denied   ${enteredPasswd}`)
-	}
-	if(attempts === 3){
-		console.log("Too many attempts. Exiting...")
-		break;
-	}
-}while(!correct)
+// 	if(enteredPasswd === RealPassword){
+// 		console.log(`Access granted`)
+// 		break;
+// 	}else{
+// 		console.log(`Access Denied   ${enteredPasswd}`)
+// 	}
+// 	if(attempts === 3){
+// 		console.log("Too many attempts. Exiting...")
+// 		break;
+// 	}
+// }while(!correct)
 
 // do{
 // 	console.log("Enter password");
@@ -79,3 +79,9 @@ do{
 // for (let key in car) {
 //   console.log(`${key}: ${car[key]}`);
 // }
+
+    let i = 5;
+    let j = ++i; // i becomes 6, then j is assigned the new value of i (which is 6)
+    console.log(i); // Output: 6
+    console.log(j); // Output: 6
+    console.log(j)
