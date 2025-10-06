@@ -19,6 +19,9 @@ body
 	font-weight: 700;
 	font-color:#282C3F;
 }
+.list-contents{
+	position: relative;
+}
 .power{
 	color: #ff5d82;
 	margin-inline-start: 4px;
@@ -37,7 +40,18 @@ body
     position: relative;
     display: inline-block; 
 }
+.active{
+	position: absolute;
+	top: 150px;
+	opacity: 0;
+	visibility: hidden;
+}
+.list-contents li:hover .active{
+	opacity: 1;
+	visibility: visible;
 
+
+}
 .icon {
     position: absolute;
     left: 10px;
