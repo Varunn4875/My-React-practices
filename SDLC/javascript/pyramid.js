@@ -3,20 +3,21 @@
 let R=5;
 
 for(i=1; i<=R; i++){
-	// console.log( ' '.repeat(R-i) + '*'.repeat(i) + ' '+ '*'.repeat(i) )
+  // console.log('#'.repeat(i))
+	 // console.log( ' '.repeat(R-i) + '*'.repeat(i) )
 }   //for inverted switch the values to (i=R;i>=1;i--)
-
+ 
 
 //2.Pyramid and Diamond  inverted using number
 
 // let n=5;
 // for (let i=1; i<=n; i++){
-// 	console.log(' '.repeat(n-i) + String(i).repeat(2*i-1))
+	// console.log(' '.repeat(n-i) + String(i).repeat(2*i-1))
 // }
 
-// //inverted pyramid and diamond
+//inverted pyramid and diamond
 // for(let i=n-1; i>=1;i--){
-// 	console.log(' '.repeat(n-i) + String(i).repeat(2*i-1))
+// 	// console.log(' '.repeat(n-i) + String(i).repeat(2*i-1))
 // }   
 
 
@@ -33,17 +34,17 @@ for(i=1; i<=R; i++){
 
  //4. Hollow Pyramid
 
- let n = 5;
+//  let n = 5;
 
-for (let i = 1; i <= n; i++) {
-  if (i === n) {
-    console.log('*'.repeat(2 * i - 1));
-  } else {
-    console.log(' '.repeat(n - i) + '*'
-     + ' '.repeat(2 * i - 3 > 0 ? 2 * i - 3 : 0)
-     + (i > 1 ? '*' : ''));
-  }
-}
+// for (let i = 1; i <= n; i++) {
+//   if (i === n) {
+//     console.log('*'.repeat(2 * i - 1));
+//   } else {
+//     console.log(' '.repeat(n - i) + '* '
+//      + ' '.repeat(2 * i - 3 > 0 ? 2 * i - 3 : 0)
+//      + (i > 1 ? '*' : ''));
+//   }
+// }
 
 
 

@@ -40,36 +40,36 @@
 //4. using withdrawl using nested if
 //                         ---------
 
-// let pins=prompt('Enter your pins')
-// let balance=2000
-// let withdrawlAmt=prompt('Enter your withdrawlAMount')
-// let err='404'
+let pins=parseInt(prompt('Enter your pins'))
+let balance=2000
+let withdrawlAmt=prompt('Enter your withdrawlAMount')
+let err='404'
 
-// if (pins==='2102') {
-// 	if(withdrawlAmt<=balance){
-// 		console.log(`withdrawl amount of ${1500} is successfull`)
-// 	}
-// 	else if(withdrawlAmt>balance){
-// 		console.log(`insufficient balance error:${err}`)
-// 	}
-// } else{
-// 	console.log(`your pin was incorrect`)
-// }
+if (pins === 2102) {
+	if(withdrawlAmt<=balance){
+		console.log(`withdrawl of amount ${withdrawlAmt} is successfull`)
+	}
+	else if(withdrawlAmt>balance){
+		console.log(`insufficient balance error:${err}`)
+	}
+} else{
+	console.log(`your pin was incorrect`)
+}
 
 
 //5.language selection using switch statement
 
-let userLanguage=prompt('Enter your preferred Language').toLowerCase()
-switch(userLanguage){
-		case "tamil":
-			console.log(`you're switched to tamil`)
-		break;
-		case "english":
-			console.log(`Your Profile was switched to ${userLanguage}`) 
-		break;
-		case "hindi":
-		console.log(`Your Profile was switched to ${userLanguage}`)
-		break;
-		default:
-			console.log("please select your language")
-}
+// let userLanguage=prompt('Enter your preferred Language').toLowerCase()
+// switch(userLanguage){
+// 		case "tamil":
+// 			console.log(`you're switched to tamil`)
+// 		break;
+// 		case "english":
+// 			console.log(`Your Profile was switched to ${userLanguage}`) 
+// 		break;
+// 		case "hindi":
+// 		console.log(`Your Profile was switched to ${userLanguage}`)
+// 		break;
+// 		default:
+// 			console.log("please select your language")
+// }
