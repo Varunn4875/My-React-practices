@@ -20,7 +20,6 @@
 
 
 //3.movie ticket price calculator using else-if ladder
-
 // let years=prompt('Enter your children age in years')
 // let d1=10
 // let d2=15
