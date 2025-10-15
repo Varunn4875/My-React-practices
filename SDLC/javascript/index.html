@@ -5,12 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>javascript</title>
 </head>
-<body style="background-color: black; color: whtie;">
+<body>
 <center><h1>Javascript Practices</h1></center>
 <!-- <script src="test.js"></script> -->
 <!-- <script src="arith.js"></script> -->
 <!-- <script src="loops.js"></script> -->
-<script src="pyramid.js"></script>
+<!-- <script src="pyramid.js"></script> -->
+<!-- <script src="string.js"></script> -->
+<!-- <script src="Array.js"></script> -->
+<!-- <script src="math.js"></script> -->
+<!-- <script src="reference.js"></script> -->
+<script src="JSON.js"></script>
 <script>
 	//1.while
 	 // let number=2;
@@ -71,7 +76,7 @@
 	// let arr=["apple","orange","mdfdhfkh"]
 	// console.log(arr)
 
-	// for(let contents of arr){
+	// for(let contents in arr){
 	// 	console.log(contents)
 	// }
 // let b=5;
@@ -106,7 +111,7 @@
 
 	//hollow pyramid
 
-	let n=5
+	// let n=5
 	// for(let i=1; i<=5; i++){
 	// 	if(i===n){
 	// 		console.log('*'.repeat(2*n-1))
@@ -114,16 +119,130 @@
 	// 		console.log(' '.repeat(n-i) + '*' + ' '.repeat(2 * i -3 > 0 ? 2 * i - 3 : 0)+(i>1?'*':''))
 	// 	}
 	// }
+
+
 	// for(let i=1; i<=n; i++){
 	// 	if(i===n){
 	// 		console.log('*'.repeat(2*n-1))
 	// 	}else{
-	// 		console.log(' '.repeat(n-i)+ '*'+' '.repeat(2*i-3 >0? 2*i-3 : 0) +(i>1?'*':''))
+	// 		console.log(' '.repeat(n-i)+ '*'
+	// 			+' '.repeat(2*i-3 >0 ? 2*i-3 : 0)
+	// 			 +(i>1?'*':''))
 	// 	}
 	// }
 
+// 	for (let i = 1; i <= 3; i++) {
+//   for (let j = 1; j <= 2; j++) {
+//     console.log(i, j);
+//   }
+// }
 
+// 	for (let i = 1; i <= 2; i++) {
+//   for (let j = 1; j <= 3; j++) {
+//     console.log(i + "," + j);
+//   }
+// }
+
+// 	let i, j;
+
+// // The first for statement is labeled "loop1"
+// loop1: for (i = 0; i < 3; i++) {
+//   // The second for statement is labeled "loop2"
+//   loop2: for (j = 0; j < 3; j++) {
+//     if (i === 1 && j === 1) {
+//       continue loop1;
+//     }
+//     console.log(`i = ${i}, j = ${j}`);
+//   }
+// }
+
+// Logs:
+// i = 0, j = 0
+// i = 0, j = 1
+// i = 0, j = 2
+// i = 1, j = 0
+
+// 	let i = 1;
+// console.log(i++); // prints 1, then i = 2
+// console.log(++i); // increments to 3, then prints 3
+
+// 	🔹 Mental Shortcut (Easy to Remember)
+// Operator	When increment happens	Returns
+// ++i	Before use	New value
+// i++	After use	Old value
+    // var message = "Hello from inside the function!";
+	//     function greet() {
+      
+    //   console.log(message); // Accessible here
+    // }
+
+    // greet();
+    // console.log(message); // Error: message is not defined outside the function
+
+
+
+// let firstName, lastName, price, discount, fullPrice;
+
+// // Use later
+// firstName = "John";
+// lastName = "Doe";
+
+// price = 19.90;
+// discount = 0.10;
+
+// fullPrice = price - discount;
+
+// for (let i = 0; i < 5; i++) {
+// 	console.log()
+// }
+    </script>
+
+<p id="demo">hey </p>
+
+<script>
+// let day=new Date().getDay();
+// console.log(day)
+// switch (day) {
+//   case 0:
+//     day = "Sunday";
+//     console.log(SUnday)
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case  6:
+//     day = "Saturday";
+//     break;
+//   default:
+//      day = "unknown";
+// }
+// document.getElementById("#demo").innerHTML = "hey" ;
+
+
+// const valentines = new Date("2002-02-30");
+// const dayNumber = valentines.getDay(); // call here
+// const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+// console.log(dayNames[dayNumber]);
+// document.getElementById('demo').innerHTML=dayNames[dayNumber]
 </script>
+
+</body>
+</html>
+
+
 
 </body>
 </html>

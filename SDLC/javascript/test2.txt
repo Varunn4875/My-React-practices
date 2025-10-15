@@ -1,0 +1,776 @@
+1.
+
+for (let i = 0; i < 3; i++) {
+console.log(i);
+}
+✅ Answer: (b) 0 1 2
+For loop starts at 0, prints i until i<3.
+
+2. Which statement is used to stop a loop early in JavaScript?
+   ✅ Answer: (c) break
+   `break` exits the current loop immediately.
+
+3.
+
+let x = 5;
+if (x > 10) console.log("High");
+else console.log("Low");
+✅ Answer: (b) Low
+Condition false, else branch executed.
+
+4. Which loop will always execute at least once?
+   ✅ Answer: (c) do...while
+   `do...while` executes code first, then checks condition.
+
+5.
+
+let i = 0;
+while (i < 3) {
+console.log(i);
+i++;
+}
+✅ Answer: (a) 0 1 2
+While loop prints i while condition true.
+
+6. In a for loop, what does the third expression usually represent?
+   ✅ Answer: (c) increment/decrement
+   Third part updates loop variable each iteration.
+
+7. Identify the invalid loop syntax:
+   ✅ Answer: (b) for i = 0; i < 10; i++
+   Missing parentheses () around loop header.
+
+8.
+
+for (let i = 1; i <= 3; i++) {
+if (i === 2) continue;
+console.log(i);
+}
+✅ Answer: (b) 1 3
+`continue` skips i=2.
+
+9. Which control statement is used to skip the rest of the loop iteration?
+   ✅ Answer: (c) continue
+   `continue` moves to next iteration.
+
+10.
+
+for (let i = 1; i <= 3; i++) {
+for (let j = 1; j <= 2; j++) {
+console.log(i, j);
+}
+}
+✅ Answer: (b) Prints 6 lines
+Nested loops: 3 outer * 2 inner = 6 iterations.
+
+11.
+
+let count = 0;
+do {
+console.log(count);
+count++;
+} while (count < 2);
+✅ Answer: (b) 0 1
+`do...while` runs at least once, counts 0 and 1.
+
+12.
+
+let x = 10;
+if (x > 5) x++;
+else x--;
+console.log(x);
+✅ Answer: (c) 11
+x>5 true, incremented by 1.
+
+13.
+
+for (let i = 1; i <= 2; i++) {
+for (let j = 1; j <= 2; j++) {
+console.log(i + j);
+}
+}
+✅ Answer: (a) 2 3 3 4
+i+j combinations: 1+1=2,1+2=3,2+1=3,2+2=4.
+
+14. Which of these keywords cannot be used to control loop execution?
+    ✅ Answer: (b) skip
+    `skip` is not a JavaScript keyword.
+
+15.
+
+for (let i = 0; i < 5; i += 2) {
+console.log(i);
+}
+✅ Answer: (b) 0 2 4
+i increments by 2 each iteration.
+
+16.
+
+let sum = 0;
+for (let i = 1; i <= 3; i++) {
+sum += i;
+}
+console.log(sum);
+✅ Answer: (b) 6
+1+2+3 = 6.
+
+17.
+
+for (let i = 1; i <= 3; i++) {
+if (i === 2) break;
+console.log(i);
+}
+✅ Answer: (a) 1
+`break` stops loop at i=2.
+
+18. How many times will this loop run?
+    for (let i = 0; i < 10; i += 3) {}
+    ✅ Answer: (b) 4
+    i = 0,3,6,9 → 4 iterations.
+
+19.
+
+for (let i = 1; i <= 3; i++) {
+let pattern = "";
+for (let j = 1; j <= i; j++) {
+pattern += "*";
+}
+console.log(pattern);
+}
+✅ Answer: (a) * ** ***
+Triangular pattern.
+
+20. Which of these loops does not exist in JavaScript?
+    ✅ Answer: (c) repeat
+    `repeat` is not a loop; it's a string method.
+
+21.
+
+let num = 2;
+switch(num) {
+case 1: console.log("One");
+case 2: console.log("Two");
+case 3: console.log("Three");
+}
+✅ Answer: (b) Two Three
+Switch falls through if no break.
+
+22. Which is needed to stop fall-through in switch cases?
+    ✅ Answer: (c) break
+    Stops execution of subsequent cases.
+
+23.
+
+let i = 5;
+while (i > 0) {
+console.log(i);
+i--;
+}
+✅ Answer: (a) 5 4 3 2 1
+Prints while condition true, decrement each iteration.
+
+24. How many times will the loop run?
+    for (let i = 1; i < 5; i++) {}
+    ✅ Answer: (b) 4
+    i = 1,2,3,4 → 4 iterations.
+
+25.
+
+for (let i = 1; i <= 5; i++) {
+if (i % 2 === 0) continue;
+console.log(i);
+}
+✅ Answer: (b) 1 3 5
+`continue` skips even numbers.
+
+26.
+
+for (let i = 1; i <= 3; i++) {
+console.log("*".repeat(i));
+}
+✅ Answer: (a) * ** ***
+Each iteration prints i asterisks.
+
+27. Which statement is true about for...of?
+    ✅ Answer: (b) Works with iterables like arrays
+    Iterates over array elements, strings, maps, sets.
+
+28.
+
+let sum = 0;
+for (let i = 1; i < 4; i++) {
+if (i === 2) continue;
+sum += i;
+}
+console.log(sum);
+✅ Answer: (b) 4
+i=2 skipped, sum = 1+3=4.
+
+29.
+
+for (let i = 2; i <= 6; i += 2) console.log(i);
+✅ Answer: (a) 2 4 6
+i increments by 2.
+
+30. What happens if the condition in a while loop is always true?
+    ✅ Answer: (c) Infinite loop
+    Loop never stops unless broken manually.
+
+31. Which statement correctly exits from a loop and a function together?
+    ✅ Answer: (c) return
+    Exits current function entirely.
+
+32.
+
+let i = 3;
+do {
+console.log(i);
+i--;
+} while (i > 0);
+✅ Answer: (a) 3 2 1
+`do...while` executes first, then checks condition.
+
+33.
+
+for (let i = 1; i <= 3; i++) {
+let str = "";
+for (let j = 3; j >= i; j--) {
+str += "#";
+}
+console.log(str);
+}
+✅ Answer: (a) ### ## #
+Decreasing pattern.
+
+34.
+
+for (let i = 1; i <= 3; i++) {
+if (i === 2) continue;
+console.log("Loop " + i);
+}
+✅ Answer: (c) Loop 1 Loop 3
+Skips i=2.
+
+35.
+
+for (let i = 1; i <= 2; i++) {
+for (let j = 1; j <= 2; j++) {
+if (i === j) console.log(i);
+}
+}
+✅ Answer: (d) 1 2
+Prints i when i===j.
+
+36. Which is not a looping statement?
+    ✅ Answer: (c) repeat
+    `repeat` is a string method, not a loop.
+
+37. Which keyword transfers control to the next iteration of a loop?
+    ✅ Answer: (c) continue
+    Skips current iteration.
+
+38. Which loop would you use to iterate over array values?
+    ✅ Answer: (a) for...of
+    Iterates over elements, not indices.
+
+39.
+
+let arr = [1, 2, 3];
+for (let i in arr) console.log(i);
+✅ Answer: (b) 0 1 2
+`for...in` iterates over indices.
+
+40.
+
+for (let i of "Hi") console.log(i);
+✅ Answer: (b) H i
+`for...of` iterates over characters in string.
+41. Which keyword exits only from the current loop, not nested loops?
+✅ Answer: (b) break
+Explanation: break exits the innermost loop where it is used. It does not affect outer loops.
+
+Example:
+
+for(let i=1;i<=3;i++){
+  for(let j=1;j<=3;j++){
+    if(j===2) break;
+    console.log(i,j);
+  }
+}
+// Output: 1 1 2 1 3 1 2 2 3 2 ...
+
+
+42. What is printed?
+
+let x = 0;
+while (x < 3) {
+  console.log(++x);
+}
+
+
+✅ Answer: (b) 1 2 3
+Explanation: Pre-increment ++x increments before printing. Loop runs while x<3.
+
+43. What is the output?
+
+let i = 0;
+while (i < 3) i++;
+console.log(i);
+
+
+✅ Answer: (b) 3
+Explanation: Loop increments i until 3, then prints i.
+
+44. What is the result?
+
+let i = 1;
+do {
+  console.log("Run");
+} while (i < 1);
+
+
+✅ Answer: (a) Run once
+Explanation: do...while executes at least once, even if the condition is false.
+
+45. Which of these is a valid infinite loop?
+✅ Answer: (d) All
+Explanation: for(;;), while(true), do{} while(true); all create infinite loops.
+
+46. What is the output?
+
+for (let i = 0; i < 5; i++) {
+  if (i === 3) break;
+  console.log(i);
+}
+
+
+✅ Answer: (a) 0 1 2
+Explanation: break stops the loop when i===3.
+
+47. Which loop is best when the number of iterations is unknown?
+✅ Answer: (b) while
+Explanation: while loop checks condition before each iteration, suitable for unknown repetitions.
+
+48. What will be printed?
+
+for (let i = 3; i > 0; i--) {
+  console.log("*".repeat(i));
+}
+
+
+✅ Answer: (a) *** ** *
+Explanation: repeat(i) prints decreasing number of stars.
+
+49. What is the output?
+
+for (let i = 1; i <= 2; i++) {
+  for (let j = 1; j <= 3; j++) {
+    console.log(i + "," + j);
+  }
+}
+
+
+✅ Answer: (c) 6 lines
+Explanation: Nested loops run 2 * 3 = 6 times.
+
+50. Which loop is more readable for arrays and strings?
+✅ Answer: (b) for...of
+Explanation: for...of directly iterates over values of arrays or strings.
+
+51. Which statement transfers control to a labeled statement?
+✅ Answer: (b) continue label
+Explanation: continue label; jumps to the next iteration of a labeled loop.
+
+52. What is the output?
+
+let i = 0;
+while (i++ < 2) console.log(i);
+
+
+✅ Answer: (b) 1 2
+Explanation: Post-increment i++ prints incremented value after comparison.
+
+53. Which of the following can create an infinite loop if the condition never becomes false?
+✅ Answer: (d) all of these
+Explanation: for, while, do...while can all loop infinitely if not controlled.
+
+54. What is the purpose of a switch statement?
+✅ Answer: (d) All of these
+Explanation: Switch helps choose among multiple options, replaces if-else chains, and compares values.
+
+55. What will be printed?
+
+for (let i = 1; i <= 3; i++) {
+  console.log(i * 2);
+}
+
+
+✅ Answer: (a) 2 4 6
+Explanation: Loop multiplies each value by 2.
+
+56. Which loop is best for iterating properties of an object?
+✅ Answer: (c) for...in
+Explanation: for...in iterates over object keys.
+
+57. What is the output?
+
+for (let i = 5; i >= 1; i--) console.log(i);
+
+
+✅ Answer: (b) 5 4 3 2 1
+Explanation: Loop decrements from 5 to 1.
+
+58. What is the output?
+
+let i = 0;
+do {
+  i++;
+  if (i === 2) continue;
+  console.log(i);
+} while (i < 3);
+
+
+✅ Answer: (b) 1 3
+Explanation: continue skips printing 2.
+
+59. How can you stop nested loops from executing completely?
+✅ Answer: (c) return
+Explanation: return exits the entire function, stopping all loops.
+
+60. Which control structure is used for decision-making?
+✅ Answer: (c) both a and b
+Explanation: if...else and switch handle decision-making.
+
+61. What is printed?
+
+let i = 1;
+while (i <= 3) {
+  console.log(i++);
+}
+
+
+✅ Answer: (b) 1 2 3
+Explanation: Post-increment prints current i then increments.
+
+62. Which keyword stops the current iteration but not the entire loop?
+✅ Answer: (c) continue
+Explanation: Skips rest of iteration and continues with the next.
+
+63. What is the output?
+
+for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 2; j++) {
+    console.log(i * j);
+  }
+}
+
+
+✅ Answer: (b) 0 0 0 1
+Explanation: Multiplication i*j for all iterations.
+
+64. Which loop syntax is correct?
+✅ Answer: (b) for (i = 0; i < 10; i++)
+Explanation: Standard for-loop syntax: for(initialization; condition; increment).
+
+65. What is the output?
+
+let n = 3;
+switch (n) {
+  case 1: console.log("One"); break;
+  case 2: console.log("Two"); break;
+  default: console.log("Other");
+}
+
+
+✅ Answer: (c) Other
+Explanation: n doesn’t match 1 or 2, so default executes.
+
+66. Which loop is best suited for reading data until EOF?
+✅ Answer: (b) while
+Explanation: while can read data until end-of-file (EOF) condition is met.
+
+67. Which of these can produce a triangular pattern?
+✅ Answer: (c) both a and b
+Explanation: Nested loops (for or while) are commonly used for patterns.
+
+68. What will happen if break is missing in a switch?
+✅ Answer: (b) Fall-through to next case
+Explanation: Execution continues to the next case until break or end.
+
+69. What is printed?
+
+for (let i = 1; i <= 3; i++) {
+  if (i === 1) continue;
+  console.log(i * i);
+}
+
+
+✅ Answer: (b) 4 9
+Explanation: Skips i=1 due to continue, prints squares of 2 and 3.
+
+70. Which keyword restarts the loop without exiting it?
+✅ Answer: (c) continue
+Explanation: continue skips rest of iteration and starts next.
+
+71. How many times will this execute?
+
+for (let i = 0; i <= 2; i++) {}
+
+
+✅ Answer: (b) 3
+Explanation: Loop executes for i = 0,1,2 → 3 times.
+
+72. What is the output?
+
+let sum = 0;
+for (let i = 0; i <= 4; i++) sum += i;
+console.log(sum);
+
+
+✅ Answer: (b) 10
+Explanation: Sum = 0+1+2+3+4 = 10
+
+73. Which statement defines a block of code executed repeatedly?
+✅ Answer: (c) for
+Explanation: Loops (for, while, do...while) define repeated execution blocks.
+
+74. What is printed?
+
+for (let i = 2; i <= 8; i += 3) console.log(i);
+
+
+✅ Answer: (a) 2 5 8
+Explanation: Loop increments by 3: 2, 5, 8.
+
+75. What is the output?
+
+for (let i = 1; i <= 3; i++) {
+  console.log("*".repeat(3 - i + 1));
+}
+
+
+✅ Answer: (a) *** ** *
+Explanation: repeat(3 - i + 1) produces decreasing stars.
+
+76. What will for...in loop print for an array?
+✅ Answer: (a) index numbers
+Explanation: for...in iterates over keys (indexes) of arrays.
+
+77. What is the output?
+
+for (let i = 1; i <= 5; i++) {
+  if (i > 3) break;
+  console.log(i);
+}
+
+
+✅ Answer: (b) 1 2 3
+Explanation: break stops loop when i>3.
+
+78. What is the result?
+
+let a = 0;
+while (a < 3) {
+  a++;
+  console.log(a);
+}
+
+
+✅ Answer: (a) 1 2 3
+Explanation: Loop increments a before printing.
+
+79. Which statement is true for for...of?
+✅ Answer: (a) Iterates values
+Explanation: for...of iterates over iterable values, e.g., array elements.
+
+80. Which of these is valid infinite loop syntax?
+✅ Answer: (d) All of these
+Explanation: for(;;), while(true), and do{} while(true); all create infinite loops.
+
+81. What is the output?
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    if (j === 1) break;
+    console.log(i, j);
+  }
+}
+
+
+✅ Answer: (c) 0 0 1 0 2 0
+Explanation: Inner loop breaks when j===1, so only j=0 prints for each i. Total 3 lines.
+
+82. What is the result?
+
+let x = 1;
+switch(x) {
+  case 0:
+  case 1:
+    console.log("Matched");
+    break;
+  default:
+    console.log("None");
+}
+
+
+✅ Answer: (b) Matched
+Explanation: case 1 matches x=1; code executes until break.
+
+83. What will be printed?
+
+let i = 0;
+while (i < 2) {
+  console.log(i++);
+}
+
+
+✅ Answer: (a) 0 1
+Explanation: Prints i then increments; loop stops when i=2.
+
+84. Which statement ends the current function execution?
+✅ Answer: (c) return
+Explanation: return exits the function immediately.
+
+85. What is printed?
+
+for (let i = 3; i > 0; i--) {
+  if (i === 2) continue;
+  console.log(i);
+}
+
+
+✅ Answer: (b) 3 1
+Explanation: continue skips printing i=2.
+
+86. What is printed?
+
+let n = 1;
+do {
+  console.log("JS");
+  n++;
+} while (n < 3);
+
+
+✅ Answer: (b) JS JS
+Explanation: Loop runs while n<3. Executes twice: n=1 and n=2.
+
+87. Which of these loops executes a minimum of once?
+✅ Answer: (c) do...while
+Explanation: do...while executes body before checking condition.
+
+88. What will happen?
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    if (i === j) continue;
+    console.log(i, j);
+  }
+}
+
+
+✅ Answer: (a) Skips same pairs
+Explanation: continue skips iteration when i===j; all other pairs are printed.
+
+89. What is the output?
+
+let text = "";
+for (let i = 0; i < 3; i++) text += i;
+console.log(text);
+
+
+✅ Answer: (b) 012
+Explanation: Concatenates 0,1,2 into string.
+
+90. Which is not a control statement?
+✅ Answer: (d) print
+Explanation: break, switch, and throw control execution; print is not a statement in JS.
+
+91. What is printed?
+
+for (let i = 1; i <= 3; i++) {
+  if (i === 2) break;
+  console.log("Hello");
+}
+
+
+✅ Answer: (b) Hello
+Explanation: Loop breaks at i=2, so only first iteration prints.
+
+92. Which keyword defines a label before a loop?
+✅ Answer: (a) label:
+Explanation: label: creates a reference for break or continue with labels.
+
+93. What is the output?
+
+let n = 3;
+do {
+  console.log(n--);
+} while (n > 0);
+
+
+✅ Answer: (a) 3 2 1
+Explanation: Prints n then decrements; stops when n=0.
+
+94. What is the output?
+
+for (let i = 1; i <= 3; i++) {
+  console.log("*".repeat(i));
+}
+
+
+✅ Answer: (a) * ** ***
+Explanation: Prints increasing stars using repeat(i).
+
+95. Which loop type is often used with arrays?
+✅ Answer: (a) for...of
+Explanation: Iterates directly over array values.
+
+96. What is printed?
+
+let sum = 0;
+for (let i = 1; i <= 3; i++) {
+  if (i == 2) continue;
+  sum += i;
+}
+console.log(sum);
+
+
+✅ Answer: (c) 4
+Explanation: Skips i=2; sum = 1 + 3 = 4.
+
+97. What is printed?
+
+for (let i = 2; i <= 5; i++) {
+  console.log("*".repeat(i));
+}
+
+
+✅ Answer: (a) ** *** **** *****
+Explanation: Prints 2,3,4,5 stars in sequence.
+
+98. Which control structure handles multiple conditions efficiently?
+✅ Answer: (b) switch
+Explanation: Switch is ideal for handling many discrete values instead of multiple if-else.
+
+99. What will be the output?
+
+let i = 0;
+while(true){
+  i++;
+  if(i===3) break;
+  console.log(i);
+}
+
+
+✅ Answer: (b) 1 2
+Explanation: while(true) creates infinite loop; break stops at i=3.
+
+100. Which keyword immediately stops code execution inside a loop?
+✅ Answer: (b) break
+Explanation: break exits the current loop immediately.
+
+
+🔹 Mental Shortcut (Easy to Remember)
+Operator  When increment happens  Returns
+++i Before use  New value
+i++ After use Old value
