@@ -6,6 +6,8 @@ console.log(i);
 ✅ Answer: (b) 0 1 2
 For loop starts at 0, prints i until i<3.
 
+
+
 2. Which statement is used to stop a loop early in JavaScript?
    ✅ Answer: (c) break
    `break` exits the current loop immediately.
@@ -260,6 +262,8 @@ if (i === j) console.log(i);
 }
 ✅ Answer: (d) 1 2
 Prints i when i===j.
+
+
 
 36. Which is not a looping statement?
     ✅ Answer: (c) repeat
