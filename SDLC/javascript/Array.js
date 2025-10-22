@@ -154,10 +154,11 @@ for (let [index,value] of arr.entries()){
 
 }
 
-nums.fill(0,1,4)  //content,startind, endind
+nums.fill(0,1,4)  //content,startindex, endindex
 console.log(nums)
 
 let a=[1,2]
+console.log(a.reduce())
 let b=[3,4]
 let c=[...a, ...b]
 console.log(c)
