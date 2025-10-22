@@ -17,8 +17,8 @@
 
 try{
 	const wrongJson=[1,23,44,55,66,76,8]
-	const data=JSON.stringify(wrongJson)
+	const data=JSON.parse(wrongJson)
 	console.log(data)
-}catch(err){
-	console.log("JSON Error" + err.message)
+}catch(del){
+	console.log("JSON Error" + del.message)
 }
