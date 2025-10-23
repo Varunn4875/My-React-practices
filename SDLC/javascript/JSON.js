@@ -22,3 +22,8 @@ try{
 }catch(del){
 	console.log("JSON Error" + del.message)
 }
+
+let obj={"first name":"varun","age":24}
+
+obj["first name"]="varunnnn"
+console.log(obj)
