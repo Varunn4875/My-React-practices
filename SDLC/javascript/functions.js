@@ -56,14 +56,51 @@ for(let [key ,value] of entries){
 }
 
 entries.forEach( obj =>{
-	console.log(`${obj}`)
+	console.log(`${obj[0]} : ${obj[1]}`)
 })
 
 for(i=0; i<entries.length;i++){
-	console.log(entries[i])
+	console.log(entries)
 }
 
 //An array of the given object's own enumerable string-keyed property key-value pairs.
 // Each key-value pair is an array with two elements: 
 //the first element is the property key (which is always a string), 
 //and the second element is the property value.
+
+
+
+// function student(message){
+// 	window.addEventListener("click", () =>{ alert(`hey ${message}`)})
+// }
+
+// student("varun")
+
+// let arr=[1,2,3,4,5,1,2,3,4,5]
+// let[a,b,...c]=arr
+// console.log(c)
+
+// function students(name,age){
+	
+// 	this.welcome=function(){
+// 		console.log(`Hello my name is ${name} and my age is ${age}`)
+// 	}
+// }
+// const student1=new students("varun",23)
+// student1.welcome();
+
+class student{
+	constructor(name,age,gender){
+			this.name=name,
+			this.age=age,
+			this.gender=gender
+	}
+	welcome=function(){
+		console.log(`Hello my name is ${this.name} and my age is ${this.age}`)
+	}
+}
+const student1=new student("varun",23,"male")
+const student2=new student("arun",23,"male")
+console.log(student1,student2)
+student2.welcome()
+
