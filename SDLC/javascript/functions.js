@@ -104,3 +104,13 @@ const student2=new student("arun",23,"male")
 console.log(student1,student2)
 student2.welcome()
 
+let lc="varunselvakumar"
+console.log(lc.toLowerCase())
+
+//length
+// console.log(lc.length)
+// console.log(lc.charAt(0).toUpperCase())
+
+// let char="varun"
+// console.log(char.charCodeAt(0)+ " "+char.charCodeAt(1)+ " "+char.charCodeAt(2)+ " "+char.charCodeAt(3)+ " "+char.charCodeAt(4))
+
