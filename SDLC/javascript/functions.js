@@ -29,18 +29,19 @@ arrowfunc()
 
 function outer(){
     console.log("im outer function")
+    let count=0;
 	return function inner(){
-		console.log("im inner function")
-		return function innering(){
-		console.log("im inner function")
-	}
+		return count++;
+	// 	return function innering(){
+	// 	console.log("im inner function")
+	// }
 	}
 }
 
-// const multi=outer()
-// multi()   //while using return we need to save 
-//those in variables and call them 
-
+const multi=outer()
+console.log(multi())  //while using return we need to save 
+// those in variables and call them 
+console.log(multi()) 
 
 // outer()()()
 
@@ -114,3 +115,27 @@ console.log(lc.toLowerCase())
 // let char="varun"
 // console.log(char.charCodeAt(0)+ " "+char.charCodeAt(1)+ " "+char.charCodeAt(2)+ " "+char.charCodeAt(3)+ " "+char.charCodeAt(4))
 
+// let dayOfWeek = "Monday";
+// let message;
+
+// switch (dayOfWeek) {
+//   case "Monday":
+//     message = "Start of the work week!";
+//     break;
+//   case "Tuesday":
+//   case "Wednesday":
+//   case "Thursday":
+//     message = "Mid-week grind!";
+//     break;
+//   case "Friday":
+//     message = "Almost the weekend!";
+//     break;
+//   case "Saturday":
+//   case "Sunday":
+//     message = "Enjoy your weekend!";
+//     break;
+//   default:
+//     message = "Invalid day entered.";
+// }
+
+// console.log(message); // Output: Mid-week grind!
