@@ -46,28 +46,6 @@ console.log(multi())
 // outer()()()
 
 
-let address={"street":"church-corner","city":"karur"}
-
-const entries=Object.entries(address)
-console.log(entries)
-
-
-for(let [key ,value] of entries){
-	console.log(`${key} : ${value}`)
-}
-
-entries.forEach( obj =>{
-	console.log(`${obj[0]} : ${obj[1]}`)
-})
-
-for(i=0; i<entries.length;i++){
-	console.log(entries)
-}
-
-//An array of the given object's own enumerable string-keyed property key-value pairs.
-// Each key-value pair is an array with two elements: 
-//the first element is the property key (which is always a string), 
-//and the second element is the property value.
 
 
 
@@ -105,37 +83,134 @@ const student2=new student("arun",23,"male")
 console.log(student1,student2)
 student2.welcome()
 
-let lc="varunselvakumar"
-console.log(lc.toLowerCase())
 
-//length
-// console.log(lc.length)
-// console.log(lc.charAt(0).toUpperCase())
+//5. function with parameters
 
-// let char="varun"
-// console.log(char.charCodeAt(0)+ " "+char.charCodeAt(1)+ " "+char.charCodeAt(2)+ " "+char.charCodeAt(3)+ " "+char.charCodeAt(4))
+function add(a,b){
+	return a+b;
+}
+const result=add(10,100)
+console.log(result);
 
-// let dayOfWeek = "Monday";
-// let message;
+//7.IIFE -> Immediately Invoked Function Expression
 
-// switch (dayOfWeek) {
-//   case "Monday":
-//     message = "Start of the work week!";
-//     break;
-//   case "Tuesday":
-//   case "Wednesday":
-//   case "Thursday":
-//     message = "Mid-week grind!";
-//     break;
-//   case "Friday":
-//     message = "Almost the weekend!";
-//     break;
-//   case "Saturday":
-//   case "Sunday":
-//     message = "Enjoy your weekend!";
-//     break;
-//   default:
-//     message = "Invalid day entered.";
+//it defines a function and calls it immediately
+// (function(){...}) and then it will be called immediately
+//by ()
+
+(function(){
+	console.log("im first")
+})();
+
+
+//why IIFW is used
+
+//Global scope pollution avoid pannalam.
+
+// (function(){
+// 	var message ="hello";
+// 	console.log(message);
+// })();
+// console.log(typeof(message))  -->  undefined 
+
+
+//Temporary variables will be created, used and erased
+//One-time initialization will be helpful and efficient by this
+
+
+//Arrow Function IIFE
+
+// (()=>{
+// 	console.log("Arrow IIFE")
+// })();
+
+
+//use-case Example - Counter inside IIFE
+
+const counter=(function(){
+	let count=0;
+	return function(){
+		count++;
+		return count;
+	}
+})();
+console.log(counter());
+console.log(counter());
+
+//8. Arrow Function short return
+const square=(X) =>Math.pow(X,3);
+console.log(square(5))
+
+//9. callback function
+
+// function sayHello(name) {
+//   console.log("Hello " + name);
+// };
+
+// function greet(callback) {
+//   callback("varun")
 // }
 
-// console.log(message); // Output: Mid-week grind!
+// greet(sayHello);
+
+//10.Anonymous function
+
+setTimeout(function(){
+	console.log('i will run after 1 sec')
+},1000);
+
+
+//11.constructor Function
+
+
+function candidate(name,age){
+	this.name=name;
+	this.age=age;
+}
+const c1=new candidate("varun",23);
+console.log(c1.name)
+
+//Four types of User Defined functions
+
+//1. Without Arguments, WIthout Return;
+
+function showWelcome(){
+	console.log("welcome to our website")
+}
+showWelcome()
+
+//2. with Arguments , without Return
+
+function showalert(message){
+	alert(message);
+}
+// showalert("im varun")
+
+//3. without arguments with return
+
+
+function getCurrentDate(){
+	let today=new Date();
+	return today.toDateString()
+}
+let date=getCurrentDate();
+console.log("today is ", date)
+
+//4. with arguments, with return
+function calculateDiscount(price,discountpercent){
+	let discount=(price*discountpercent)/100;
+	return price-discount;
+}
+
+let finalPrice=calculateDiscount(100,20)
+console.log(finalPrice)
+
+
+
+
+
+
+
+
+
+

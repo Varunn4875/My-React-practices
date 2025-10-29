@@ -134,6 +134,29 @@ entry.forEach(entri =>{
 	console.log(`${entri[0]} - ${entri[1]}`);
 })
 
+let address={"street":"church-corner","city":"karur"}
+
+const entries=Object.entries(address)
+console.log(entries)
+
+
+for(let [key ,value] of entries){
+	console.log(`${key} : ${value}`)
+}
+
+entries.forEach( obj =>{
+	console.log(`${obj[0]} : ${obj[1]}`)
+})
+
+for(i=0; i<entries.length;i++){
+	console.log(entries)
+}
+
+//An array of the given object's own enumerable string-keyed property key-value pairs.
+// Each key-value pair is an array with two elements: 
+//the first element is the property key (which is always a string), 
+//and the second element is the property value.
+
 
 
 
