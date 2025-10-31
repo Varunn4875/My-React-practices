@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>countdowntimer</title>
+</head>
+
+<body>
+	<h1 id="demo"></h1>
+	<p id="demo2"></p>
+	<button onclick="toggleTimer()">Pause</button>
+
+	<script>        
+        let min = 1;
+        let sec = 10;
+        let timer = null;
+        let isPaused = false;
+        document.getElementById("demo").innerHTML = ` ${min}: ${sec}`
+
+        function runTimer(){
+        	sec--;
+            document.getElementById("demo").innerHTML = ` ${min}: ${sec}`
+	            if(sec===0)
+	        {
+	            sec = 5;
+	            min --;
+	        }
+	        if (min<0){
+	        	clearInterval(timer)
+	        	document.getElementById("demo2").innerHTML = ` Time Up`
+	        }
+        }
+        timer = setInterval(runTimer, 1000);
+
+       function toggleTimer() {
+  if (!isPaused) {
+    clearInterval(timer);
+    isPaused = true;
+    document.querySelector("button").textContent = "Resume";
+  } else  {
+    timer = setInterval(runTimer, 1000);
+    isPaused = false;
+    document.querySelector("button").textContent = "Pause";
+  }
+}
+
+function process(a,b,callback){
+	return callback(a,b)
+}
+console.log(process(3,4,(x,y)=>x+y))
+
+
+	</script>
+
+</body>
+</html>

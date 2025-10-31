@@ -40,6 +40,8 @@ for(let i=0; i<=N; i++){
 }
 console.log(a)
 
+
+//find largest number in array
 let arr=[]
 // console.log(arr.reduce((a,b)=>a+b))
 // let sum=a[0]

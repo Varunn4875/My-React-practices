@@ -1,0 +1,913 @@
+1. Structure
+
+1. Which tag is used to include JavaScript in HTML?
+a) <java> b) <js> c) <script> d) <code>
+
+2. Where should JavaScript code be placed in an HTML file?
+a) Only in <body> b) Only in <head> c) In <head> or <body> d) Outside HTML
+
+3. Which file extension is used for JavaScript files?
+a) .jav b) .js c) .jvs d) .jsx
+
+4. Which attribute of <script> is used to link external JS?
+a) src b) href c) link d) type
+
+5. Which symbol starts a comment in JS?
+a) // b) # c) <!-- d) \\
+
+2. Variables
+
+6. Which keyword declares a variable in JS?
+a) var b) let c) const d) All of these
+
+7. Which keyword allows reassignment but not redeclaration?
+a) var b) let c) const d) None
+
+8. Which variable is block scoped?
+a) var b) let c) global d) none
+
+9. Which variable type cannot be reassigned?
+a) var b) const c) let d) undefined
+
+10. What is the default value of an uninitialized variable?
+a) null b) undefined c) 0 d) NaN
+
+3. Data Types
+
+11. Which of the following is NOT a JS data type?
+a) string b) number c) float d) boolean
+
+12. What type is returned by typeof null?
+a) null b) object c) undefined d) number
+
+13. Which is a primitive data type?
+a) Array b) Object c) String d) Function
+
+14. What is typeof []?
+a) array b) object c) list d) undefined
+
+15. Which data type holds multiple values in ordered form?
+a) Object b) Array c) String d) Map
+
+4. Nullish Coalescing
+
+16. The operator ?? returns:
+a) First truthy value b) First defined value c) Last null value d) Always true
+
+17. What is null ?? "Hello"?
+a) Hello b) null c) undefined d) Error
+
+18. What is undefined ?? 20?
+a) undefined b) 20 c) Error d) null
+
+19. Which operator is similar but checks falsy values?
+a) || b) && c) ?? d) !=
+
+20. Which of these returns 0 for null ?? 0?
+a) true b) false c) 0 d) undefined
+
+5. Comparison
+
+21. Which operator checks both value and type?
+a) == b) === c) != d) =
+
+22. 5 == "5" returns?
+a) true b) false c) error d) undefined
+
+23. 5 === "5" returns?
+a) true b) false c) null d) error
+
+24. null == undefined gives?
+a) true b) false c) error d) NaN
+
+25. NaN == NaN is?
+a) true b) false c) error d) null
+
+6. Operators
+
+26. Which is the assignment operator?
+a) = b) == c) === d) :=
+
+27. Which is the modulus operator?
+a) % b) / c) * d) ^
+
+28. Which operator increments value by one?
+a) + b) ++ c) += d) =+
+
+29. What does a += 5 mean?
+a) a = a + 5 b) a = 5 c) a = +5 d) Error
+
+30. Which operator checks if both conditions are true?
+a) && b) || c) ?? d) !
+
+7. String Functions
+
+31. "Hello".length returns?
+a) 4 b) 5 c) 6 d) Error
+
+32. "hello".toUpperCase() gives?
+a) Hello b) HELLO c) hello d) Error
+
+33. "WORLD".toLowerCase() gives?
+a) World b) world c) WORLD d) Error
+
+34. "abc".includes("b") returns?
+a) true b) false c) null d) undefined
+
+35. "Hi".concat("There") returns?
+a) Hi There b) HiThere c) Error d) undefined
+
+8. Math Functions
+
+36. Math.round(4.7) returns?
+a) 4 b) 5 c) 4.7 d) 7
+
+37. Math.floor(4.9) returns?
+a) 4 b) 5 c) 9 d) 0
+
+38. Math.ceil(4.1) returns?
+a) 4 b) 5 c) 1 d) 0
+
+39. Math.max(2,5,1) returns?
+a) 1 b) 2 c) 5 d) undefined
+
+40. Math.random() returns value between:
+a) 0 to 1 b) 1 to 10 c) -1 to 1 d) 0 to 100
+
+9. Array Functions
+
+41. Which adds item to end of array?
+a) push() b) pop() c) shift() d) unshift()
+
+42. Which removes last element?
+a) pop() b) push() c) slice() d) filter()
+
+43. Which method joins elements into a string?
+a) join() b) concat() c) map() d) reduce()
+
+44. Which creates a new array with filtered items?
+a) find() b) filter() c) map() d) some()
+
+45. Which executes a function for each array element?
+a) forEach() b) map() c) filter() d) reduce()
+
+10. Control Statements 
+
+46. Which keyword starts a conditional block?
+a) when b) if c) switch d) case
+
+47. Which keyword is used to exit a loop?
+a) stop b) exit c) break d) end
+
+48. Which statement skips one iteration?
+a) break b) skip c) continue d) pass
+
+49. switch statements use which keyword for matching?
+a) compare b) case c) if d) match
+
+50. The default block in switch runs when?
+a) first case matches b) no case matches c) always d) never
+
+11. Template Strings
+
+51. Template strings use which symbol?
+a) ' ' b) " " c)  d) ~ ~
+
+52. Inside template strings, variables are written as?
+a) ${var} b) (var) c) [var] d) {var}
+
+53. What is ${5+5} in a template literal?
+a) "5+5" b) 10 c) undefined d) null
+
+54. Template strings support:
+a) Multiline b) Variable substitution c) Both d) None
+
+55. Template literals introduced in:
+a) ES5 b) ES6 c) ES7 d) ES4
+
+12. Looping + String Functions
+
+56. for loop requires:
+a) Initialization b) Condition c) Increment d) All
+
+57. for...of is used for:
+a) Objects b) Strings/Arrays c) Numbers d) Classes
+
+58. "Hello".charAt(1) gives?
+a) H b) e c) l d) o
+
+59. "abc".repeat(2) gives?
+a) abcabc b) abc c) aabbcc d) Error
+
+60. "test".indexOf("e") returns?
+a) 0 b) 1 c) 2 d) -1
+
+13. Primitive & Reference
+
+61. Which is a primitive type?
+a) String b) Array c) Object d) Function
+
+62. Objects are stored in:
+a) Stack b) Heap c) Queue d) Register
+
+63. Primitive values are compared by:
+a) Reference b) Value c) Type d) Address
+
+64. Reference types store:
+a) Actual value b) Memory address c) Both d) None
+
+65. Which is a reference type?
+a) Number b) String c) Object d) Boolean
+
+14. Object Clone
+
+66. Which creates shallow copy?
+a) Object.assign({}, obj) b) = operator c) clone() d) spread()
+
+67. Which spread operator clones object?
+a) {...obj} b) ...obj c) clone(obj) d) copy(obj)
+
+68. Cloning means:
+a) Copying by reference b) Copying by value c) Both d) None
+
+69. Deep clone copies:
+a) Only top-level b) Nested objects too c) Keys only d) Methods
+
+70. JSON cloning is done by:
+a) JSON.parse(JSON.stringify(obj)) b) Object.copy(obj) c) obj.clone() d) None
+
+15. Destructuring
+
+71. Array destructuring syntax:
+a) {a,b} b) [a,b] c) (a,b) d) <a,b>
+
+72. Object destructuring uses:
+a) {} b) [] c) () d) <>
+
+73. const [x,y] = [1,2] gives x=?
+a) 1 b) 2 c) undefined d) null
+
+74. const {a,b} = {a:10,b:20} gives b=?
+a) 10 b) 20 c) undefined d) null
+
+75. Destructuring introduced in:
+a) ES5 b) ES6 c) ES7 d) ES4
+
+16. Object Literals
+
+76. Object literal syntax starts with:
+a) {} b) [] c) () d) <>
+
+77. Key and value are separated by:
+a) , b) = c) : d) ->
+
+78. Property shorthand allows:
+a) Using variable name directly b) Skipping braces c) Omitting semicolon d) None
+
+79. Computed property syntax:
+a) { [key]: value } b) { key = value } c) [key:value] d) { key->value }
+
+80. Object literal introduced in:
+a) ES3 b) ES5 c) ES6 d) ES7
+
+17. Notation (Dot, Bracket)
+
+81. Dot notation example:
+a) obj.key b) obj["key"] c) obj(key) d) obj{key}
+
+82. Bracket notation is useful when key is:
+a) String with spaces b) Fixed name c) Number d) None
+
+83. person["name"] equals:
+a) person.name b) person("name") c) person.name() d) person{“name”}
+
+84. Which allows dynamic property access?
+a) Dot b) Bracket c) Both d) None
+
+85. obj.123 is invalid, use:
+a) obj["123"] b) obj.123 c) obj(123) d) obj{123}
+
+18. Iterating Objects
+
+86. Which loop iterates object keys?
+a) for...in b) for...of c) while d) forEach
+
+87. Object.keys(obj) returns?
+a) Keys array b) Values array c) Object d) None
+
+88. Object.values(obj) returns?
+a) Keys b) Values c) Both d) None
+
+89. Object.entries(obj) returns?
+a) [[key,value]] b) [key,value] c) {} d) undefined
+
+90. for...of works with:
+a) Arrays b) Objects c) Both d) None
+
+19. Scope (Block, Function)
+
+91. Block scope variables are declared with:
+a) var b) let c) const d) both b and c
+
+92. Function scope variable uses:
+a) var b) let c) const d) None
+
+93. Variable inside {} block is accessible:
+a) Inside block b) Outside block c) Anywhere d) None
+
+94. Function scope variable resets:
+a) Each call b) Once c) Never d) Constant
+
+95. Global variable declared:
+a) Outside all functions b) Inside function c) In loop d) None
+
+96.1. Structure
+
+1. Which tag is used to include JavaScript in HTML?
+a) <java> b) <js> c) <script> d) <code>
+
+2. Where should JavaScript code be placed in an HTML file?
+a) Only in <body> b) Only in <head> c) In <head> or <body> d) Outside HTML
+
+3. Which file extension is used for JavaScript files?
+a) .jav b) .js c) .jvs d) .jsx
+
+4. Which attribute of <script> is used to link external JS?
+a) src b) href c) link d) type
+
+5. Which symbol starts a comment in JS?
+a) // b) # c) <!-- d) \\
+
+2. Variables
+
+6. Which keyword declares a variable in JS?
+a) var b) let c) const d) All of these
+
+7. Which keyword allows reassignment but not redeclaration?
+a) var b) let c) const d) None
+
+8. Which variable is block scoped?
+a) var b) let c) global d) none
+
+9. Which variable type cannot be reassigned?
+a) var b) const c) let d) undefined
+
+10. What is the default value of an uninitialized variable?
+a) null b) undefined c) 0 d) NaN
+
+3. Data Types
+
+11. Which of the following is NOT a JS data type?
+a) string b) number c) float d) boolean
+
+12. What type is returned by typeof null?
+a) null b) object c) undefined d) number
+
+13. Which is a primitive data type?
+a) Array b) Object c) String d) Function
+
+14. What is typeof []?
+a) array b) object c) list d) undefined
+
+15. Which data type holds multiple values in ordered form?
+a) Object b) Array c) String d) Map
+
+4. Nullish Coalescing
+
+16. The operator ?? returns:
+a) First truthy value b) First defined value c) Last null value d) Always true
+
+17. What is null ?? "Hello"?
+a) Hello b) null c) undefined d) Error
+
+18. What is undefined ?? 20?
+a) undefined b) 20 c) Error d) null
+
+19. Which operator is similar but checks falsy values?
+a) || b) && c) ?? d) !=
+
+20. Which of these returns 0 for null ?? 0?
+a) true b) false c) 0 d) undefined
+
+5. Comparison
+
+21. Which operator checks both value and type?
+a) == b) === c) != d) =
+
+22. 5 == "5" returns?
+a) true b) false c) error d) undefined
+
+23. 5 === "5" returns?
+a) true b) false c) null d) error
+
+24. null == undefined gives?
+a) true b) false c) error d) NaN
+
+25. NaN == NaN is?
+a) true b) false c) error d) null
+
+6. Operators
+
+26. Which is the assignment operator?
+a) = b) == c) === d) :=
+
+27. Which is the modulus operator?
+a) % b) / c) * d) ^
+
+28. Which operator increments value by one?
+a) + b) ++ c) += d) =+
+
+29. What does a += 5 mean?
+a) a = a + 5 b) a = 5 c) a = +5 d) Error
+
+30. Which operator checks if both conditions are true?
+a) && b) || c) ?? d) !
+
+7. String Functions
+
+31. "Hello".length returns?
+a) 4 b) 5 c) 6 d) Error
+
+32. "hello".toUpperCase() gives?
+a) Hello b) HELLO c) hello d) Error
+
+33. "WORLD".toLowerCase() gives?
+a) World b) world c) WORLD d) Error
+
+34. "abc".includes("b") returns?
+a) true b) false c) null d) undefined
+
+35. "Hi".concat("There") returns?
+a) Hi There b) HiThere c) Error d) undefined
+
+8. Math Functions
+
+36. Math.round(4.7) returns?
+a) 4 b) 5 c) 4.7 d) 7
+
+37. Math.floor(4.9) returns?
+a) 4 b) 5 c) 9 d) 0
+
+38. Math.ceil(4.1) returns?
+a) 4 b) 5 c) 1 d) 0
+
+39. Math.max(2,5,1) returns?
+a) 1 b) 2 c) 5 d) undefined
+
+40. Math.random() returns value between:
+a) 0 to 1 b) 1 to 10 c) -1 to 1 d) 0 to 100
+
+9. Array Functions
+
+41. Which adds item to end of array?
+a) push() b) pop() c) shift() d) unshift()
+
+42. Which removes last element?
+a) pop() b) push() c) slice() d) filter()
+
+43. Which method joins elements into a string?
+a) join() b) concat() c) map() d) reduce()
+
+44. Which creates a new array with filtered items?
+a) find() b) filter() c) map() d) some()
+
+45. Which executes a function for each array element?
+a) forEach() b) map() c) filter() d) reduce()
+
+10. Control Statements 
+
+46. Which keyword starts a conditional block?
+a) when b) if c) switch d) case
+
+47. Which keyword is used to exit a loop?
+a) stop b) exit c) break d) end
+
+48. Which statement skips one iteration?
+a) break b) skip c) continue d) pass
+
+49. switch statements use which keyword for matching?
+a) compare b) case c) if d) match
+
+50. The default block in switch runs when?
+a) first case matches b) no case matches c) always d) never
+
+11. Template Strings
+
+51. Template strings use which symbol?
+a) ' ' b) " " c)  d) ~ ~
+
+52. Inside template strings, variables are written as?
+a) ${var} b) (var) c) [var] d) {var}
+
+53. What is ${5+5} in a template literal?
+a) "5+5" b) 10 c) undefined d) null
+
+54. Template strings support:
+a) Multiline b) Variable substitution c) Both d) None
+
+55. Template literals introduced in:
+a) ES5 b) ES6 c) ES7 d) ES4
+
+12. Looping + String Functions
+
+56. for loop requires:
+a) Initialization b) Condition c) Increment d) All
+
+57. for...of is used for:
+a) Objects b) Strings/Arrays c) Numbers d) Classes
+
+58. "Hello".charAt(1) gives?
+a) H b) e c) l d) o
+
+59. "abc".repeat(2) gives?
+a) abcabc b) abc c) aabbcc d) Error
+
+60. "test".indexOf("e") returns?
+a) 0 b) 1 c) 2 d) -1
+
+13. Primitive & Reference
+
+61. Which is a primitive type?
+a) String b) Array c) Object d) Function
+
+62. Objects are stored in:
+a) Stack b) Heap c) Queue d) Register
+
+63. Primitive values are compared by:
+a) Reference b) Value c) Type d) Address
+
+64. Reference types store:
+a) Actual value b) Memory address c) Both d) None
+
+65. Which is a reference type?
+a) Number b) String c) Object d) Boolean
+
+14. Object Clone
+
+66. Which creates shallow copy?
+a) Object.assign({}, obj) b) = operator c) clone() d) spread()
+
+67. Which spread operator clones object?
+a) {...obj} b) ...obj c) clone(obj) d) copy(obj)
+
+68. Cloning means:
+a) Copying by reference b) Copying by value c) Both d) None
+
+69. Deep clone copies:
+a) Only top-level b) Nested objects too c) Keys only d) Methods
+
+70. JSON cloning is done by:
+a) JSON.parse(JSON.stringify(obj)) b) Object.copy(obj) c) obj.clone() d) None
+
+15. Destructuring
+
+71. Array destructuring syntax:
+a) {a,b} b) [a,b] c) (a,b) d) <a,b>
+
+72. Object destructuring uses:
+a) {} b) [] c) () d) <>
+
+73. const [x,y] = [1,2] gives x=?
+a) 1 b) 2 c) undefined d) null
+
+74. const {a,b} = {a:10,b:20} gives b=?
+a) 10 b) 20 c) undefined d) null
+
+75. Destructuring introduced in:
+a) ES5 b) ES6 c) ES7 d) ES4
+
+16. Object Literals
+
+76. Object literal syntax starts with:
+a) {} b) [] c) () d) <>
+
+77. Key and value are separated by:
+a) , b) = c) : d) ->
+
+78. Property shorthand allows:
+a) Using variable name directly b) Skipping braces c) Omitting semicolon d) None
+
+79. Computed property syntax:
+a) { [key]: value } b) { key = value } c) [key:value] d) { key->value }
+
+80. Object literal introduced in:
+a) ES3 b) ES5 c) ES6 d) ES7
+
+17. Notation (Dot, Bracket)
+
+81. Dot notation example:
+a) obj.key b) obj["key"] c) obj(key) d) obj{key}
+
+82. Bracket notation is useful when key is:
+a) String with spaces b) Fixed name c) Number d) None
+
+83. person["name"] equals:
+a) person.name b) person("name") c) person.name() d) person{“name”}
+
+84. Which allows dynamic property access?
+a) Dot b) Bracket c) Both d) None
+
+85. obj.123 is invalid, use:
+a) obj["123"] b) obj.123 c) obj(123) d) obj{123}
+
+18. Iterating Objects
+
+86. Which loop iterates object keys?
+a) for...in b) for...of c) while d) forEach
+
+87. Object.keys(obj) returns?
+a) Keys array b) Values array c) Object d) None
+
+88. Object.values(obj) returns?
+a) Keys b) Values c) Both d) None
+
+89. Object.entries(obj) returns?
+a) [[key,value]] b) [key,value] c) {} d) undefined
+
+90. for...of works with:
+a) Arrays b) Objects c) Both d) None
+
+19. Scope (Block, Function)
+
+91. Block scope variables are declared with:
+a) var b) let c) const d) both b and c
+
+92. Function scope variable uses:
+a) var b) let c) const d) None
+
+93. Variable inside {} block is accessible:
+a) Inside block b) Outside block c) Anywhere d) None
+
+94. Function scope variable resets:
+a) Each call b) Once c) Never d) Constant
+
+95. Global variable declared:
+a) Outside all functions b) Inside function c) In loop d) None
+
+96. Lexical scope means:
+a) Variable accessed where declared b) Anywhere c) Runtime only d) None
+
+97. Redeclaring let in same block causes:
+a) Error b) Works fine c) Warning d) Ignores
+
+98. const must be:
+a) Initialized b) Optional c) Ignored d) Later declared
+
+99. Function scope variable accessible using:
+a) var b) let c) const d) static
+
+100. Block scope was introduced in:
+a) ES3 b) ES5 c) ES6 d) ES7
+
+97. Redeclaring let in same block causes:
+a) Error b) Works fine c) Warning d) Ignores
+
+98. const must be:
+a) Initialized b) Optional c) Ignored d) Later declared
+
+99. Function scope variable accessible using:
+a) var b) let c) const d) static
+
+100. Block scope was introduced in:
+a) ES3 b) ES5 c) ES6 d) ES7
+
+
+//ANSWERS
+
+1. Structure
+
+c) <script> — HTML uses <script> to include JS.
+
+c) In <head> or <body> — scripts can be placed in either; placement affects when they run.
+
+b) .js — standard JS file extension is .js.
+
+a) src — <script src="file.js"> links an external file.
+
+a) // — single-line comments start with // (multi-line use /* ... */).
+
+2. Variables
+
+d) All of these — var, let, and const all declare variables (with different behavior).
+
+b) let — let allows reassignment but not redeclaration in the same scope.
+
+b) let — let (and const) are block-scoped; var is function-scoped.
+
+b) const — const cannot be reassigned (must be initialized).
+
+b) undefined — an uninitialized variable has the value undefined.
+
+3. Data Types
+
+c) float — JavaScript has number (no separate float type).
+
+b) object — typeof null is a historical quirk and returns "object".
+
+c) String — String (primitive string) is a primitive; Array/Object/Function are reference types (well, Array is an object).
+
+b) object — typeof [] returns "object" (arrays are objects).
+
+b) Array — Arrays hold multiple ordered values.
+
+4. Nullish Coalescing
+
+b) First defined value — x ?? y returns the first operand that's not null or undefined.
+
+a) Hello — null ?? "Hello" -> "Hello" because null is considered nullish.
+
+b) 20 — undefined ?? 20 -> 20.
+
+a) || — the || operator returns the first truthy value (checks falsy), not nullish only.
+
+c) 0 — null ?? 0 evaluates to 0. (The ?? returns the right side if left is nullish — here null is nullish.)
+
+5. Comparison
+
+b) === — strict equality === checks value and type.
+
+a) true — 5 == "5" is true because == coerces types.
+
+b) false — 5 === "5" is false because types differ.
+
+a) true — null == undefined is true (special loose-equality rule).
+
+b) false — NaN == NaN is false; NaN is not equal to itself.
+
+6. Operators
+
+a) = — = is the assignment operator.
+
+a) % — % is modulus (remainder).
+
+b) ++ — ++ increments by one.
+
+a) a = a + 5 — a += 5 adds 5 to a.
+
+a) && — && is logical AND, true when both conditions are true.
+
+7. String Functions
+
+b) 5 — "Hello".length is 5.
+
+b) HELLO — "hello".toUpperCase() -> "HELLO".
+
+b) world — "WORLD".toLowerCase() -> "world".
+
+a) true — "abc".includes("b") returns true.
+
+b) HiThere — "Hi".concat("There") -> "HiThere" (no automatic space).
+
+8. Math Functions
+
+b) 5 — Math.round(4.7) rounds to the nearest integer: 5.
+
+a) 4 — Math.floor(4.9) -> 4 (largest integer ≤ value).
+
+b) 5 — Math.ceil(4.1) -> 5 (smallest integer ≥ value).
+
+c) 5 — Math.max(2,5,1) -> 5.
+
+a) 0 to 1 — Math.random() returns a number in the range [0, 1).
+
+9. Array Functions
+
+a) push() — push() adds item(s) to the array end.
+
+a) pop() — pop() removes the last element and returns it.
+
+a) join() — join() concatenates array elements into a string.
+
+b) filter() — filter() creates a new array with items that pass a test.
+
+a) forEach() — forEach() executes a function for each element (no return).
+
+10. Control Statements
+
+b) if — if starts a conditional block.
+
+c) break — break exits loops (or switch).
+
+c) continue — continue skips to the next iteration.
+
+b) case — switch uses case labels for matching.
+
+b) no case matches — default runs when no case matches.
+
+11. Template Strings
+
+**c) (backtick)** — template strings use backticks `` `` (option c).
+
+a) ${var} — ${...} embeds expressions inside template literals.
+
+b) 10 — ${5+5} evaluates the expression and results in 10.
+
+c) Both — template strings support multiline text and variable substitution.
+
+b) ES6 — template literals were introduced in ES6 (ES2015).
+
+12. Looping + String Functions
+
+d) All — a for loop normally has initialization, condition, and increment.
+
+b) Strings/Arrays — for...of iterates over iterables like arrays and strings.
+
+b) e — "Hello".charAt(1) returns 'e' (0-based index).
+
+a) abcabc — "abc".repeat(2) -> "abcabc".
+
+b) 1 — "test".indexOf("e") returns 1 (first occurrence index).
+
+13. Primitive & Reference
+
+a) String — string is a primitive type.
+
+b) Heap — objects are stored on the heap (references on the stack).
+
+b) Value — primitives are compared by value.
+
+b) Memory address — reference types store a reference (address) to the value.
+
+c) Object — object is a reference type.
+
+14. Object Clone
+
+a) Object.assign({}, obj) — Object.assign({}, obj) creates a shallow copy.
+
+a) {...obj} — the spread {...obj} copies enumerable own properties (shallow).
+
+b) Copying by value — "cloning" usually means making a copy (value copy) rather than referencing the same object; note shallow vs deep nuance.
+
+b) Nested objects too — deep clone copies nested objects as well (not just top-level).
+
+a) JSON.parse(JSON.stringify(obj)) — common pattern for deep cloning plain-data objects (with caveats for functions, Dates, undefined, etc.).
+
+15. Destructuring
+
+b) [a,b] — array destructuring uses square brackets [...].
+
+a) {} — object destructuring uses curly braces {...}.
+
+a) 1 — const [x,y] = [1,2] gives x = 1.
+
+b) 20 — const {a,b} = {a:10,b:20} gives b = 20.
+
+b) ES6 — destructuring was introduced in ES6.
+
+16. Object Literals
+
+a) {} — object literal starts with {}.
+
+c) : — key and value are separated by a colon :.
+
+a) Using variable name directly — property shorthand lets you write {x} instead of {x: x}.
+
+a) { [key]: value } — computed property names use bracket syntax inside the literal.
+
+a) ES3 — basic object literal syntax existed long before ES5/6 (object literals date back early JS versions).
+
+17. Notation (Dot, Bracket)
+
+a) obj.key — dot notation example: obj.key.
+
+a) String with spaces — bracket notation obj["some key"] is necessary for keys with spaces or special chars.
+
+a) person.name — person["name"] is equivalent to person.name.
+
+b) Bracket — bracket notation allows dynamic property access (e.g., obj[varName]).
+
+a) obj["123"] — numeric-starting or numeric-like keys must be accessed via [], e.g., obj["123"].
+
+18. Iterating Objects
+
+a) for...in — for...in iterates object keys (enumerable properties).
+
+a) Keys array — Object.keys(obj) returns an array of keys.
+
+b) Values — Object.values(obj) returns an array of values.
+
+a) [[key,value]] — Object.entries(obj) returns an array of [key, value] pairs.
+
+a) Arrays — for...of works with iterables like arrays and strings (not plain objects).
+
+19. Scope (Block, Function)
+
+d) both b and c — block scope variables use let and const.
+
+a) var — var declares function-scoped variables (traditional function scope).
+
+a) Inside block — a variable declared inside {} with let/const is accessible only inside that block.
+
+a) Each call — function-scoped variables are re-created each function call (they have a fresh environment).
+
+a) Outside all functions — global variables are declared in the global scope (outside functions).
+
+a) Variable accessed where declared — lexical scope means scope is determined by source code structure (where declared), not runtime.
+
+a) Error — redeclaring let in the same block throws a SyntaxError.
+
+a) Initialized — const must be initialized at declaration.
+
+a) var — historically function scope is associated with var. (let/const are block-scoped.)
+
+c) ES6 — block scope (let/const) was standardized with ES6 (ES2015).

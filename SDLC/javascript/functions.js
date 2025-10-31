@@ -207,8 +207,101 @@ console.log(finalPrice)
 
 
 
+//-----------------------------------------------------------------------
+
+//types of arguments
+//1. fixed(positional)arguments
+//2.default arguments
+//3.rest arguments
+//4.arbitrary arguments
+//5.named arguments using objects
+//6.callback as argument
+//7.spread arguments
 
 
+//1. fixed(positional)arguments
+function fixed(name,age){
+	console.log("hey" +" "+name,age)
+}
+fixed("varun",22)
+
+//2.default arguments
+function efault(name="varun"){
+	console.log(name)
+}
+efault("sasi")
+
+//3.rest arguments
+
+function sum(...numbers){
+	return numbers.reduce((a,b)=>a+b)
+}
+console.log(sum(10,23,454,65,6,76,7))
+
+//4.arbitrary arguments
+
+function showArgs(){
+	for(let i=0; i<arguments.length; i++){
+		console.log(arguments[i])
+	}
+}
+showArgs("hello",100,true,false)
+
+//arguments is an array -like object available inside regular functions(not in arrow functions)
+
+
+//5.Named Arguments using object
+//use object destr to mimic named arguments 
+
+function createUser({name,age,city}){
+	console.log(name,age,city)
+}
+createUser({"name":"varun","age":22,"city":"chennai"})
+
+
+//6. callback as argument
+function process(a,b,callback){
+	return callback(a,b);
+}
+console.log(process(2,3,(x,y)=>x+y));
+
+//7. spread argument
+//spread is used to pass elements of an array as separate arguments
+function add(a,b,c){
+	return a+b+c;
+}
+let nums=[19,234,545]
+console.log(add(...nums))
+
+let a=[7896]
+let N=130;
+
+for(let i=0; i<=N; i++){
+	a.push(i)
+}
+console.log(a)
+let arr=[]
+let lrg=0
+// let sum=0
+for(let i=0; i<a.length; i++){
+
+	// if(lrg < a[i]){
+	// 	lrg=a[i]
+	// }
+	lrg=lrg+a[i]
+	
+
+
+	 // sum=sum+a[i] // to add
+
+	// if(a[i] % 2 === 0){
+	// 	// sum=sum+a[i]
+	// 	arr.push(a[i])
+
+	// }
+}
+console.log(lrg)
+console.log(a.reduce((a,b)=>a+b))
 
 
 

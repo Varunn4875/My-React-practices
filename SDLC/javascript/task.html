@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+</head>
+<body>
+	<h1 id="demo"></h1>
+	<script>
+		(function greet(message){
+			document.getElementById("demo").innerHTML=message
+		})("hey varun")
+
+			function alarm(msg){
+				alert(msg)
+			}
+			alarm("you must login first")
+
+			function showDiscount(price, pricediscount){
+				let discount=(price*pricediscount)/100;
+				return price-discount;
+			}
+			let finalPrice=showDiscount(1000,20);
+			console.log(finalPrice)
+let n = 5
+			for(i=1; i<=n; i++){ //(i=n; i>=1; i--) for inverted
+	let line='' //resets the line to empty string
+for(j=1; j<=i; j++){	
+	line += j +' '
+}
+console.log(line)
+ }
+	</script>
+
+</body>
+</html>
