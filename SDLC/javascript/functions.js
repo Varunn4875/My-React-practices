@@ -169,6 +169,8 @@ function candidate(name,age){
 }
 const c1=new candidate("varun",23);
 console.log(c1.name)
+const c2=new candidate("sasi",23);
+console.log(c2.name)
 
 //Four types of User Defined functions
 
