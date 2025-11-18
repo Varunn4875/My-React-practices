@@ -102,6 +102,88 @@
 // }finally{
 // 	alert("Your calculator operation compleeed")
 // }
-let random=JSON.stringify(Date.now())
-console.log(random.charAt(12))
+// let random=JSON.stringify(Date.now())
+// console.log(random.charAt(12))
 
+// let str = prompt("Enter a string:");
+// let rev = str.split('').reverse().join('')
+// if (str === rev)
+//   console.log("Palindrome");
+// else
+//   console.log("Not Palindrome");
+
+// let n = parseInt(prompt("Enter the number of terms:"));
+// let n1 = 0, n2 = 1, nextTerm;
+
+// if (isNaN(n) || n <= 0) {
+//   alert("Please enter a valid positive number!");
+// } else {
+//   let series = "";
+
+//   for (let i = 1; i <= n; i++) {
+//     series += n1 + " ";
+//     nextTerm = n1 + n2;
+//     n1 = n2;
+//     n2 = nextTerm;
+//   }
+//   console.log("Fibonacci Series:", series);
+// }
+
+// let n = parseInt(prompt("Enter number of terms:"));
+// let a = 0, b = 1;
+// console.log(a);
+// console.log(b);
+// for (let i = 2; i < n; i++) {
+//   let c = a + b;
+//   console.log(c);
+//   a = b;
+//   b = c;
+// }
+
+//loops
+let seconds=5
+
+// do{
+//   console.log(`${seconds}`)
+//   seconds++;
+// }while(seconds <5)
+
+// while(seconds <5){
+//   console.log(`${seconds}`)
+//   seconds++
+// }
+
+//for-loop
+
+// for(let i=0; i<=seconds;i++){
+//   console.log(i)
+// }
+
+//nested-for loop
+
+// for(let i=1; i<=5;i++){
+
+//   for(let j=1;j<=5;j++ ){
+//     console.log(i,j)
+//   }
+// }
+
+// let forarr=['apple','orange','banana']
+
+// for (let items of forarr){
+//   console.log(items)
+// }
+
+// for(let i=0; i<forarr.length;i++){
+//   console.log(forarr[i])
+// }
+
+let obj={"name":"varun","age":21,"city":"tmalai"}
+
+// for(let values in obj){
+//   console.log(`${values} : ${obj[values]}`)
+// }
+
+// for(let [key,value] of Object.entries(obj)){
+//   console.log(`${key} : ${value}`)
+// }
