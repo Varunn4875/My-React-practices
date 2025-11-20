@@ -15,7 +15,7 @@ console.log(typeof(symb))
 let a=10
 let b=1000
 let c=a
-a=20
+a=20;
 console.log(a)
 console.log(c)
 

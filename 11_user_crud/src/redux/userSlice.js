@@ -49,20 +49,20 @@ import axios from "axios";
 const BASE_URL = import.meta.env.VITE_API_BASE_URL
 
 export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
-    const response = await axios.get(`${BASE_URL}/api/users/`)
+    const response = await axios.get(`/api/api/users`)
     return response.data
 })
 
 export const addUser = createAsyncThunk('users/addUser', async (user) => {
-    const response = await axios.post(`${BASE_URL}/api/users/`, user);
+    const response = await axios.post(`/api/api/users`, user);
     return response.data
 })
 export const removeUser = createAsyncThunk('users/removeUser', async (id) => {
-    await axios.delete(`${BASE_URL}/api/users/${id}`);
+    await axios.delete(`/api/api/users${id}`);
     return id
 })
 export const updateUser = createAsyncThunk('users/updateUser', async (user) => {
-    const response = await axios.put(`${BASE_URL}/api/users/${user.id}`, user); 
+    const response = await axios.put(`/api/api/users/${user.id}`, user); 
     return response.data;
     console.log(user);
     

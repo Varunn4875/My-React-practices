@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+</head>
+<body>
+	<h1 id="demo"></h1>
+	<script>
+// 		(function greet(message){
+// 			document.getElementById("demo").innerHTML=message
+// 		})("hey varun")
+
+// 			function alarm(msg){
+// 				alert(msg)
+// 			}
+// 			alarm("you must login first")
+
+// 			function showDiscount(price, pricediscount){
+// 				let discount=(price*pricediscount)/100;
+// 				return price-discount;
+// 			}
+// 			let finalPrice=showDiscount(1000,20);
+// 			console.log(finalPrice)
+// let n = 5
+// 			for(i=1; i<=n; i++){ //(i=n; i>=1; i--) for inverted
+// 	let line='' //resets the line to empty string
+// for(j=1; j<=i; j++){	
+// 	line += j +' '
+// }
+// console.log(line)
+//  }
+
+//1.palindrome checker
+// let str = prompt("Enter a string:");
+// let rev = str.split('').reverse().join('')
+// if (str === rev)
+//   console.log("Palindrome");
+// else
+//   console.log("Not Palindrome");
+
+
+//2.fibonacci series
+
+// let num=prompt("enter the number ")
+// let a=0;
+// let b=1;
+// console.log(a)
+// console.log(b)
+// for(let i=2; i<num; i++)
+// {
+// let c=a+b
+// console.log(c)
+// a=b;
+// b=c;
+// }
+
+
+//  3 & 4 sorting arrays without join
+
+let arr = [5, 2, 9, 1, 5, 6];
+
+for (let i = 0; i < arr.length; i++) {
+    for (let j = i+1 ; j < arr.length; j++) {
+    	// console.log(arr[i],arr[j])
+        if (arr[i] > arr[j]) {
+
+            let temp = arr[i] // temp=5
+            arr[i]=arr[j] //arr[i]=2
+            arr[j]=temp //arr[j]=5
+        }
+    }
+}
+console.log(arr);
+
+//5. prime numbers
+// let series=20
+// let c=2;
+// for(let i=2; i<series;i++){
+// 	if(( 1 * i === i && i%2 !==0) && i * 1 === i ){
+// 		 c = i;
+// 	}
+// 	console.log(c)
+// }
+
+for (let i = 2; i <= 20; i++) { // start from 2, the first prime
+    let isPrime = true;          // assume i is prime
+
+    for (let j = 2; j <= Math.sqrt(i); j++) {
+        if (i % j === 0) {       // divisible by j → not prime
+            isPrime = false;
+            break;               // no need to check further
+        }
+    }
+    if (isPrime) {
+        console.log(i);          // print prime number
+    }
+}
+
+
+
+//6. sort using char.length
+let strarr=["the","php","python","java"]
+
+for (let i = 0; i < strarr.length; i++) {
+    for (let j = i+1; j < strarr.length; j++) {
+        if (strarr[i].length > strarr[j].length) {
+
+            let strtemp = strarr[i];
+            strarr[i] = strarr[j];
+            strarr[j] = strtemp;
+        }
+    }
+}
+console.log(strarr)
+
+
+//7.join two arrays
+let arr1=[1,2,3]
+let arr2=[13,12,14]
+let arr3=[]
+
+for(i=0; i<arr1.length;i++){
+	
+	for(j=0; j<arr2.length;j++){
+		arr3.push(arr1[i],arr2[j])
+	}
+
+}
+    console.log([...new Set(arr3)])
+
+
+    let str="success"
+    let found=null;
+
+    for(let i=0; i<str.length; i++){
+
+    	if(str.indexOf(str[i]) === str.lastIndexOf(str[i])){
+                found=str[i]
+                break;
+    	}
+    }
+    console.log(found)
+
+
+//6. Array joining without using join or concat
+    let a1=[23,45,67,89]
+    let a2=[356,78,9,87,654,3,2,45,67,]
+    let combined=[];
+
+    for(let items of a1){
+        combined.push(items)
+    }
+    for(let items of a2){
+        combined.push(items)
+    }
+    console.log(combined)
+
+
+
+let na1=[[2345,6,78,987,654,[23,46,56,767,67]],1, [2, [3, [4, [5]]]]]
+let flatarr=[];
+
+
+
+  
+let flatArr = [];
+
+function flatten(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (Array.isArray(array[i])) {
+      // if it's an array, call the same function again
+      flatten(array[i]);
+    } else {
+      // if it's not an array, push the value directly
+      flatArr.push(array[i]);
+    }
+  }
+}
+
+flatten(na1);
+console.log(flatArr); // [1, 2, 3, 4, 5, 6]
+
+
+//10. find a pair with a given sum 
+
+
+let pair = [
+  12, 7, 3, 19, 25, 10, 2, 8, 14, 5,
+  30, 17, 9, 21, 6, 13, 18, 1, 11, 4,
+  27, 15, 22, 28, 16, 20, 24, 26, 29, 23,
+  33, 31, 32, 35, 34, 36, 37, 38, 39, 40,
+  41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+];
+let target=20
+
+for(let i=0; i<pair.length;i++){
+    for(j=i; j<pair.length; j++){
+
+        if(pair[i]+pair[j]===target){
+            console.log(`pair found (${pair[i]}, ${pair[j]})`)
+        }
+    }
+} 
+
+</script>
+
+</body>
+</html>
