@@ -22,6 +22,44 @@ console.log(parsed);
 console.log(arr.splice(0,3))
 console.log(arr)
 
+let n=15
+
+for(let i=1; i<=n;i++){
+
+	let result=''
+
+	if(i===1){
+		console.log('*'.repeat(n))
+	}else if(i===n){
+		console.log('*'.repeat(n))
+	} else{
+		result+='*'+' '.repeat(n-2)+'*'
+		console.log(result)
+	}
+
+	
+}
+
+let n=5
+let m=10
+
+for(let i=1; i<=n; i++){
+
+	let result=""
+
+	for(let j=1; j<=m; j++){
+		if(i===1 || i===n || j===1 || j===m){
+			result+="*"
+			} else{
+				result+=" "
+			}
+		}
+	console.log(result)
+}
+
+
+
+
 
 
 
