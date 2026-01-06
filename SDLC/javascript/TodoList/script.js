@@ -19,7 +19,7 @@ button.addEventListener("click", ()=>{
 })
 
 function addTodo(todo){
-       let items=document.createElement(`li`)
+       let items=document.createElement(`p`)
        items.innerText=`${todo}`;
        console.log(items)
        todoli.appendChild(items)
