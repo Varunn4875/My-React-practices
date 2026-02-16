@@ -10,7 +10,7 @@ function App() {
   const incrementCount=()=>{
     dispatch({type: "INCREMENT"})
 
-  }
+  } 
 
   return (
     <>

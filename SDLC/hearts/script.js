@@ -39,10 +39,10 @@ class Heart {
   }
   reset() {
     this.x = Math.random() * canvas.width;
-    this.y = canvas.height + 20;
-    this.size = Math.random() * 20 + 20;
+    this.y = canvas.height + 25;
+    this.size = Math.random() * 25 + 25;
     this.speed = Math.random() * 2 + 2;
-    this.color = Math.random() > 0.5 ? 'blue' : 'white';
+    this.color = Math.random() > 0.5 ? 'hotpink' : 'white';
     this.angle = Math.random() * 2 * Math.PI;
     this.angularSpeed = (Math.random() - 0.5) * 0.02;
   }
