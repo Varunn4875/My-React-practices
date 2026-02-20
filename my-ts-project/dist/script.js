@@ -28,5 +28,20 @@ let pro1 = {
     name: "iphone",
 };
 console.log(pro1);
+let id;
+id = '123';
+id: 123;
+function printId(id) {
+    console.log("ID:", id);
+}
+printId(123);
+function updateStatus(status) {
+    console.log(status);
+}
+updateStatus("pending");
 export {};
+//Type narrowing is the process by 
+//which TypeScript reduces a broader type 
+// (like a union) into a more specific type
+//  based on runtime checks.
 //# sourceMappingURL=script.js.map

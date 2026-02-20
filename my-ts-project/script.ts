@@ -32,7 +32,9 @@ function welcome(name:string ="Guest"):string{
 
 console.log(welcome())
 
-//interface
+//interface   for objects
+
+//types for unions functions and advanced types
 
 interface users{
     name:string;
@@ -57,4 +59,36 @@ let pro1 : product = {
     
 }
 console.log(pro1)
+
+type admin = {
+    role:string;
+}
+
+type userDetails ={
+    name:string;
+}
+
+type Adminuser = admin & userDetails
+
+let id : string|number;
+
+id ='123';
+id:123;
+
+function printId(id:string|number){
+    console.log("ID:",id)
+}
+printId(123)
+
+type PaymentStatus = "pending" | "completed" | "failed";
+
+function updateStatus(status: PaymentStatus) {
+  console.log(status);
+}
+updateStatus("pending")
+
+//Type narrowing is the process by 
+//which TypeScript reduces a broader type 
+// (like a union) into a more specific type
+//  based on runtime checks.
 
