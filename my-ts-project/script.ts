@@ -186,6 +186,7 @@ console.log(size);
 type partialUser ={
     id:number,
     name:string,
+    email:string
 }
 type updatedUser =Partial<partialUser>
 
@@ -194,7 +195,8 @@ const updatedUser= (data:Partial<partialUser>) =>{
        return data.id
 
 }
-// updatedUser(1)
+// updatedUser(1,{name:"varun"})  -> here email becomes optional 
+//all the three becomes optionals we can either update or redeclare
 
 // 2. Required<t>
 // 3. Readonly<t>   cannot update the value
@@ -214,6 +216,83 @@ function printpublicuser(user:publicuser): void{
     console.log(user.id,user.name)
 }
 printpublicuser({id:1,name:"varun"})
+
+//5.Omit<T,K>
+type omitUser ={
+    id:number,
+    name:string,
+    password:string
+}
+
+type SafeUser = Omit<omitUser, "password">
+
+//common in API responses 
+//Auth systems 
+//DTO shaping 
+
+//6. Record<K,T>
+
+//create object types dynamically
+
+type Roles = "admin" | "user"|"guest"
+
+type RolePermissions = Record<Roles, string[]>
+
+//config maps 
+//feature flags
+//permission systems
+//enums mapping
+
+
+//7. Exclude<T,U>  remove some values
+
+type ExcludeRole ="admin" |"user"|"guest"
+
+type NonAdmin =Exclude<ExcludeRole, "admin">
+
+//result   "user" |"guest"
+
+
+//Extract<T,U>
+
+type ExtractRole = "admin" |"user"|"guest"
+
+type AdminOnly =Extract<ExtractRole , "admin"|"manager">
+
+//result   "admin"
+
+// 9 NonNullable<T>
+//remove null | undefined
+
+type User = string | null | undefined
+
+type cleanUser = NonNullable<User>
+
+//result string
+
+
+//10. returnTYpe<T>
+//extract function return type
+const getUser = ()=>{
+    return {id: 1, name:"varun"}
+}
+
+type UserType= ReturnType<typeof getUser>
+
+const users: UserType =getUser()
+console.log(users)
+
+//11.  Parameters<T>
+
+//extract functioon parameter types
+
+function login(email:string, password:string){}
+
+type LoginArgs = Parameters<typeof login>
+
+//result [string,string]
+
+
 
 
 

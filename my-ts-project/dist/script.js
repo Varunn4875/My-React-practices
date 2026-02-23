@@ -105,5 +105,17 @@ function printpublicuser(user) {
     console.log(user.id, user.name);
 }
 printpublicuser({ id: 1, name: "varun" });
+//result string
+//10. returnTYpe<T>
+//extract function return type
+const getUser = () => {
+    return { id: 1, name: "varun" };
+};
+const users = getUser();
+console.log(users);
+//11.  Parameters<T>
+//extract functioon parameter types
+function login(email, password) { }
 export {};
+//result [string,string]
 //# sourceMappingURL=script.js.map
