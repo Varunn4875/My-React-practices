@@ -294,6 +294,53 @@ type LoginArgs = Parameters<typeof login>
 
 
 
+//=================================//
+//diff between type and interface
+//=================================//
+
+// Type and Interface Use Cases
+// 1) Interface Usage
+// TypeScript
+// Copy code
+// interface User {
+//   id: number;
+//   name: string;
+//   email: string;
+// }
+// Best for:
+// API responses
+// Database models
+// Class contracts
+// Large team projects
+// 2) Use type when you need more flexibility
+// TypeScript
+// Copy code
+// type Status = "pending" | "success" | "failed";
+// 👉 Interface cannot do this.
+// Explicit Return Type vs Without Explicit Return Type
+// With explicit return type
+// TypeScript
+// Copy code
+// interface User {
+//   id: number;
+//   name: string;
+// }
+
+// const getUser = (): User => {
+//   return { id: 1, name: "Varun" };
+// };
+// Without explicit return type (Recommended in most cases)
+// TypeScript
+// Copy code
+// const getUser = () => {
+//   return { id: 1, name: "Varun" };
+// };
+// TypeScript automatically infers the return type.
+// TypeScript
+// Copy code
+// type UserType = ReturnType<typeof getUser>;
+
+
 
 
 
