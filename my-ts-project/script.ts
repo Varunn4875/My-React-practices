@@ -300,8 +300,7 @@ type LoginArgs = Parameters<typeof login>
 
 // Type and Interface Use Cases
 // 1) Interface Usage
-// TypeScript
-// Copy code
+
 // interface User {
 //   id: number;
 //   name: string;
@@ -313,14 +312,12 @@ type LoginArgs = Parameters<typeof login>
 // Class contracts
 // Large team projects
 // 2) Use type when you need more flexibility
-// TypeScript
-// Copy code
+
 // type Status = "pending" | "success" | "failed";
 // 👉 Interface cannot do this.
 // Explicit Return Type vs Without Explicit Return Type
 // With explicit return type
-// TypeScript
-// Copy code
+
 // interface User {
 //   id: number;
 //   name: string;
