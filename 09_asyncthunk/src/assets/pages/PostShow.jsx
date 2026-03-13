@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import { useEffect } from "react";
 import { useSelector,useDispatch } from "react-redux";
 import { fetchPost } from "../../redux/postSlice";
+import '../../App.css'
 
 
 const PostShow=()=>{
@@ -18,8 +19,8 @@ const PostShow=()=>{
         {postStatus ==='loading'  &&  <p>Loading</p>}
         {postStatus === 'succeeded' && (
             <div>
-                <h3>{post.title}</h3>
-                <p>{post.body}</p>
+                <h3 className="post-title">{post.title}</h3>
+                <p className="post-body">{post.body}</p>
             </div>
         )}
         </>

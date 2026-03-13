@@ -12,12 +12,12 @@ const Posts=()=>{
     },[])
     return(
         <>
-        <h2>Posts</h2>
+        <h2 className="hero-title">Posts</h2>
         {status==='loading' &&<p>Loading...</p>}
         {status==='succeeded'&&(
             posts.map(item =>(
-                <div key={item.id}>
-                    <h2>{item.title}</h2>
+                <div className="post-card" key={item.id}>   
+                    <h2 className="item-title">{item.title}</h2>
                     <Link to={`/posts/${item.id}`}>ViewPost</Link>
                 </div>
     

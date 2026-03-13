@@ -1,0 +1,92 @@
+/* Page Container */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fb;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main Title */
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Post List Card */
+.item-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+/* Post Card Container */
+div[key] {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div[key]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Link Button */
+a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background: #3b82f6;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 5px;
+  transition: background 0.2s ease;
+}
+
+a:hover {
+  background: #2563eb;
+}
+
+/* Post Detail Page */
+.post-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.post-body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* Loading Text */
+p {
+  font-size: 16px;
+  color: #64748b;
+}
+.post-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Routes,Route} from 'react-router-dom'
 import Posts from './assets/pages/Posts'
 import PostShow from './assets/pages/PostShow'
+import './App.css'
 
 function App() {
   
